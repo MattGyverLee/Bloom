@@ -1,0 +1,5161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xlingpaper PUBLIC "-//XMLmind//DTD XLingPap//EN"
+"XLingPap.dtd">
+<xlingpaper
+version="2.24.0"
+><styledPaper
+><lingPaper
+automaticallywrapinterlinears="yes"
+version="2.28.0"
+><frontMatter
+><title
+><titleContentChoices
+><titleContent
+contentType="en"
+>Bloom</titleContent
+><titleContent
+contentType="fr"
+>Bloom</titleContent
+></titleContentChoices
+></title
+><shortTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Bloom_4-8-0</titleContent
+><titleContent
+contentType="fr"
+>Bloom_4-8-0</titleContent
+></titleContentChoices
+></shortTitle
+><subtitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Participant's Manual: (English)</titleContent
+><titleContent
+contentType="fr"
+>Manuel de cours (Français)</titleContent
+></titleContentChoices
+></subtitle
+><author
+>Jenni Beadle &amp; Justin Mbaihondoum</author
+><author
+>Matthew Lee</author
+><contents
+showLevel="3"
+showinlandscapemode="no"
+><labelContentChoices
+><labelContent
+contentType="en"
+>Table of Contents</labelContent
+><labelContent
+contentType="fr"
+>Table de matières</labelContent
+></labelContentChoices
+></contents
+></frontMatter
+><part
+id="p1"
+><secTitle
+>Part 1</secTitle
+><shortTitle
+>BloomMan</shortTitle
+><chapter
+XeLaTeXSpecial="pagebreak"
+id="sGoal"
+showinlandscapemode="no"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Introduction</titleContent
+><titleContent
+contentType="fr"
+><object
+type="tEmphasis"
+>Introduction</object
+></titleContent
+></titleContentChoices
+></secTitle
+><section1
+id="sIn"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Goal</titleContent
+><titleContent
+contentType="fr"
+>But</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="en"
+>The participants will produce a variety of reading books, of different sizes (A6, A5 reading books, Big Books), different levels and formats (printed and electronic).</p
+><p
+contentType="fr"
+>Les participants produiront une variété de livres de lecture, de différentes tailles (livres de lecture A6, A5, Big Books), niveaux et formats (imprimés et électroniques).</p
+></section1
+><section1
+id="scourseObjectives"
+showinlandscapemode="no"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Course Objectives</titleContent
+><titleContent
+contentType="fr"
+>Objectifs</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>At the end of the course, the participant will be able to:</p
+><p
+contentType="fr"
+pagecontrol="letFormatterDecide"
+>À la fin de ce cours, le participant sera capable de :</p
+><ul
+><li
+contentType="en"
+>Prepare easy readers using basic book in collection</li
+><li
+contentType="fr"
+>Créer un livre simple dans une collection déjà créé</li
+><li
+contentType="en"
+>Produce a Big Book based on an A6 version of the book.</li
+><li
+contentType="fr"
+>Produire un Gros Livre basé sur une version A6 du livre.</li
+><li
+contentType="en"
+>Define settings for language</li
+><li
+contentType="fr"
+>Définir les paramètres de la langue</li
+><li
+contentType="en"
+>Create decodable books</li
+><li
+contentType="fr"
+>Créer des livres déchiffables</li
+><li
+contentType="en"
+>Create books at various levels</li
+><li
+contentType="fr"
+>Créer des livres à différents niveaux</li
+><li
+contentType="en"
+>Create electronic books</li
+><li
+contentType="fr"
+>Créer des livres électroniques</li
+></ul
+></section1
+></chapter
+><chapter
+id="sBT1"
+showinlandscapemode="no"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Creating a basic book</titleContent
+><titleContent
+contentType="fr"
+><object
+type="tEmphasis"
+>Créer un livre simple</object
+></titleContent
+></titleContentChoices
+></secTitle
+><pc
+contentType="en"
+><object
+type="tsub"
+>Introduction</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Introduction </object
+></pc
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>This module explains how to create a basic book in a collection that has already been created.</p
+><p
+contentType="fr"
+>Ce module explique comment créer un livre simple dans une collection qui a déjà été créée.</p
+><pc
+contentType="en"
+><object
+type="tsub"
+>Where we are</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Où en sommes-nous ? </object
+></pc
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>Before you can create a book in Bloom, the program needs to be installed on your computer and a collection needs to be created for the books in your language. If this hasn't been done then see appendix X for instructions on how to install Bloom and how to create collections.</p
+><p
+contentType="fr"
+pagecontrol="letFormatterDecide"
+>Avant de pouvoir créer un livre dans Bloom, le programme doit être installé sur votre ordinateur et une collection doit être créée. Sinon, voir annexe X pour comment faire.Si cela n'a pas été fait, consultez l'annexe X pour obtenir des instructions sur l'installation de Bloom et la création de collections.</p
+><pc
+contentType="en"
+><object
+type="tsub"
+>Why is this important?</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Pourquoi est-il important ? </object
+></pc
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>Books in Bloom are stored in a collection. A collection can also contains templates to use when creating a new book. All the books are created, edited and published in a similar way. Basic book is the simplest type of book so it is the best way to start learning Bloom.</p
+><p
+contentType="fr"
+pagecontrol="letFormatterDecide"
+>Les livres en Bloom sont stockés dans une collection. Une collection peut également contenir des modèles à utiliser lors de la création d'un nouveau livre. Tous les livres sont créés, édités et publiés de la même manière. Le livre simple est le type de livre le plus simple, c'est donc la meilleure façon de commencer à apprendre Bloom.</p
+><pc
+contentType="en"
+><object
+type="tsub"
+>What will you do?</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Que ferez-vous ? </object
+></pc
+><ul
+><li
+contentType="en"
+>You will start Bloom and create a vernacular collection.</li
+><li
+contentType="en"
+>You will then create a book based on the Basic Book template.</li
+><li
+contentType="en"
+>Once you have finished editing the book, you will publish it as a PDF.</li
+></ul
+><ul
+><li
+contentType="fr"
+>Vous démarrez Bloom et utilisez une collection vernaculaire.</li
+><li
+contentType="fr"
+>Vous allez ensuite créer et éditer un livre à partir du modèle Livre simple.</li
+><li
+contentType="fr"
+>Une fois l’édition terminée, vous publierez le livre en format PDF.</li
+></ul
+><section1
+id="s4"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Load the program</titleContent
+><titleContent
+contentType="fr"
+>Démarrer Bloom</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="en"
+>Double-click on <object
+type="tmenu"
+>Bloom</object
+> icon on the desktop<br
+></br
+> OR</li
+><li
+contentType="fr"
+>Double-cliquez sur l’icône <object
+type="tmenu"
+>Bloom</object
+> sur le bureau <br
+></br
+>OU</li
+><li
+contentType="en"
+>(From the Start menu, choose Bloom )</li
+><li
+contentType="fr"
+>(Dans le menu Démarrer, choisissez Bloom)<br
+></br
+><object
+type="tresult"
+>Lorsque Bloom est ouvert pour la première fois, votre Collection sera vide.</object
+><br
+></br
+></li
+><li
+contentType="fr"
+><img
+XeLaTeXSpecial="scaling='750'"
+src="imgfr/image3.png"
+width="400"
+></img
+></li
+></ul
+><framedUnit
+framedtype="tTeacher"
+><p
+contentType="fr"
+>Dans la fenêtre principale, sous l’icône <object
+type="tmenu"
+>Collections</object
+>, vous avez le nom de la collection ainsi qu’une liste de tous les livres de cette collection. Vous avez plusieurs modèles prédéfinis dans le volet Sources pour nouveaux livres.</p
+></framedUnit
+></section1
+><section1
+id="chCollection"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>[1] Choose the collection</titleContent
+><titleContent
+contentType="fr"
+>[1] Choisir la collection</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="en"
+><img
+src="imgfr/Coll.png"
+></img
+></p
+><p
+contentType="en"
+>The first step is to make sure you have the correct collection open. Most of your work will be done in the collection for your language. If necessary, you can change it now. See XXX for instructions.</p
+><p
+contentType="fr"
+><img
+src="imgfr/Coll.png"
+></img
+></p
+><p
+contentType="fr"
+>La première étape est de s'assurer que vous avez la bonne collection ouverte. La plupart de votre travail sera fait dans la collection pour votre langue. Si nécessaire, vous pouvez la modifier maintenant. Voir xxx pour savoir comment faire.</p
+></section1
+><section1
+id="cr-basic-book"
+showinlandscapemode="no"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Create a book based on Basic book</titleContent
+><titleContent
+contentType="fr"
+>Créer un livre basé sur Livre simple</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="en"
+>Click <object
+type="tmenu"
+>Basic book</object
+> template (bottom left)</li
+><li
+contentType="fr"
+>Dans le volet <object
+type="tmenu"
+>Sources pour nouveaux livres</object
+>, cliquez sur <object
+type="tmenu"
+>Livre simple</object
+> <br
+></br
+><img
+src="imgfr/LivreSimple.png"
+></img
+><br
+></br
+></li
+><li
+contentType="en"
+>Click <object
+type="tmenu"
+> Create a book from this source??</object
+></li
+><li
+contentType="fr"
+>Cliquez sur le bouton <object
+type="tmenu"
+>Créer un livre depuis cette source</object
+>.<br
+></br
+><img
+src="imgfr/image5.png"
+></img
+><br
+></br
+><object
+type="tresult"
+>Bloom ajoute un nouveau livre de ce modèle à la collection de livres et l’ouvre dans l’onglet « Éditer ». Il y a six pages déjà créées.</object
+><br
+></br
+><img
+XeLaTeXSpecial="scalin'='500'"
+src="imgfr/image6.png"
+width="500"
+></img
+><br
+></br
+></li
+></ul
+><framedUnit
+contentType="fr"
+framedtype="tTeacher"
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>xxx.</p
+><p
+contentType="fr"
+pagecontrol="letFormatterDecide"
+>Elle s’ouvre sur la page <object
+type="tmenu"
+>Couverture extérieure</object
+>. Notez que le livre apparaît dans l’onglet <object
+type="tmenu"
+>Éditer</object
+>. Le volet gauche est appelé Pages. Il montre les pages qui sont dans votre livre. La page en surbrillance dans le volet <object
+type="tmenu"
+>Pages</object
+> s’affiche au centre.</p
+></framedUnit
+></section1
+><section1
+id="sEditBook"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>[2] Edit the book</titleContent
+><titleContent
+contentType="fr"
+>[2] Éditer le livre</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="en"
+>Now that the book has been created, you can edit the book.</p
+><p
+contentType="fr"
+><img
+src="imgfr/Edit.png"
+></img
+></p
+><p
+contentType="fr"
+>Maintenant que le livre a été créé, vous pouvez l'éditer.</p
+><section2
+id="sEditCover"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Edit the book - cover</titleContent
+><titleContent
+contentType="fr"
+>Éditer le livre — couverture</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="fr"
+>Éditez la couverture de la manière suivante :</p
+><ul
+><li
+contentType="fr"
+>Assurez que la page de couverture est affichée.</li
+><li
+contentType="fr"
+>Si necessaire, cliquez sur la page à gauche. br</li
+><li
+contentType="fr"
+><object
+type="tresult"
+>La zone de texte supérieure doit contenir le titre du livre.</object
+></li
+><li
+contentType="fr"
+>Tapez le titre en langue.</li
+><li
+contentType="fr"
+>Cliquez sur l’icône <object
+type="tmenu"
+>Changer d’image</object
+> dans le cadre de l’image <br
+></br
+><img
+src="imgfr/image7.png"
+></img
+></li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>Galeries d'images. </object
+><br
+></br
+><img
+XeLaTeXSpecial="scaling='500'"
+src="imgfr/image10.png"
+width="500"
+xsl-foSpecial=" "
+></img
+><br
+></br
+></li
+><li
+contentType="fr"
+>Pour rechercher une image, tapez un mot et appuyez <object
+type="tmenu"
+>Enter</object
+> <br
+></br
+><img
+XeLaTeXSpecial="scaling='500'"
+src="imgfr/ImagesFound.png"
+width="500"
+></img
+><br
+></br
+><object
+type="tresult"
+>Les images trouvé sont affichés</object
+></li
+><li
+contentType="fr"
+>Sélectionnez une image.</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>OK</object
+>.</li
+><li
+contentType="fr"
+>Modifier la page de titre comme désiré.</li
+></ul
+><framedUnit
+framedtype="tTeacher"
+><p
+contentType="en"
+></p
+><p
+contentType="fr"
+>Pour plus de détails, voir <sectionRef
+sec="sImages"
+textBefore="none"
+></sectionRef
+>.</p
+></framedUnit
+></section2
+><section2
+XeLaTeXSpecial="pagebreak"
+id="sCopy"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Edit the book - add a page</titleContent
+><titleContent
+contentType="fr"
+>Éditer le livre — ajouter une page</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Cliquez sur l’icône de la page précédente. (C.à.d. où vous voulez placer la nouvelle page.)</li
+><li
+contentType="fr"
+>Cliquez sur «<object
+type="tmenu"
+> + Ajouter une page</object
+> » <br
+></br
+><img
+src="imgfr/image8.png"
+></img
+><br
+></br
+><object
+type="tresult"
+>La boîte de dialogue <object
+type="tmenu"
+>Ajouter une page</object
+> s’affiche et affiche les modèles que vous pouvez utiliser pour ajouter d’autres pages à votre livre.</object
+> <br
+></br
+><img
+XeLaTeXSpecial="scaling='500'"
+src="imgfr/adjpage.png"
+width="300"
+></img
+></li
+><li
+contentType="fr"
+>Sélectionnez <object
+type="tmenu"
+>Texte de base &amp; Illustration</object
+>.</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>Ajouter une page</object
+>.<br
+></br
+><object
+type="tresult"
+> La nouvelle page s’affiche</object
+>.</li
+></ul
+></section2
+><section2
+id="sAddPicture"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Edit the book - add a picture</titleContent
+><titleContent
+contentType="fr"
+>Éditer le livre — ajouter une image</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Cliquez sur l’icône <object
+type="tmenu"
+>Changer d'image</object
+> dans le cadre de l’image <br
+></br
+><img
+src="imgfr/image7.png"
+></img
+></li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>Galeries d'images. </object
+><br
+></br
+><img
+XeLaTeXSpecial="scaling='500'"
+src="imgfr/image10.png"
+width="500"
+xsl-foSpecial=" "
+></img
+><br
+></br
+></li
+><li
+contentType="fr"
+>Pour rechercher une image, tapez un mot (p.e. maison) et appuyez <object
+type="tmenu"
+>Enter</object
+> <br
+></br
+><img
+XeLaTeXSpecial="scaling='500'"
+src="imgfr/ImagesFound.png"
+width="500"
+></img
+><br
+></br
+><object
+type="tresult"
+>Les resultats sont affichés</object
+> <br
+></br
+></li
+><li
+contentType="fr"
+>Cliquez sur une image</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>OK</object
+>.</li
+></ul
+><framedUnit
+framedtype="tTeacher"
+><p
+contentType="en"
+></p
+><p
+contentType="fr"
+>Pour plus de détails, voir <sectionRef
+sec="sImages"
+></sectionRef
+>.</p
+></framedUnit
+></section2
+><section2
+id="sAddText"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Edit the book - add text</titleContent
+><titleContent
+contentType="fr"
+>Éditer le livre — ajouter le texte</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Cliquez sur le zone de texte.</li
+><li
+contentType="fr"
+>Saisissez le texte.</li
+></ul
+><framedUnit
+framedtype="tTeacher"
+><p
+contentType="en"
+></p
+><p
+contentType="fr"
+>Pour plus de détails, voir <sectionRef
+sec="sText"
+></sectionRef
+>.</p
+></framedUnit
+></section2
+><section2
+id="sDoitsAuteur"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Edit the book - copyright page</titleContent
+><titleContent
+contentType="fr"
+>Éditer le livre — page de droits d'auteur</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Cliquez sur la page de crédits (à gauche).<br
+></br
+><img
+src="imgfr/image11.png"
+></img
+><br
+></br
+> <object
+type="tresult"
+>La page de crédits s'affiche.</object
+></li
+><li
+contentType="fr"
+>Cliquez sur le lien bleu <br
+></br
+><img
+src="imgfr/LinkCredi.png"
+></img
+><br
+></br
+></li
+><li
+contentType="fr"
+>Tapez les informations sur les droits d'auteur. <br
+></br
+><img
+XeLaTeXSpecial="scaling='500'"
+src="imgfr/credits.png"
+width="500"
+></img
+><br
+></br
+></li
+><li
+contentType="fr"
+>Choisissez le licence, par exemple BY-NC-SA<br
+></br
+><img
+XeLaTeXSpecial="scaling='500'"
+src="imgfr/cc.png"
+width="400"
+></img
+></li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>OK</object
+>.</li
+></ul
+></section2
+></section1
+><section1
+id="Publish"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>[3] Publish a book</titleContent
+><titleContent
+contentType="fr"
+>[3] Publier un livre</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="en"
+>Now we are ready to publish the book by creating a PDF file which can be taken to a printer for printing.</p
+><p
+contentType="fr"
+><img
+src="imgfr/Publ.png"
+></img
+> <br
+></br
+>Maintenant, nous sommes prêts à publier ce livre en créant un fichier PDF qui peut être pris à une imprimante pour l’impression.</p
+><section2
+id="sPublish"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Publish the book — PDF</titleContent
+><titleContent
+contentType="fr"
+>Publier le livre — PDF</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Cliquez sur le bouton <object
+type="tmenu"
+>Publier</object
+> dans barre en haut à gauche <br
+></br
+><img
+src="imgfr/image15.png"
+></img
+></li
+><li
+contentType="fr"
+>Cliquez sur le mot <object
+type="tmenu"
+>Options</object
+> pour vérifiez la taille du papier</li
+><li
+contentType="fr"
+><object
+type="tresult"
+>Si la taille du papier est différente que la taille du livre, choisissez la taille du papier</object
+>.</li
+><li
+contentType="fr"
+>Choisissez l’une des six options (à gauche) <br
+></br
+><img
+XeLaTeXSpecial="scaling='500'"
+src="imgfr/image14.png"
+width="100"
+></img
+><br
+></br
+><object
+type="tresult"
+>Le livre s'affiche au centre</object
+>.</li
+></ul
+><framedUnit
+framedtype="tTeacher"
+><p
+contentType="en"
+></p
+><p
+contentType="fr"
+>Astuce: Tout d'abord, choisissez "<langData
+lang="lVernacular"
+><object
+type="tmenu"
+>Simple</object
+></langData
+><object
+type="tmenu"
+>" pour lire le livre une page à la fois dans l'ordre. Choisissez ensuite "Inside Booklet".</object
+></p
+></framedUnit
+></section2
+><section2
+id="sPubCC"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Publish the book - Check and make corrections</titleContent
+><titleContent
+contentType="fr"
+>Publier le livre — Vérifier et faire les corrections</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Vérifiez le livre.</li
+><li
+contentType="fr"
+>Si vous trouvez des erreurs, cliquez sur l'onglet <object
+type="tmenu"
+>Éditer</object
+> et faites les corrections.</li
+></ul
+><framedUnit
+framedtype="tTeacher"
+><p
+contentType="en"
+></p
+><p
+contentType="fr"
+>Astuce: Choisissez "Simple" pour lire le livre une page à la fois en ordre. Puis choisissez Intérieur du livret</p
+></framedUnit
+></section2
+><section2
+id="sPubPA"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Publish the book - Publish again</titleContent
+><titleContent
+contentType="fr"
+>Publier le livre — Publier encore</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Cliquez sur l’onglet <object
+type="tmenu"
+>Publier</object
+>.<br
+></br
+><img
+src="imgfr/image15.png"
+></img
+></li
+><li
+contentType="fr"
+>Choisissez encore l'option désirée (tout d'abord simple).</li
+><li
+contentType="fr"
+>Vérifiez le livre encore.</li
+><li
+contentType="fr"
+>Quand le livre est correct,</li
+><li
+contentType="fr"
+>Enregistrer le PDF (voir dessus).</li
+></ul
+></section2
+><section2
+id="sPubSsPDF"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Publish the book - Save as PDF</titleContent
+><titleContent
+contentType="fr"
+>Publier le livre — Enregistre le PDF</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Cliquez sur Enregistrer le PDF sur la barre d'outils <br
+></br
+><img
+src="imgfr/image16.png"
+></img
+> .</li
+><li
+contentType="fr"
+>Confirmez le nom de fichier et le dossier.</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>Enregistrer</object
+>.</li
+><li
+contentType="fr"
+>Si nécessaire, recommencez pour une autre option. (p.ex. la couverture ou l'intérieur)</li
+><li
+contentType="fr"
+>Accédez au dossier où vous avez enregistré le fichier PDF.</li
+></ul
+></section2
+><section2
+id="sPubPr"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Publish the book - Print the PDF</titleContent
+><titleContent
+contentType="fr"
+>Publier le livre — Imprimer le PDF</titleContent
+></titleContentChoices
+></secTitle
+><framedUnit
+framedtype="tTeacher"
+><p
+contentType="fr"
+>Si vous avez une imprimante connectée, vous pouvez imprimer le livre directement sur votre imprimante</p
+></framedUnit
+><ul
+><li
+contentType="fr"
+>Si nécessaire, cliquez sur l’onglet <object
+type="tmenu"
+>Publier</object
+>.<br
+></br
+><img
+src="imgfr/image15.png"
+></img
+></li
+><li
+contentType="fr"
+>Choisissez l’une des six options (à gauche).</li
+><li
+contentType="fr"
+id="tResult"
+>Cliquez sur Imprimer.<br
+></br
+><img
+src="imgfr/image18.png"
+></img
+><br
+></br
+><object
+type="tresult"
+>Un message s’affiche</object
+><br
+></br
+><img
+src="imgfr/image19.png"
+width="200"
+></img
+></li
+><li
+contentType="fr"
+>Après avoir lu le message, cliquez sur <object
+type="tmenu"
+>OK</object
+> pour fermer le message. <br
+></br
+><object
+type="tresult"
+>Suivant les instructions. C.-à-d. imprimer taille (pas livret) en paysage sur papier A4.</object
+></li
+><li
+contentType="en"
+>If necessary, repeat for the next option.</li
+><li
+contentType="fr"
+>Si nécessaire, répétez pour l'option suivante.</li
+></ul
+></section2
+></section1
+></chapter
+><chapter
+id="sMoreInfo"
+showinlandscapemode="no"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>For more information</titleContent
+><titleContent
+contentType="fr"
+><object
+type="tEmphasis"
+>Pour en savoir plus</object
+></titleContent
+></titleContentChoices
+></secTitle
+><pc
+contentType="en"
+>This chapter has more information on creating collections and editing pages.</pc
+><pc
+contentType="fr"
+>Ce chapitre contient plus d'informations sur la création de collections et l'édition de pages.</pc
+><section1
+id="sCollection"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Collection</titleContent
+><titleContent
+contentType="fr"
+>La collection</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="en"
+>For most of your work, you would use the collection for your language. But there are times you may want to either change to a different collection or create a new collection.</p
+><p
+contentType="fr"
+>Pour la plupart de votre travail, vous utiliseriez la collection pour votre langue. Mais il y a des moments où vous voudrez soit passer à une autre collection, soit en créer une nouvelle.</p
+><section2
+id="sCreateColl"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Create a new collection</titleContent
+><titleContent
+contentType="fr"
+>Pour créer une collection</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>1. Cliquez sur le bouton <object
+type="tmenu"
+>Autre collection.</object
+> <img
+src="imgfr/image20.png"
+></img
+> <br
+></br
+><object
+type="tresult"
+>La boîte de dialogue Ouvrir / créer des collections s’ouvre </object
+></li
+><li
+contentType="fr"
+>2. Cliquez sur <object
+type="tmenu"
+>Créer une nouvelle collection</object
+> <br
+></br
+>.<img
+src="imgfr/image21.png"
+></img
+><br
+></br
+> <object
+type="tresult"
+>La boîte de dialogue Créer une nouvelle collection Bloom) s’affiche.</object
+></li
+><li
+contentType="fr"
+>3. Cliquez sur <object
+type="tmenu"
+>Collection en langue vernaculaire/régionale</object
+>.</li
+><li
+contentType="fr"
+>4. Cliquez sur <object
+type="tmenu"
+>Suivant</object
+>.</li
+><li
+contentType="fr"
+>5. Sélectionnez la langue principale de cette collection. (p.ex. français) puis cliquez sur <object
+type="tmenu"
+>Suivant</object
+>.</li
+><li
+contentType="fr"
+>6. Entrez le pays (Tchad), puis cliquez sur <object
+type="tmenu"
+>Suivant</object
+>.</li
+><li
+contentType="fr"
+>7. Choisissez la police (Andika) et cliquez sur <object
+type="tmenu"
+>Suivant</object
+>.</li
+><li
+contentType="fr"
+>8. Saisissez le nom du projet et cliquez sur <object
+type="tmenu"
+>Suivant</object
+>.</li
+><li
+contentType="fr"
+>9. Cliquez sur <object
+type="tmenu"
+>Terminer</object
+>. <br
+></br
+><object
+type="tresult"
+>La fenêtre principale s’affiche.</object
+></li
+></ul
+><framedUnit
+framedtype="tTeacher"
+><p
+contentType="fr"
+>En haut de la fenêtre, le nom de votre nouvelle collection et le numéro de version de Bloom s’affichent. Maintenant, vous êtes prêt à ajouter un livre à votre collection.</p
+></framedUnit
+></section2
+><section2
+id="sChOtherCol"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Choose an other collection</titleContent
+><titleContent
+contentType="fr"
+>Choisir une autre collection</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Depuis la fenêtre principale:</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>Autre collection</object
+>.<br
+></br
+><object
+type="tresult"
+>La boîte de dialogue Ouvrir/Créer une collection s’affiche.</object
+> <br
+></br
+><img
+src="imgfr/image22.png"
+></img
+><br
+></br
+></li
+><li
+contentType="fr"
+>Si votre collection se trouve dans la liste,<ul
+><li
+>Cliquez sur le nom de la collection. [1]<br
+></br
+><object
+type="tresult"
+>La fenêtre principale réapparaît</object
+></li
+></ul
+></li
+></ul
+><ul
+><li
+contentType="fr"
+>Si votre collection n’est pas dans la liste,<ul
+><li
+contentType="fr"
+>Cliquez sur « Rechercher une autre collection sur cet ordinateur » [2] <br
+></br
+><object
+type="tresult"
+>Une liste des dossiers s’affiche </object
+></li
+><li
+contentType="fr"
+>Double-cliquez sur le dossier avec le nom du projet</li
+><li
+contentType="fr"
+>Double-cliquez sur le fichier avec le nom du projet.bloomCollection <br
+></br
+><object
+type="tresult"
+>La fenêtre principale réapparaît</object
+>.</li
+></ul
+></li
+></ul
+></section2
+></section1
+><section1
+id="sPage"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Page</titleContent
+><titleContent
+contentType="fr"
+>La page</titleContent
+></titleContentChoices
+></secTitle
+><section2
+id="sReorg"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Reorganise the book pages</titleContent
+><titleContent
+contentType="fr"
+>Réorganiser les pages du livre</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Faites glisser et déposez les icônes dans le volet « <object
+type="tmenu"
+>Pages</object
+>».<br
+></br
+><img
+src="imgfr/image23.png"
+></img
+></li
+></ul
+></section2
+><section2
+id="sDel"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Delete a page</titleContent
+><titleContent
+contentType="fr"
+>Supprimer une page d’un livre</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Faites un clic droit sur la page du volet « <object
+type="tmenu"
+>Pages</object
+> ».</li
+><li
+contentType="fr"
+>Choisissez <object
+type="tmenu"
+>Retirer la page</object
+>. OU</li
+><li
+contentType="fr"
+>Cliquez sur l’icône <img
+src="imgfr/image24.png"
+></img
+> en bas des pages.<br
+></br
+><object
+type="tresult"
+>La page est supprimée</object
+>. <br
+></br
+></li
+></ul
+></section2
+></section1
+><section1
+id="sText"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Text</titleContent
+><titleContent
+contentType="fr"
+>Texte</titleContent
+></titleContentChoices
+></secTitle
+><section2
+id="sFormatText"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Edit - format the text</titleContent
+><titleContent
+contentType="fr"
+>Éditer le livre — formater le texte</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Formatez le texte en cliquant sur l’icône de commande grise <img
+src="imgfr/image25.png"
+></img
+> <br
+></br
+><img
+src="imgfr/image26.png"
+></img
+><br
+></br
+><object
+type="tresult"
+>La boîte de dialogue <object
+type="tmenu"
+>Formater</object
+> s'affiche.</object
+></li
+><li
+contentType="fr"
+>Choisissez le <object
+type="tmenu"
+>style</object
+> de la boîte de texte [1].</li
+><li
+contentType="fr"
+>Cliquez sur l’onglet <object
+type="tmenu"
+>Caractères</object
+> [2] <br
+></br
+><img
+XeLaTeXSpecial="scaling='500'"
+src="imgfr/image27.png"
+width="500"
+></img
+><br
+></br
+></li
+><li
+contentType="fr"
+>Choisissez la mise en forme du style (p.ex. taille de police 18) [3]</li
+><li
+contentType="fr"
+>Cliquez sur l’onglet <object
+type="tmenu"
+>Paragraphe</object
+> [4]</li
+><li
+contentType="fr"
+>Choisissez tout autre formatage désiré.</li
+><li
+contentType="fr"
+>Cliquez sur n’importe quelle autre partie de la page pour fermer la boîte. <object
+type="tresult"
+>La boîte est fermée</object
+>. <br
+></br
+></li
+></ul
+></section2
+></section1
+><section1
+id="sImages"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Pictures</titleContent
+><titleContent
+contentType="fr"
+>Images</titleContent
+></titleContentChoices
+></secTitle
+><section2
+id="sxxx"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>xxx</titleContent
+><titleContent
+contentType="fr"
+>Ajouter (changer) une image</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Cliquez sur l’icône «<object
+type="tmenu"
+>Changer d’image</object
+>».<br
+></br
+><img
+src="imgfr/image7.png"
+></img
+><br
+></br
+><img
+XeLaTeXSpecial="scaling='500'"
+src="imgfr/image10.png"
+width="500"
+></img
+><br
+></br
+></li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>Galeries d’images</object
+>.</li
+><li
+contentType="fr"
+>Pour rechercher une image, tapez un mot et appuyez <object
+type="tmenu"
+>Enter</object
+></li
+><li
+contentType="fr"
+>Sélectionnez une image.</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>OK</object
+>.</li
+></ul
+></section2
+><section2
+id="sPastePicture"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>xxx</titleContent
+><titleContent
+contentType="fr"
+>Coller une image</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Copiez une image dans un autre logiciel que Bloom et retournez à Bloom.</li
+><li
+contentType="fr"
+>Cliquez sur l’icône <object
+type="tmenu"
+>Coller l’image </object
+>dans le cadre de l’image.<br
+></br
+><img
+src="imgfr/image28.png"
+></img
+><br
+></br
+> <object
+type="tresult"
+>L'image est affichée</object
+>. .</li
+></ul
+></section2
+><section2
+id="sAddCopyright"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>xxx</titleContent
+><titleContent
+contentType="fr"
+>Ajouter des informations de licence pour toutes les images</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Affichez une page avec l’image.</li
+><li
+contentType="fr"
+>Cliquez sur le point d’interrogation de l’une des images <br
+></br
+> <img
+src="imgfr/image29.jpeg"
+></img
+></li
+><li
+contentType="fr"
+>Remplir les informations de licence pour l’image.</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>OK.</object
+> <br
+></br
+><object
+type="tresult"
+>Bloom peut vous demande si vous voulez copier ces données sur toutes les autres images du livre</object
+></li
+><li
+contentType="fr"
+>Cliquez sur  <object
+type="tmenu"
+>Oui</object
+> (Yes) .</li
+></ul
+></section2
+></section1
+></chapter
+><chapter
+id="sCopy3"
+showinlandscapemode="no"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Big book</titleContent
+><titleContent
+contentType="fr"
+><object
+type="tEmphasis"
+>Gros livre</object
+></titleContent
+></titleContentChoices
+></secTitle
+><pc
+contentType="en"
+><object
+type="tsub"
+>Introduction</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Introduction </object
+></pc
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>This module explains how to ....</p
+><p
+contentType="fr"
+>Dans cette module, nous allons apprendre à créer un gros livre à l’aide de Bloom.</p
+><p
+contentType="fr"
+>On va continuer à utiliser le nouveau modèle <object
+type="tmenu"
+>Livre simple</object
+> (même s’il existe un vieux modèle pour créer un Gros livre). Avec le modèle Livre simple on peut créer un gros livre et aussi le même livre en format A6 d’un seul fichier. En fait, c'est plus facile de commencer avec le livre A6 et puis l’imprimer à A4 paysage.</p
+><pc
+contentType="en"
+><object
+type="tsub"
+>What will you do?</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Que ferez-vous ? </object
+></pc
+><ul
+><li
+contentType="en"
+>You will ...</li
+></ul
+><ul
+><li
+contentType="fr"
+>Nous allons d’abord créer un nouveau livre en format A6.</li
+><li
+contentType="fr"
+>Ensuite, nous le publier en format simple A4.</li
+></ul
+><section1
+id="s51"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Créer un livre simple A6</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Lancez Bloom</li
+><li
+contentType="fr"
+>Créez un Livre simple (voir Chapitre 2)</li
+><li
+contentType="fr"
+>Vérifiez la taille de la page est A6</li
+><li
+contentType="fr"
+>Éditer le livre</li
+></ul
+></section1
+><section1
+id="sComplLiv2"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Compléter le livre comme désiré</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="en"
+>Click on <object
+type="tmenu"
+>xxx</object
+></li
+><li
+contentType="fr"
+>Remplissez <ul
+><li
+>la couverture</li
+><li
+>la page de titre</li
+><li
+contentType="fr"
+>Ajouter les pages</li
+><li
+contentType="fr"
+>Ajouter le texte</li
+><li
+contentType="fr"
+>Changer les images</li
+><li
+contentType="fr"
+>Remplissez la page de crédits.</li
+></ul
+></li
+></ul
+></section1
+><section1
+id="sPubSimple"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Publish - Simple</titleContent
+><titleContent
+contentType="fr"
+>Publier - simple</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="en"
+>To print it as a Big Book, you Publish it to single pages on A4 paper.</p
+><p
+contentType="fr"
+>Pour l'imprimer comme un Gros Livre, vous le publiez Simple sur du papier A4.</p
+><ul
+contentType="en"
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>Publier</object
+>.</li
+><li
+contentType="fr"
+>Sélectionnez <object
+type="tmenu"
+>Simple</object
+>. <br
+></br
+><img
+src="imgfr/PubSimple.png"
+width="400"
+></img
+><br
+></br
+></li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>Enregistrer le PDF</object
+>.</li
+><li
+contentType="en"
+>Accédez au dossier sorti et cliquez sur <object
+type="tmenu"
+>Enregistrer le PDF</object
+>.</li
+></ul
+><framedUnit
+framedtype="tTeacher"
+><p
+contentType="en"
+>To make an even bigger Big Book, you can photocopy it on A3 paper.</p
+><p
+contentType="fr"
+>Pour faire un Gros Livre encore plus grand, vous pouvez le photocopier sur du papier A3.</p
+></framedUnit
+></section1
+></chapter
+><chapter
+id="sShellBook"
+showinlandscapemode="no"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Shell book</titleContent
+><titleContent
+contentType="fr"
+><object
+type="tEmphasis"
+>Livres canevas</object
+></titleContent
+></titleContentChoices
+></secTitle
+><pc
+contentType="en"
+><object
+type="tsub"
+>Introduction</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Introduction </object
+></pc
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>This module explains how to ....</p
+><p
+contentType="fr"
+>Dans cette module, nous allons apprendre comment créer un livre canevas (en français) que les autres peuvent utiliser pour créer des livres en leur langues.</p
+><pc
+contentType="en"
+><object
+type="tsub"
+>Where we are</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Où en sommes-nous ? </object
+></pc
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>Before you can ....</p
+><p
+contentType="fr"
+pagecontrol="letFormatterDecide"
+>Vous avez déjà fait des livres dans une collection vernaculaire. Maintenant, nous allons apprendre à faire des livres dans une collection source. On peut partager ces livres avec d’autres pour les faire en leurs langues.</p
+><pc
+contentType="en"
+><object
+type="tsub"
+>Why is this important?</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Pourquoi est-ce important ?</object
+></pc
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>...</p
+><p
+contentType="fr"
+pagecontrol="letFormatterDecide"
+>Dans Bloom, il existe deux types de collections. Une collection vernaculaire contient des livres pour une langue spécifique. Une collection source contient des livres dans une langue comme française. Puis les livres qui peuvent être partagés et traduits dans des langues vernaculaires.</p
+><p
+contentType="fr"
+pagecontrol="letFormatterDecide"
+>Quand vous voulez créer un livre que d’autres peuvent traduire dans leur propre langue, il faut les créer dans une collection source afin qu’ils puissent être partagés avec un pack Bloom.</p
+><pc
+contentType="en"
+><object
+type="tsub"
+>What will you do?</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Que ferez-vous ? </object
+></pc
+><ul
+><li
+contentType="en"
+>You will ...</li
+></ul
+><ul
+><li
+contentType="fr"
+>Nous allons d’abord créer une nouvelle collection source puis créer un livre canevas.</li
+><li
+contentType="fr"
+>Ensuite, nous ferons un pack Bloom pour cette collection qui peut être envoyée à d’autres pour créer des livres dans leur langue.</li
+></ul
+><section1
+id="sCrColl"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Créer une collection source</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="en"
+>Click on <object
+type="tmenu"
+>xxx</object
+></li
+><li
+contentType="fr"
+>1. Si nécessaire, lancez Bloom</li
+><li
+contentType="fr"
+>2. Cliquez sur le bouton <img
+src="imgfr/image20.png"
+></img
+><object
+type="tmenu"
+> Autre collection. </object
+></li
+><li
+contentType="fr"
+>3. Cliquez sur <object
+type="tmenu"
+>Créer une nouvelle collection</object
+>.</li
+><li
+contentType="fr"
+>4. Cliquez sur <object
+type="tmenu"
+>Collection source</object
+>.</li
+><li
+contentType="fr"
+>5. Cliquez sur <object
+type="tmenu"
+>Suivant</object
+>.</li
+><li
+contentType="fr"
+>6. Saisissez le nom du projet (p.ex. Mes livres canevas) et cliquez sur <object
+type="tmenu"
+>Suivant</object
+>.</li
+><li
+contentType="fr"
+>7. Cliquez sur <object
+type="tmenu"
+>Terminer</object
+>.</li
+></ul
+><p
+></p
+><section2
+id="sSourceLangSettings"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Changer les langues</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="fr"
+>Par défaut, Bloom règle la langue 1 et la langue 2 sur l'anglais. Vous devez changer les langues en français.</p
+><ul
+><li
+contentType="fr"
+>Depuis la fenêtre principale:</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>Paramètres</object
+></li
+><li
+contentType="fr"
+>Cliquez sur l'onglet <object
+type="tmenu"
+>Langues</object
+> <br
+></br
+><img
+height="300"
+src="imgfr\ParLangues.png"
+></img
+><br
+></br
+></li
+><li
+contentType="fr"
+>Pour changez Langue 1 en FR</li
+><li
+contentType="fr"
+>Cliquez sur le lien bleu <object
+type="tmenu"
+>Modifier</object
+> <br
+></br
+><img
+src="imgfr\langueFR.png"
+width="500"
+></img
+><br
+></br
+></li
+><li
+contentType="fr"
+>Tapez espace puis <object
+type="ttyped"
+> fr</object
+></li
+><li
+contentType="fr"
+>Choisissez la langue French</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>OK</object
+></li
+><li
+contentType="fr"
+>répéter pour la deuxième langue (Langue 2 &gt; FR)</li
+></ul
+></section2
+></section1
+><section1
+id="sCC"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Créer un livre canevas</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="fr"
+></p
+><section2
+id="spaper"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+></titleContent
+><titleContent
+contentType="fr"
+>Vérifier le pack de mise en page</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="fr"
+>Si vous créez des livres A6, vous pouvez choisir "Mode économique pour le papier"</p
+><ul
+><li
+contentType="fr"
+>Depuis la fenêtre principale:</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>Paramètres</object
+>.</li
+><li
+contentType="fr"
+>Cliquez sur l’onglet <object
+type="tmenu"
+>Création de livre</object
+></li
+><li
+contentType="fr"
+>Réglez le pack de mise en page autour de la couverture à <object
+type="tmenu"
+>Paper saver</object
+> (économiser de papier).</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>OK</object
+></li
+></ul
+></section2
+><section2
+id="screate"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Create a book</titleContent
+><titleContent
+contentType="fr"
+>Creér un livre</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="fr"
+>Vous créez des livres sources de la même manière qu'auparavant.</p
+><ul
+><li
+contentType="fr"
+>Cliquez sur un modèle comme <object
+type="tmenu"
+>Livre simple</object
+>.</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>Créer un livre depuis cette source</object
+>.</li
+></ul
+></section2
+></section1
+><section1
+id="sComplLiv"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Compléter le livre comme désiré</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="en"
+>Click on <object
+type="tmenu"
+>xxx</object
+></li
+><li
+contentType="fr"
+>Remplissez <ul
+><li
+>la couverture</li
+><li
+>la page de titre</li
+><li
+contentType="fr"
+>Ajouter les pages</li
+><li
+contentType="fr"
+>Ajouter le texte</li
+><li
+contentType="fr"
+>Changer les images</li
+><li
+contentType="fr"
+>Remplissez la page de crédits.</li
+></ul
+></li
+></ul
+></section1
+><section1
+id="sCBP"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Bloom Pack</titleContent
+><titleContent
+contentType="fr"
+>Pack Bloom</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="en"
+>You use Bloom packs to share books from source collections with other users. Before you can use a book in a Bloom Pack you need to install it.</p
+><p
+contentType="fr"
+>Vous utilisez les packs Bloom pour partager des livres des collections sources avec d'autres utilisateurs. Avant de pouvoir utiliser un livre dans un pack Bloom, vous devez l'installer.</p
+><section2
+id="sCrBP"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Créer un pack Bloom</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Cliquez sur l’onglet <object
+type="tmenu"
+>Collections</object
+>.</li
+><li
+contentType="fr"
+>Dans la barre d’outils, cliquez sur <object
+type="tmenu"
+>Créer un pack Bloom</object
+>. <br
+></br
+><img
+src="imgfr/image30.png"
+></img
+></li
+><li
+contentType="fr"
+>Tapez un nom pour le fichier pack Bloom et cliquez sur <object
+type="tmenu"
+>Enregistrer</object
+>. <br
+></br
+><object
+type="tresult"
+>Le pack Bloom est créé et prêt à être distribué</object
+>.</li
+><li
+contentType="fr"
+>Fermez Bloom</li
+></ul
+></section2
+><section2
+id="sIBP"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Installer un pack Bloom</titleContent
+></titleContentChoices
+></secTitle
+><framedUnit
+framedtype="tTeacher"
+><p
+contentType="fr"
+>Avant de pouvoir utiliser un pack Bloom, vous devez l'installer.</p
+></framedUnit
+><ul
+><li
+contentType="fr"
+>Ouvrez une fenêtre <object
+type="tEmphasis"
+>Explorer de fichiers</object
+> dans le dossier.</li
+><li
+contentType="fr"
+>Double-cliquez sur le fichier du pack Bloom. <br
+></br
+><object
+type="tresult"
+>Bloom ajoutera la collection et affichera un message quand il aura terminé. </object
+></li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>OK</object
+> pour fermer le message. <br
+></br
+><object
+type="tresult"
+>Bloom va redémarrer.</object
+></li
+></ul
+></section2
+><section2
+id="sUBP"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Utilisez les livres canevas d’un pack Bloom</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="en"
+>In the <object
+type="tmenu"
+>Source for New Books</object
+> pane, select the desired book.</li
+><li
+contentType="fr"
+>Dans le volet <object
+type="tmenu"
+>Source pour des nouveaux livres</object
+>, sélectionnez le livre désiré.</li
+><li
+contentType="en"
+>Click on <object
+type="tmenu"
+>Create a book from this source</object
+>.<br
+></br
+><img
+src="imgfr/image31cr.png"
+width="500"
+></img
+><br
+></br
+><object
+type="tresult"
+> The book is created and each text box shows the text to translate in a yellow bubble.</object
+></li
+><li
+contentType="fr"
+>Sélectionnez <object
+type="tmenu"
+>Créer un livre depuis cette source</object
+>.<br
+></br
+><object
+type="tresult"
+> Le livre est créé et chaque zone de texte montre le texte à traduire dans une bulle jaune.</object
+><br
+></br
+><img
+src="imgfr/image31cr.png"
+width="500"
+></img
+><br
+></br
+></li
+><li
+contentType="en"
+>Click on the text box</li
+><li
+contentType="fr"
+>Cliquez sur le zone de texte</li
+><li
+contentType="en"
+>Translate the text shown in the balloon into your langauge.</li
+><li
+contentType="fr"
+>Traduisez le texte affiché dans le ballon dans votre langue.</li
+></ul
+></section2
+></section1
+></chapter
+><chapter
+id="sCustPg"
+showinlandscapemode="no"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Custom page</titleContent
+><titleContent
+contentType="fr"
+><object
+type="tEmphasis"
+>Page personnalisée</object
+></titleContent
+></titleContentChoices
+></secTitle
+><pc
+contentType="en"
+><object
+type="tsub"
+>Introduction</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Introduction </object
+></pc
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>This module explains how to create a custom page in a book.</p
+><p
+contentType="fr"
+>Ce module explique comment.créer une page personnalisée dans un livre.</p
+><p
+contentType="en"
+>Watch the video; Bloom_custompage-SD.mp4.</p
+><p
+contentType="fr"
+>Regardez le vidéo <object
+type="tEmphasis"
+>Bloom_custompage-SD.mp4</object
+>.</p
+><section1
+id="sCB"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Start Bloom</titleContent
+><titleContent
+contentType="fr"
+>Commencer Bloom</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="en"
+><object
+type="tresult"
+>The main windows should be displayed. </object
+></li
+><li
+><object
+type="tresult"
+>La fenêtre principale apparaît.</object
+></li
+></ul
+></section1
+><section1
+id="sChCOl"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Choose a collection</titleContent
+><titleContent
+contentType="fr"
+>Choisir une collection</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Vérifiez que la bonne collection est ouverte.</li
+><li
+contentType="fr"
+>Sinon, cliquez sur <object
+type="tmenu"
+>Autres collections</object
+>.<br
+></br
+><object
+type="tresult"
+> La boîte de dialogue <object
+type="tBold"
+>Ouvrir / Créer une collection</object
+> s’affiche.</object
+></li
+><li
+contentType="fr"
+>Sélectionnez la collection désirée. <br
+></br
+><object
+type="tresult"
+>La fenêtre principale réapparaît</object
+>.</li
+></ul
+></section1
+><section1
+id="sCreateB"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Create a book</titleContent
+><titleContent
+contentType="fr"
+>Créer un livre</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Dans le volet <object
+type="tmenu"
+>Sources pour nouveaux livres</object
+>, cliquez sur <object
+type="tmenu"
+>Livre simple</object
+>.</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>Créer un livre depuis cette source</object
+>.</li
+><li
+contentType="fr"
+>Dans la page <object
+type="tmenu"
+>Couverture extérieur</object
+>, saisissez un titre.</li
+></ul
+></section1
+><section1
+id="sCustPFields"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Personnaliser une page – modifier la taille des champs</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Vous pouvez modifier la taille des champs de texte et des images <object
+type="tEmphasis"
+>en faisant glisser la ligne de séparation</object
+> entre eux.<br
+></br
+><img
+src="imgfr/image34.png"
+></img
+><br
+></br
+></li
+></ul
+></section1
+><section1
+id="sCP-add"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Personnaliser une page – ajouter des champs</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Cliquez droit sur le bouton <object
+type="tmenu"
+>Modifier la mise en page</object
+>. <br
+></br
+><img
+src="imgfr/image35.png"
+></img
+><br
+></br
+></li
+><li
+contentType="fr"
+>Utilisez les symboles <object
+type="tmenu"
+>+</object
+> pour ajouter de nouveaux champs.<br
+></br
+><img
+src="imgfr/image36.png"
+></img
+><br
+></br
+></li
+><li
+contentType="fr"
+>Indiquez à Bloom si vous désirez avoir une image ou un texte dans ce champ.<br
+></br
+><img
+src="imgfr/image37.png"
+></img
+><br
+></br
+></li
+><li
+contentType="fr"
+>Cliquez à gauche sur le bouton Modifier la mise en page.<br
+></br
+><img
+src="imgfr/image38.png"
+></img
+><br
+></br
+></li
+></ul
+></section1
+><section1
+id="sCrPgCust"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Créer une page Personnalisée</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Pour créer une page personnalisée, cliquez sur <object
+type="tmenu"
+>Ajouter une page</object
+>,</li
+><li
+contentType="fr"
+>Sélectionnez <object
+type="tmenu"
+>Personnalisation</object
+>,</li
+><li
+contentType="fr"
+>Puis cliquez sur <object
+type="tmenu"
+>Ajouter cette page</object
+>. <br
+></br
+><object
+type="tresult"
+>Une page personnalisée s’affiche et est prête à être modifiée</object
+>.</li
+></ul
+></section1
+><section1
+id="sDefPage"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Définir la page</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Utilisez les symboles <object
+type="tmenu"
+>+</object
+> pour ajouter de nouveaux champs.</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>X</object
+> pour supprimer de champs.</li
+><li
+contentType="fr"
+>Indiquez à Bloom si vous désirez avoir une image ou un texte dans ce champ.</li
+><li
+contentType="fr"
+>Cliquez à gauche sur le bouton <object
+type="tmenu"
+>Modifier la mise en page</object
+> pour la fixer</li
+></ul
+></section1
+></chapter
+><chapter
+id="sLevelBooks"
+showinlandscapemode="no"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Levelled books</titleContent
+><titleContent
+contentType="fr"
+><object
+type="tEmphasis"
+>Livres par niveau (gradués)</object
+></titleContent
+></titleContentChoices
+></secTitle
+><pc
+contentType="en"
+><object
+type="tsub"
+>Introduction</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Introduction </object
+></pc
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>This module explains how to ....</p
+><p
+contentType="fr"
+>Ce module explique comment créer les livres par niveau de difficulté dans Bloom.</p
+><pc
+contentType="en"
+><object
+type="tsub"
+>Why is this important?</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Pourquoi est-ce important ?</object
+></pc
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>...</p
+><p
+contentType="fr"
+pagecontrol="letFormatterDecide"
+>Dans la prochaine session, nous allons créer des livres déchiffrables pour faciliter la lecture des débutants pendant qu’ils apprennent encore les lettres. Avec les livres par niveau, il n’y a aucune restriction sur les lettres utilisées, mais c’est la difficulté des livres qui est contrôlée. Le niveau de difficulté est défini par le nombre de pages, la longueur des phrases et le nombre de mots par phrase ou par page.</p
+><pc
+contentType="en"
+><object
+type="tsub"
+>What will you do?</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Que ferez-vous ? </object
+></pc
+><ul
+><li
+contentType="en"
+>You will ...</li
+></ul
+><ul
+><li
+contentType="fr"
+>Créer un livre simple ou un livre par niveau.</li
+><li
+contentType="fr"
+>Configurer les niveaux.</li
+><li
+contentType="fr"
+>Créer des livres aux niveaux divers.</li
+></ul
+><section1
+id="sChCol"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Choisir la collection</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Si nécessaire, cliquez sur <object
+type="tmenu"
+>Autres collections</object
+>. <br
+></br
+><object
+type="tresult"
+>La boîte de dialogue <object
+type="tEmphasis"
+>Ouvrir / Créer une collection</object
+> s’affiche</object
+>.</li
+><li
+contentType="fr"
+>Sélectionnez la collection désirée. <br
+></br
+><object
+type="tresult"
+>La fenêtre principale réapparaît.</object
+></li
+></ul
+></section1
+><section1
+id="sCrLivre"
+showinlandscapemode="no"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Créer un livre</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Dans le volet <object
+type="tEmphasis"
+>Sources pour des nouveaux livres</object
+>, sélectionnez le modèle de <object
+type="tmenu"
+>Livre par niveau</object
+>.</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>Créer un livre depuis cette source</object
+>.</li
+><li
+contentType="fr"
+>Si nécessaire, cliquez l’icône de menu (à droite) <br
+></br
+><object
+type="tresult"
+>Le volet « Outil de livre par niveau » s’affiche.</object
+></li
+></ul
+></section1
+><section1
+id="sConfigLevel"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Configurer les niveaux</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Dans le volet <object
+type="tEmphasis"
+>Outil de livre gradué</object
+>, cliquez sur le lien <object
+type="tmenu"
+>Configurer les niveaux</object
+>. <br
+></br
+><img
+src="imgfr/image39cr.png"
+></img
+><br
+></br
+><br
+></br
+><object
+type="tresult"
+>La boîte de dialogue «Configurer l’outil de livre par niveau» s’affiche. </object
+></li
+><li
+contentType="fr"
+>Sur le côté gauche, un tableau récapitulatif de niveau est donné. Sur le côté droit, nous pouvons voir les règles pour un niveau donné. <br
+></br
+><img
+src="imgfr/image40.png"
+></img
+><br
+></br
+></li
+></ul
+></section1
+><section1
+id="sConfigLevel1"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Configurer niveau 1</titleContent
+></titleContentChoices
+></secTitle
+><framedUnit
+framedtype="tTeacher"
+><p
+contentType="fr"
+>Maintenant nous voulons définir chaque niveau selon nos règles. Notez qu’il y a six niveaux définis préalablement. Nous voulons les modifier et ajouter des niveaux supplémentaires si nécessaire.</p
+></framedUnit
+><ul
+><li
+contentType="fr"
+>1. Cliquez sur <object
+type="tmenu"
+>Niveau 1</object
+>.</li
+><li
+contentType="fr"
+>2. Définissez les mots<object
+type="tmenu"
+> maximums dans chaque phrase </object
+>(par exemple, 3).</li
+><li
+contentType="fr"
+>3. Définissez le mot <object
+type="tmenu"
+>maximum dans chaque page</object
+> (par exemple, 3).</li
+><li
+contentType="fr"
+>4. Définissez le nombre <object
+type="tmenu"
+>maximum de mots par livre</object
+> (par exemple, 20).</li
+><li
+contentType="fr"
+>5. Si vous le souhaitez, nous pourrions définir le <object
+type="tmenu"
+>maximum de mots uniques par livre </object
+>(par exemple, 10).</li
+></ul
+></section1
+><section1
+id="sConfigOtherLev"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Configurer les autres niveaux</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Configurez les autres niveaux comme désiré.</li
+><li
+contentType="fr"
+>Voilà quelques suggestions dans le tableau :</li
+><li
+contentType="fr"
+>Définissez la limite de mots par phrase. [A]</li
+><li
+contentType="fr"
+>Définissez la limite de mot par page. [B]</li
+><li
+contentType="fr"
+>Définissez Nombre maximal de mots par livre. [C]</li
+><li
+contentType="fr"
+>Si désiré, on peut définir la limite de mots uniques par livre. [D]</li
+></ul
+><table
+border="1"
+contentType="fr"
+><tr
+><th
+>Niveau</th
+><th
+>[A]</th
+><th
+>[B]</th
+><th
+>[C]</th
+><th
+>[D]</th
+></tr
+><tr
+><th
+>2</th
+><th
+>5</th
+><th
+>5</th
+><th
+>48</th
+><th
+>16</th
+></tr
+><tr
+><td
+>3</td
+><td
+>7</td
+><td
+>10</td
+><td
+>72</td
+><td
+>24</td
+></tr
+><tr
+><td
+>4</td
+><td
+>8</td
+><td
+>18</td
+><td
+>206</td
+><td
+>40</td
+></tr
+><tr
+><td
+>5</td
+><td
+>12</td
+><td
+>25</td
+><td
+>500</td
+><td
+>72</td
+></tr
+><tr
+><td
+>6</td
+><td
+>20</td
+><td
+>50</td
+><td
+>1000</td
+><td
+></td
+></tr
+><tr
+><td
+>6</td
+><td
+>20</td
+><td
+>50</td
+><td
+>1000</td
+><td
+></td
+></tr
+></table
+></section1
+><section1
+id="sDelLevel"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Supprimer un niveau</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>1. Cliquez sur le niveau</li
+><li
+contentType="fr"
+>2. Cliquez sur le lien <object
+type="tmenu"
+>Retirer le niveau</object
+>. <br
+></br
+><img
+src="imgfr/RetNiv.png"
+width="400"
+></img
+><br
+></br
+></li
+></ul
+></section1
+><section1
+id="sChOrder"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Change the order</titleContent
+><titleContent
+contentType="fr"
+>Modifier l’ordre</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="en"
+>Drag the lines to change the order.</li
+><li
+contentType="fr"
+>Faites glisser les lignes pour changer l'ordre.</li
+></ul
+></section1
+><section1
+id="sAddLev"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Ajouter un niveau</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Cliquez sur le lien <object
+type="tmenu"
+>Ajouter un niveau</object
+>.<br
+></br
+><img
+src="imgfr/AdjNiveau.png"
+></img
+><br
+></br
+></li
+></ul
+><framedUnit
+framedtype="tTeacher"
+><p
+contentType="fr"
+>Si on ne veut pas qu’une règle s’applique à un niveau donné, décocher la case appropriée.</p
+><p
+contentType="fr"
+><img
+src="imgfr/AdjNiveauCaseCr.png"
+></img
+></p
+></framedUnit
+></section1
+><section1
+id="sAddNotes"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Ajouter des notes à l’auteur</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Nous pouvons mettre des notes à l’auteur dans la zone de texte <object
+type="tmenu"
+>Ce qu’il faut se rappeler pour ce niveau</object
+>.<br
+></br
+><img
+src="imgfr/AdjNotes.png"
+></img
+><br
+></br
+></li
+></ul
+></section1
+><section1
+id="sCreateLevBook"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Créer le livre</titleContent
+></titleContentChoices
+></secTitle
+><framedUnit
+framedtype="tTeacher"
+><p
+contentType="fr"
+>Après avoir défini tous les niveaux, nous sommes prêts à créer notre livre gradué.</p
+></framedUnit
+><ul
+contentType="fr"
+><li
+>Si nécessaire, cliquez sur <object
+type="tmenu"
+>OK</object
+> (pour fermer la boîte de dialogue).</li
+><li
+>Assurez-vous que le niveau est correct (cliquez sur la flèche si nécessaire) <br
+></br
+><img
+src="imgfr/image41.png"
+></img
+><br
+></br
+></li
+><li
+>Remplissez les détails des pages avant (page de titre, etc.) et ajoutez des pages au besoin.</li
+><li
+>Tapez (ou copiez) du texte.</li
+><li
+>Si votre texte est plus complexe que permis pour le niveau, le texte ou la page changera de couleur.</li
+><li
+>Modifiez la police si nécessaire (voir page <sectionRef
+sec="sFormatText"
+></sectionRef
+>)</li
+></ul
+></section1
+></chapter
+><chapter
+id="sDecodable"
+showinlandscapemode="no"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Decodable books</titleContent
+><titleContent
+contentType="fr"
+><object
+type="tEmphasis"
+>Livre déchiffrable</object
+></titleContent
+></titleContentChoices
+></secTitle
+><pc
+contentType="en"
+><object
+type="tsub"
+>Introduction</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Introduction </object
+></pc
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>In this module we will learn how to create a decodable book in Bloom (i.e. a book that contains only the letters (or sight words) learned).</p
+><p
+contentType="fr"
+>Ce module nous allons apprendre comment créer un livre déchiffrable dans Bloom (c.-à-d. un livre qui ne contient que les lettres (ou mots à vue) apprises).</p
+><pc
+contentType="en"
+><object
+type="tsub"
+>Why is this important?</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Pourquoi est-ce important ?</object
+></pc
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>When people start learning to read, they need a lot of practice with reading materials that contain only the letters (or sight words) they have learned so far. Without a program like Bloom, it is very painful to make sure your book is limited to known letters or sight words. Bloom's Decodable book allows us to introduce letters and sight words at different stages. When you make decodable books, Bloom will warn you every time you use a word with letters that have not yet been learned (or that is not a sight word).</p
+><p
+contentType="fr"
+pagecontrol="letFormatterDecide"
+>Quand les gens commencent à apprendre à lire, ils ont besoin de beaucoup de pratique avec des documents de lecture qui ne contient que les lettres (ou mots à vue) qu’ils ont apprises jusqu’à présent. Sans un programme comme Bloom, il est très pénible de s’assurer que votre livre est limité aux lettres connues ou mots à vue. Le livre Déchiffrable de Bloom nous permet d’introduire des lettres et des mots à vue à différentes étapes. Lorsque vous faites des livres déchiffrables, Bloom vous avertira chaque fois que vous utilisez un mot avec des lettres qui n’ont pas encore été apprises (ou qui n’est pas un mot à vue).</p
+><pc
+contentType="en"
+><object
+type="tsub"
+>What will you do?</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Que ferez-vous ? </object
+></pc
+><ul
+><li
+contentType="en"
+>Create a book based on the decipherable book template.</li
+><li
+contentType="fr"
+>Créez un livre basé sur le modèle de livre déchiffrable.</li
+><li
+contentType="en"
+>Configure the stages by adding the graphemes, the word list and define the letters and sight words for each step.</li
+><li
+contentType="fr"
+>Régler les étapes en ajoutant les graphèmes, la liste de mots et la définition des lettres et des mots à vue pour chacune des étapes.</li
+><li
+contentType="en"
+>Create a stage 1 decodable book.</li
+><li
+contentType="fr"
+>Créer un livre déchiffrable de niveau 1.</li
+></ul
+><section1
+id="sChCol2"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Choose the collection</titleContent
+><titleContent
+contentType="fr"
+>Choisir la collection</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="en"
+>If necessary, start Bloom</li
+><li
+contentType="fr"
+>Si nécessaire, démarrez Bloom</li
+><li
+contentType="en"
+>Check that the right collection is open.</li
+><li
+contentType="fr"
+>Vérifiez que la bonne collection est overte.</li
+><li
+contentType="en"
+>If necessary, click <object
+type="tmenu"
+>Other collections</object
+>. <br
+></br
+><object
+type="tresult"
+>The dialog box <object
+type="tEmphasis"
+>Open / Create a collection</object
+> opens</object
+>.</li
+><li
+contentType="fr"
+>Si nécessaire, cliquez sur <object
+type="tmenu"
+>Autres collections</object
+>. <br
+></br
+><object
+type="tresult"
+>La boîte de dialogue <object
+type="tEmphasis"
+>Ouvrir / Créer une collection</object
+> s’affiche</object
+>.</li
+><li
+contentType="en"
+>Select the desired collection <br
+></br
+><object
+type="tresult"
+>The main window opens.</object
+></li
+><li
+contentType="fr"
+>Sélectionnez la collection désirée. <br
+></br
+><object
+type="tresult"
+>La fenêtre principale réapparaît.</object
+></li
+></ul
+></section1
+><section1
+id="sCrLivreLD"
+showinlandscapemode="no"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Create a decodable book</titleContent
+><titleContent
+contentType="fr"
+>Créer un livre déchiffrable</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Dans le volet <object
+type="tEmphasis"
+>Sources pour des nouveaux livres</object
+>, sélectionnez le modèle de <object
+type="tmenu"
+>Livre déchiffrable</object
+>.</li
+><li
+contentType="fr"
+>Cliquez sur <object
+type="tmenu"
+>Créer un livre depuis cette source</object
+>.</li
+></ul
+></section1
+><section1
+id="sConfigSt"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Configurer les étapes</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Si nécessaire, cliquez sur <img
+src="imgfr/image42.png"
+></img
+> (à droite) pour voir le volet d'outils.</li
+><li
+contentType="fr"
+>Dans le volet <object
+type="tEmphasis"
+>Outil du livre déchiffrable</object
+>, cliquez sur <object
+type="tmenu"
+>Configurer les étapes</object
+>.<br
+></br
+><img
+src="imgfr/image43.jpeg"
+></img
+><br
+></br
+> <object
+type="tresult"
+>La boîte de dialogue s’affiche</object
+>. Voir dessous.</li
+></ul
+></section1
+><section1
+id="sAddLetters"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>...</titleContent
+><titleContent
+contentType="fr"
+>Ajouter des graphèmes</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Cliquez sur l’onglet <object
+type="tmenu"
+>Lettres</object
+>.</li
+><li
+contentType="fr"
+>Saisissez ou collez les lettres souhaitées dans la zone de texte <object
+type="tmenu"
+>Lettres et ensembles de lettres</object
+>. <br
+></br
+><img
+src="imgfr/image44.png"
+></img
+><br
+></br
+></li
+></ul
+></section1
+><section1
+id="sAddWordlist"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Add word list</titleContent
+><titleContent
+contentType="fr"
+>Ajouter une liste de mots (des mots suggérés)</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="fr"
+>Cliquez sur l’onglet <object
+type="tmenu"
+>Exemples de mots</object
+>.</li
+><li
+contentType="fr"
+>Tapez ou collez les mots suggérés dans la zone de texte <object
+type="tmenu"
+>1) Tapez les mots ici</object
+>.</li
+><li
+contentType="fr"
+>Cliquez sur le lien <object
+type="tUnderline"
+>Dossier de textes types</object
+>. <br
+></br
+><object
+type="tresult"
+>Une fenêtre Explorer s’ouvre dans le dossier que Bloom utilise pour obtenir des mots suggérés.</object
+></li
+><li
+contentType="fr"
+>Collez votre fichier texte dans ce dossier.</li
+><li
+contentType="fr"
+>Fermez la fenêtre Explorer. <br
+></br
+><object
+type="tresult"
+>Le nom complet du chemin du fichier est affiché dans la zone de texte <object
+type="tEmphasis"
+>2) Placez les fichiers texte</object
+>.</object
+></li
+></ul
+></section1
+></chapter
+><chapter
+id="sCrEl"
+showinlandscapemode="no"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Create and electronic book (for Android)</titleContent
+><titleContent
+contentType="fr"
+><object
+type="tEmphasis"
+>Créer un livre electronique (pour Android)</object
+></titleContent
+></titleContentChoices
+></secTitle
+><pc
+contentType="en"
+><object
+type="tsub"
+>Introduction</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Introduction </object
+></pc
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>Bloom can also create electronic books which can be read on an Android Smartphone using Bloom Reader. This module explains how to format your book for an Android and also how to transfer the book to the phone.</p
+><p
+contentType="fr"
+>Bloom peut également créer des livres électroniques qui peuvent être lus sur un Smartphone Android en utilisant l'app Bloom Reader. Ce module explique comment formater votre livre pour un Android et aussi comment transférer le livre sur le téléphone.</p
+><pc
+contentType="en"
+><object
+type="tsub"
+>Where we are</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Où en sommes-nous ? </object
+></pc
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>You have created a book that you want to copy to your Android device. Before you can copy it, you need to download and install Bloom Reader on your phone.</p
+><p
+contentType="fr"
+pagecontrol="letFormatterDecide"
+>Vous avez créé un livre que Avant de pouvoir copier votre livre sur votre appareil Android, vous devez télécharger et installer Bloom Reader sur votre téléphone.</p
+><pc
+contentType="en"
+><object
+type="tsub"
+>Why is this important?</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Pourquoi est-ce important ?</object
+></pc
+><p
+contentType="en"
+pagecontrol="letFormatterDecide"
+>Electronic books are cheaper to produce, however, you need to have an app that can read them. Bloom Reader was written especially to read Bloom books on an Android Smartphone. Since the size of the screen is very different to the size of paper you need to format it first before you can send it to your phone.</p
+><p
+contentType="fr"
+pagecontrol="letFormatterDecide"
+>Les livres électroniques sont moins chers à produire, cependant, vous devez avoir une application qui peut les lire. Bloom Reader a été écrit spécialement pour lire les livres Bloom sur un Smartphone Android. Comme la taille de l'écran est très différente de la taille du papier, vous devez d'abord le formater avant de pouvoir l'envoyer à votre téléphone.</p
+><pc
+contentType="en"
+><object
+type="tsub"
+>What will you do?</object
+></pc
+><pc
+contentType="fr"
+><object
+type="tsub"
+>Que ferez-vous ? </object
+></pc
+><ul
+><li
+contentType="en"
+>First you need to download and install Bloom Reader from the Google Playstore.</li
+><li
+contentType="fr"
+>D'abord vous devez télécharger et installer Bloom Reader à partir de la boutique Google Playstore.</li
+><li
+contentType="en"
+>You then open your book and reformat it to fit an Android screen</li
+><li
+contentType="fr"
+>Vous ouvrez ensuite votre livre et le reformatez pour qu'il s'adapte à un écran Android</li
+><li
+contentType="en"
+>Then you publish your book to your Android device.</li
+><li
+contentType="fr"
+>Puis, vous publiez le livre sur votre appareil Android.</li
+></ul
+><section1
+id="sChCOlEl"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Choose the collection</titleContent
+><titleContent
+contentType="fr"
+>Choisir la collection</titleContent
+></titleContentChoices
+></secTitle
+><p
+><img
+src="imgfr/Coll.png"
+></img
+></p
+><ul
+><li
+contentType="en"
+>Start Bloom (and Bloom Reader on your phone)</li
+><li
+contentType="fr"
+>Lancez Bloom (et Bloom Reader sur votre téléphone)</li
+><li
+contentType="en"
+></li
+><li
+contentType="fr"
+>Vérifiez que la bonne collection est ouverte.</li
+><li
+contentType="en"
+></li
+><li
+contentType="fr"
+>Sinon, cliquez sur <object
+type="tmenu"
+>Autres collections</object
+>.<br
+></br
+><object
+type="tresult"
+> La boîte de dialogue <object
+type="tBold"
+>Ouvrir / Créer une collection</object
+> s’affiche.</object
+></li
+><li
+contentType="en"
+></li
+><li
+contentType="fr"
+>Sélectionnez la collection désirée. <br
+></br
+><object
+type="tresult"
+>La fenêtre principale réapparaît</object
+>.</li
+><li
+contentType="fr"
+>Sélectionnez le livre désirée.</li
+></ul
+></section1
+><section1
+id="sReformat"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Reformat your book for Android</titleContent
+><titleContent
+contentType="fr"
+>Reformater votre livre pour Android</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="fr"
+><img
+src="imgfr/edit.png"
+></img
+></p
+><p
+contentType="fr"
+>Vous devez changer la taille de la page et vérifier chaque page pour vous assurer qu'elle s'affiche correctement à l'écran.</p
+><section2
+id="sRePgeS"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Change the page size</titleContent
+><titleContent
+contentType="fr"
+>Changer la taille de la page</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="en"
+>On the toolbar,click <object
+type="tEmphasis"
+>the current page size</object
+> (e.g. A5Portrait)</li
+><li
+contentType="fr"
+>Dans la barre d'outils, cliquez sur <object
+type="tEmphasis"
+>la taille de la page actuelle</object
+> (par exemple, A5Portrait)</li
+><li
+contentType="en"
+>Choose <object
+type="tmenu"
+>Device16x9Portrait</object
+> <br
+></br
+><img
+XeLaTeXSpecial="scaled='100'"
+src="imgfr/PageAndroid.png"
+width="200"
+xsl-foSpecial=" "
+></img
+> <br
+></br
+> .<object
+type="tresult"
+>The page size changes and Bloom tries to rearrange the page.</object
+></li
+><li
+contentType="dn"
+>Change picture for English</li
+><li
+contentType="fr"
+>Choisissez <object
+type="tmenu"
+>Appareil16x0Portrait</object
+><br
+></br
+><img
+src="imgfr/PageAndroid.png"
+width="200"
+></img
+> <br
+></br
+><object
+type="tresult"
+> La taille de la page change et Bloom tente de réorganiser la page</object
+>.<br
+></br
+></li
+></ul
+></section2
+><section2
+id="sRPage"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Check each page</titleContent
+><titleContent
+contentType="fr"
+>Vérifier chaque page</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="en"
+>Check each page to verify that they display on the screen properly. If not, make any adjustments necessary to the problem pages.</li
+><li
+contentType="fr"
+>Vérifiez chaque page pour vous assurer qu'elle s'affiche correctement à l'écran. Si ce n'est pas le cas, apportez les modifications nécessaires aux pages problématiques.</li
+></ul
+></section2
+></section1
+><section1
+id="sdraftBT"
+showinlandscapemode="no"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Publish your book to Android</titleContent
+><titleContent
+contentType="fr"
+>Publier votre livre à Android</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="en"
+>To publish your book to your Android, you need to connect your device, make some settings and then send the book. See below for instructions on how to do this.</p
+><p
+contentType="fr"
+>Pour publier votre livre sur votre Android, vous devez connecter votre appareil, faire quelques réglages et ensuite envoyer le livre. Voir ci-dessous pour les instructions sur la façon de procéder.</p
+><section2
+id="sConAnd"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Connect your Android device</titleContent
+><titleContent
+contentType="fr"
+>Connecter votre appareil Android</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="en"
+>Connect your Android device to your PC via cable or Wi-Fi.</li
+><li
+contentType="fr"
+>Connectez votre appareil Android à votre PC via le câble ou le Wi-Fi.</li
+><li
+contentType="en"
+>Check that Bloom Reader is running on your Android Device.</li
+><li
+contentType="fr"
+>Vérifiez que le lecteur Bloom est en marche sur votre appareil Android.</li
+></ul
+></section2
+><section2
+id="sAndSettings"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Publish</titleContent
+><titleContent
+contentType="fr"
+>Publier</titleContent
+></titleContentChoices
+></secTitle
+><ul
+><li
+contentType="en"
+>Click the <object
+type="tmenu"
+>Publish</object
+> icon</li
+><li
+contentType="fr"
+>Cliquer sur l'icône <object
+type="tmenu"
+>Publier</object
+></li
+><li
+contentType="en"
+>Select Android</li
+><li
+contentType="fr"
+>Choisissez Android <br
+></br
+><img
+XeLaTeXSpecial="scaled='500'"
+src="imgfr/PubAnd.png"
+width="100"
+></img
+><br
+></br
+></li
+><li
+contentType="en"
+>If desired, select color from Thumbnail Color</li
+><li
+contentType="fr"
+>Si vous le souhaitez, sélectionnez la couleur dans <object
+type="tmenu"
+>Settings</object
+> (Couleur des vignettes) <br
+></br
+><img
+src="imgfr/ChCol.png"
+width=" 300"
+></img
+><br
+></br
+></li
+><li
+contentType="en"
+>Select your choice from Method Choices</li
+><li
+contentType="fr"
+>Sélectionnez votre choix parmi les choix de méthodes <br
+></br
+><img
+XeLaTeXSpecial="scaled='500'"
+src="imgfr/ConAnd.png"
+width="200"
+></img
+><br
+></br
+></li
+></ul
+></section2
+><section2
+id="sBlRead"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Bloom Reader</titleContent
+><titleContent
+contentType="fr"
+>Bloom Reader</titleContent
+></titleContentChoices
+></secTitle
+><p
+contentType="en"
+>After sending is completed. On your Android, play the sent book. Sometimes not all the text will be displayed on the Android. You may need to make some adjustments in the Bloom book to get all the text to fit, then publish it again.</p
+><p
+contentType="fr"
+>Une fois l'envoi terminé. Sur votre Android, jouez le livre envoyé. Parfois, tout le texte ne sera pas affiché sur l'Android. Vous pouvez avoir besoin de faire quelques ajustements dans le livre Bloom pour que tout le texte s'adapte, puis le publier à nouveau.</p
+></section2
+></section1
+></chapter
+></part
+><backMatter
+><appendix
+contentType="fr"
+id="sChadSpecChar"
+showinlandscapemode="no"
+><secTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Chad special characters</titleContent
+><titleContent
+contentType="fr"
+><object
+type="tEmphasis"
+>Les caractères de Tchad Unicode</object
+></titleContent
+></titleContentChoices
+></secTitle
+><shortTitle
+><titleContentChoices
+><titleContent
+contentType="en"
+>Bloom_Chad</titleContent
+><titleContent
+contentType="fr"
+>Bloom_Tchad</titleContent
+></titleContentChoices
+></shortTitle
+><p
+contentType="en"
+>Certain characters used in Chadian languages are not found on the keyboard. To type these, you need to type more than one key.</p
+><p
+contentType="fr"
+>Certains des caractères utilisés dans les langues tchadiennes ne se trouvent pas sur le clavier. Pour les taper, vous devez appuyer sur plus qu’une touche. Les tableaux ci-dessous montrent tous les caractères du Tchad.</p
+><p
+contentType="en"
+>The table below shows the special characters in Chad and the combination of keys needed for each character.</p
+><tablenumbered
+contentType="en"
+id="ntSpecLet"
+><table
+align="left"
+border="1"
+><tr
+><th
+align="left"
+colspan="2"
+valign="top"
+>Chadian Characters</th
+><th
+align="left"
+colspan="2"
+valign="top"
+>The tones</th
+></tr
+><tr
+><th
+align="left"
+colspan="2"
+valign="top"
+>Type … to have</th
+><th
+align="left"
+colspan="2"
+valign="top"
+>Type … to have</th
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;’ ’</td
+><td
+align="left"
+valign="top"
+>;n ŋ</td
+><td
+align="left"
+valign="top"
+>]</td
+><td
+align="left"
+valign="top"
+>à low tone</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;b ɓ</td
+><td
+align="left"
+valign="top"
+>;o ɔ</td
+><td
+align="left"
+valign="top"
+>[</td
+><td
+align="left"
+valign="top"
+>á high tone</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;c ç</td
+><td
+align="left"
+valign="top"
+>;p œ</td
+><td
+align="left"
+valign="top"
+>=</td
+><td
+align="left"
+valign="top"
+>ā mid tone</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;d ɗ</td
+><td
+align="left"
+valign="top"
+>;y ƴ</td
+><td
+align="left"
+valign="top"
+>^</td
+><td
+align="left"
+valign="top"
+>â falling tone</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;e ɛ</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>|</td
+><td
+align="left"
+valign="top"
+>ǎ rising tone</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;f ə</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>#</td
+><td
+align="left"
+valign="top"
+>ä umlaut</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;h ɦ</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>~</td
+><td
+align="left"
+valign="top"
+>ã tilde</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;k ɨ</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>_</td
+><td
+align="left"
+valign="top"
+>a̰ under tilde</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;m ɲ</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>`</td
+><td
+align="left"
+valign="top"
+>a̧ cedilla</td
+></tr
+></table
+></tablenumbered
+><tablenumbered
+contentType="fr"
+id="ntLetSpec"
+><table
+align="left"
+border="1"
+><tr
+><th
+align="left"
+colspan="2"
+valign="top"
+>Les caractères du Tchad</th
+><th
+align="left"
+colspan="2"
+valign="top"
+>Les tons</th
+></tr
+><tr
+><th
+align="left"
+colspan="2"
+valign="top"
+>Tapez ... pour avoir</th
+><th
+align="left"
+colspan="2"
+valign="top"
+>Tapez ... pour avoir</th
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;’ ’</td
+><td
+align="left"
+valign="top"
+>;n ŋ</td
+><td
+align="left"
+valign="top"
+>]</td
+><td
+align="left"
+valign="top"
+>à ton bas</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;b ɓ</td
+><td
+align="left"
+valign="top"
+>;o ɔ</td
+><td
+align="left"
+valign="top"
+>[</td
+><td
+align="left"
+valign="top"
+>á ton haut</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;c ç</td
+><td
+align="left"
+valign="top"
+>;p œ</td
+><td
+align="left"
+valign="top"
+>=</td
+><td
+align="left"
+valign="top"
+>ā ton moyen</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;d ɗ</td
+><td
+align="left"
+valign="top"
+>;y ƴ</td
+><td
+align="left"
+valign="top"
+>^</td
+><td
+align="left"
+valign="top"
+>â ton descendant</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;e ɛ</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>|</td
+><td
+align="left"
+valign="top"
+>ǎ ton montant</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;f ə</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>#</td
+><td
+align="left"
+valign="top"
+>ä umlaut</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;h ɦ</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>~</td
+><td
+align="left"
+valign="top"
+>ã tilde</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;k ɨ</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>_</td
+><td
+align="left"
+valign="top"
+>a̰ sous-tilda</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;m ɲ</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>`</td
+><td
+align="left"
+valign="top"
+>a̧ cédille</td
+></tr
+></table
+></tablenumbered
+><tablenumbered
+contentType="en"
+id="ntSpecChar"
+><table
+XeLaTeXSpecial="pagebreak"
+align="left"
+border="1"
+><tr
+><th
+align="left"
+valign="top"
+>Type</th
+><th
+align="left"
+valign="top"
+>to have</th
+><th
+align="left"
+valign="top"
+></th
+><th
+align="left"
+valign="top"
+>Type</th
+><th
+>To receive</th
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;]</td
+><td
+align="left"
+valign="top"
+>]</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;;</td
+><td
+align="left"
+valign="top"
+>;</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;[</td
+><td
+align="left"
+valign="top"
+>[</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;{</td
+><td
+align="left"
+valign="top"
+>“</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;=</td
+><td
+align="left"
+valign="top"
+>=</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;}</td
+><td
+align="left"
+valign="top"
+>”</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;^</td
+><td
+align="left"
+valign="top"
+>^</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;(</td
+><td
+align="left"
+valign="top"
+>’</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;|</td
+><td
+align="left"
+valign="top"
+>|</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;)</td
+><td
+align="left"
+valign="top"
+>’</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;#</td
+><td
+align="left"
+valign="top"
+>#</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;&lt;[1]<endnote
+id="nKeymanEn"
+><p
+contentType="en"
+>For Keyman &lt;&lt; for « and &gt;&gt; for », ;&lt; for ‹ and ;&gt; for ›</p
+></endnote
+></td
+><td
+align="left"
+valign="top"
+>«</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;~</td
+><td
+align="left"
+valign="top"
+>~</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;&gt;</td
+><td
+align="left"
+valign="top"
+>»</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;_</td
+><td
+align="left"
+valign="top"
+>_</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;,</td
+><td
+align="left"
+valign="top"
+>‹</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;`</td
+><td
+align="left"
+valign="top"
+>`</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;.</td
+><td
+align="left"
+valign="top"
+>›</td
+></tr
+></table
+></tablenumbered
+><p
+></p
+><p
+></p
+><tablenumbered
+contentType="fr"
+id="ntCarSpec"
+><table
+align="left"
+border="1"
+><tr
+><th
+align="left"
+valign="top"
+>Tapez</th
+><th
+align="left"
+valign="top"
+>pour <br
+></br
+>avoir</th
+><th
+align="left"
+valign="top"
+></th
+><th
+align="left"
+valign="top"
+>Tapez</th
+><th
+align="left"
+valign="top"
+>Pour <br
+></br
+>avoir</th
+><th
+align="left"
+valign="top"
+></th
+><th
+align="left"
+valign="top"
+>Tapez</th
+><th
+>Pour <br
+></br
+>avoir</th
+><th
+></th
+><th
+>Tapez</th
+><th
+>Pour <br
+></br
+>avoir</th
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;]</td
+><td
+align="left"
+valign="top"
+>]</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;#</td
+><td
+align="left"
+valign="top"
+>#</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;;</td
+><td
+align="left"
+valign="top"
+>;</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;&lt; ou &lt;&lt;</td
+><td
+align="left"
+valign="top"
+>«</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;[</td
+><td
+align="left"
+valign="top"
+>[</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;~</td
+><td
+align="left"
+valign="top"
+>~</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;{</td
+><td
+align="left"
+valign="top"
+>“</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;&gt; ou &gt;&gt;</td
+><td
+align="left"
+valign="top"
+>»</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;=</td
+><td
+align="left"
+valign="top"
+>=</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;_</td
+><td
+align="left"
+valign="top"
+>_</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;}</td
+><td
+align="left"
+valign="top"
+>”</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;,</td
+><td
+align="left"
+valign="top"
+>‹</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;^</td
+><td
+align="left"
+valign="top"
+>^</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;`</td
+><td
+align="left"
+valign="top"
+>`</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;(</td
+><td
+align="left"
+valign="top"
+>’</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;.</td
+><td
+align="left"
+valign="top"
+>›</td
+></tr
+><tr
+><td
+align="left"
+valign="top"
+>;|</td
+><td
+align="left"
+valign="top"
+>|</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+>;)</td
+><td
+align="left"
+valign="top"
+>’</td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+></td
+><td
+align="left"
+valign="top"
+></td
+></tr
+></table
+></tablenumbered
+></appendix
+><endnotes
+></endnotes
+><references
+authorformtoshowineditor="full"
+showinlandscapemode="no"
+titleformtoshowineditor="uppercase"
+></references
+></backMatter
+><languages
+><language
+id="lVernacular"
+name="vernacular"
+></language
+><language
+id="lGloss"
+name="gloss"
+></language
+><language
+id="len"
+></language
+></languages
+><types
+><comment
+>The following types are provided as pre-set examples. You may well want to create your own types that refer to one or more of these. You do that by typing in the names of the types in the types attribute of your type.</comment
+><type
+font-style="italic"
+id="tresult"
+></type
+><type
+XeLaTeXSpecial="\hrulefill"
+id="tHr"
+></type
+><type
+font-weight="bold"
+id="tmenu"
+></type
+><type
+id="t-en"
+></type
+><type
+id="t-fr"
+></type
+><type
+before="XLingPaper"
+id="tXLingPaper"
+></type
+><type
+before="XMLmind"
+id="tXMLmind"
+></type
+><type
+font-weight="bold"
+id="tBold"
+></type
+><type
+font-style="italic"
+font-weight="bold"
+id="tBoldItalic"
+></type
+><type
+font-weight="bold"
+id="tEmphasis"
+></type
+><type
+id="tGrammaticalGloss"
+types="tSmallCaps"
+></type
+><type
+font-style="italic"
+id="tItalic"
+></type
+><type
+cssSpecial="text-decoration:none"
+id="tNoOverline"
+xsl-foSpecial="text-decoration=&quot;no-overline&quot;"
+></type
+><type
+font-variant="normal"
+id="tNoSmallCaps"
+></type
+><type
+cssSpecial="text-decoration:none"
+id="tNoStrikethrough"
+xsl-foSpecial="text-decoration=&quot;no-line-through&quot;"
+></type
+><type
+cssSpecial="text-decoration:none"
+id="tNoUnderline"
+xsl-foSpecial="text-decoration=&quot;no-underline&quot;"
+></type
+><type
+cssSpecial="text-decoration:overline"
+id="tOverline"
+xsl-foSpecial="text-decoration=&quot;overline&quot;"
+></type
+><type
+font-style="normal"
+font-variant="normal"
+font-weight="normal"
+id="tRegular"
+></type
+><type
+font-family="Charis SIL Small Caps"
+id="tSmallCaps"
+></type
+><type
+XeLaTeXSpecial="line-through"
+cssSpecial="text-decoration:line-through"
+id="tStrikethrough"
+xsl-foSpecial="text-decoration=&quot;line-through&quot;"
+></type
+><type
+XeLaTeXSpecial="subscript"
+cssSpecial="vertical-align:sub;"
+font-size="65%"
+id="tsubscript"
+xsl-foSpecial="baseline-shift='sub'"
+></type
+><type
+XeLaTeXSpecial="superscript"
+cssSpecial="vertical-align:super;"
+font-size="65%"
+id="tSuperscript"
+xsl-foSpecial="baseline-shift='super'"
+></type
+><type
+XeLaTeXSpecial="underline"
+cssSpecial="text-decoration:underline"
+id="tUnderline"
+xsl-foSpecial="text-decoration=&quot;underline&quot;"
+></type
+><type
+before="Paratext 8"
+id="tPT"
+></type
+><type
+before="Paratext 7"
+id="tPTPrev"
+></type
+><type
+font-style="italic"
+font-weight="bold"
+id="tsub"
+></type
+><type
+font-family="Courier New"
+id="ttyped"
+></type
+><comment
+>Add your custom types here.</comment
+></types
+><framedTypes
+><framedType
+align="left"
+backgroundcolor="#FFE6FF"
+description="Teacher Note"
+id="tTeacher"
+indent-after="2cm"
+indent-before="2cm"
+innerbottommargin=".03in"
+innerleftmargin=".125in"
+innerrightmargin=".125in"
+innertopmargin=".03in"
+spaceafter="3pt"
+spacebefore="3pt"
+></framedType
+></framedTypes
+><publishingInfo
+><publishingBlurb
+></publishingBlurb
+><keywords
+><keyword
+>Bloom</keyword
+><keyword
+>SIL International</keyword
+><keyword
+>United Bible Societies</keyword
+><keyword
+>Bible Translation</keyword
+></keywords
+></publishingInfo
+><contentControl
+showOnlyChosenItemsInEditor="no"
+><contentTypes
+><contentType
+id="en"
+>english</contentType
+><contentType
+id="fr"
+>french</contentType
+><contentType
+id="dn"
+>Developer's Note</contentType
+></contentTypes
+><contentControlChoices
+><contentControlChoice
+active="no"
+>Export Everything</contentControlChoice
+><contentControlChoice
+active="yes"
+exclude="en dn"
+>Exclude English and Developer's Notes</contentControlChoice
+><contentControlChoice
+active="no"
+exclude="fr dn"
+>Exclude French and Developer's Notes</contentControlChoice
+><contentControlChoice
+active="no"
+exclude="fr"
+>Exclude French</contentControlChoice
+><contentControlChoice
+active="no"
+exclude="en"
+>Exclude English</contentControlChoice
+></contentControlChoices
+></contentControl
+></lingPaper
+><xi:include
+href="publisherstylesheets/SILInternationalBookletStylesheet.xml"
+xpointer="element(/1)"
+xmlns:xi="http://www.w3.org/2001/XInclude"
+></xi:include
+></styledPaper
+></xlingpaper
+>

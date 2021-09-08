@@ -1,0 +1,53 @@
+\BOOKMARK [1][]{rXLingPapContents.1}{Table de matières}{}% 1
+\BOOKMARK [1][]{sIntCourseIntro.1}{Part I Introduction du Cours}{}% 2
+\BOOKMARK [1][]{sGoal.1}{1 Introduction}{}% 3
+\BOOKMARK [2][]{sIn.2}{1.1  But}{sGoal.1}% 4
+\BOOKMARK [2][]{scourseObjectives.2}{1.2  Objectifs}{sGoal.1}% 5
+\BOOKMARK [1][]{Modules.1}{Part II Modules}{}% 6
+\BOOKMARK [1][]{c.1}{2 Introduction}{}% 7
+\BOOKMARK [1][]{sBT1.1}{3 Créer un livre simple}{}% 8
+\BOOKMARK [2][]{s4.2}{3.1  Démarrer Bloom}{sBT1.1}% 9
+\BOOKMARK [2][]{chCollection.2}{3.2  1 Choisir la collection}{sBT1.1}% 10
+\BOOKMARK [2][]{cr-basic-book.2}{3.3  Créer un livre basé sur Livre simple}{sBT1.1}% 11
+\BOOKMARK [2][]{sEditBook.2}{3.4  2 Éditer le livre}{sBT1.1}% 12
+\BOOKMARK [2][]{Publish.2}{3.5  3 Publier un livre}{sBT1.1}% 13
+\BOOKMARK [1][]{sMoreInfo.1}{4 Pour savoir en plus}{}% 14
+\BOOKMARK [2][]{sCollection.2}{4.1  La collection}{sMoreInfo.1}% 15
+\BOOKMARK [2][]{sPage.2}{4.2  La page}{sMoreInfo.1}% 16
+\BOOKMARK [2][]{sText.2}{4.3  Texte}{sMoreInfo.1}% 17
+\BOOKMARK [2][]{sImages.2}{4.4  Images}{sMoreInfo.1}% 18
+\BOOKMARK [1][]{sCopy3.1}{5 Livres canevas}{}% 19
+\BOOKMARK [2][]{s51.2}{5.1  Créer une collection}{sCopy3.1}% 20
+\BOOKMARK [2][]{sCC.2}{5.2  Créer un livre canevas}{sCopy3.1}% 21
+\BOOKMARK [2][]{sComplLiv.2}{5.3  Compléter le livre comme désiré}{sCopy3.1}% 22
+\BOOKMARK [2][]{sCBP.2}{5.4  Pack Bloom}{sCopy3.1}% 23
+\BOOKMARK [1][]{sCustPg.1}{6 Page personnalisée}{}% 24
+\BOOKMARK [2][]{sCB.2}{6.1  Commencer Bloom}{sCustPg.1}% 25
+\BOOKMARK [2][]{sChCOl.2}{6.2  Choisir une collection}{sCustPg.1}% 26
+\BOOKMARK [2][]{sCreateB.2}{6.3  Créer un livre}{sCustPg.1}% 27
+\BOOKMARK [2][]{sCustPFields.2}{6.4  Personnaliser une page – modifier la taille des champs}{sCustPg.1}% 28
+\BOOKMARK [2][]{sCP-add.2}{6.5  Personnaliser une page – ajouter des champs}{sCustPg.1}% 29
+\BOOKMARK [2][]{sCrPgCust.2}{6.6  Créer une page Personnalisée}{sCustPg.1}% 30
+\BOOKMARK [2][]{sDefPage.2}{6.7  Définir la page}{sCustPg.1}% 31
+\BOOKMARK [1][]{sLevelBooks.1}{7 Livres par niveau \(gradués\)}{}% 32
+\BOOKMARK [2][]{sChCol.2}{7.1  Choisissez une collection}{sLevelBooks.1}% 33
+\BOOKMARK [2][]{sCrLivre.2}{7.2  Création d’un livre}{sLevelBooks.1}% 34
+\BOOKMARK [2][]{sConfigLevel.2}{7.3  Configurer les niveaux}{sLevelBooks.1}% 35
+\BOOKMARK [2][]{sConfigLevel1.2}{7.4  Configurer niveau 1}{sLevelBooks.1}% 36
+\BOOKMARK [2][]{sConfigOtherLev.2}{7.5  Configurer les autres niveaux}{sLevelBooks.1}% 37
+\BOOKMARK [2][]{sDelLevel.2}{7.6  Supprimer un niveau}{sLevelBooks.1}% 38
+\BOOKMARK [2][]{sChOrder.2}{7.7  Modifier l’ordre}{sLevelBooks.1}% 39
+\BOOKMARK [2][]{sAddLev.2}{7.8  Ajouter un niveau}{sLevelBooks.1}% 40
+\BOOKMARK [2][]{sAddNotes.2}{7.9  Ajouter des notes à l’auteur}{sLevelBooks.1}% 41
+\BOOKMARK [2][]{sCreateLevBook.2}{7.10  Créer le livre}{sLevelBooks.1}% 42
+\BOOKMARK [1][]{sDecodable.1}{8 Livre déchiffrable}{}% 43
+\BOOKMARK [2][]{sChCol2.2}{8.1  Choisissez une collection}{sDecodable.1}% 44
+\BOOKMARK [2][]{sCrLivreLD.2}{8.2  Création d’un livre déchiffrable}{sDecodable.1}% 45
+\BOOKMARK [2][]{sConfigSt.2}{8.3  Configurer les étapes}{sDecodable.1}% 46
+\BOOKMARK [2][]{sAddLetters.2}{8.4  Ajouter des graphèmes}{sDecodable.1}% 47
+\BOOKMARK [2][]{sAddWordlist.2}{8.5  Ajouter une liste de mots \(des mots suggérés\)}{sDecodable.1}% 48
+\BOOKMARK [1][]{sCrEl.1}{9 Créer un livre electronique \(pour Android\)}{}% 49
+\BOOKMARK [2][]{sChCOlEl.2}{9.1  Choisir une collection}{sCrEl.1}% 50
+\BOOKMARK [2][]{sReformat.2}{9.2  Reformater votre livre pour Android}{sCrEl.1}% 51
+\BOOKMARK [2][]{sdraftBT.2}{9.3  Publier votre livre à Android}{sCrEl.1}% 52
+\BOOKMARK [1][]{sChadSpecChar.1}{A  Les caractères de Tchad Unicode}{}% 53

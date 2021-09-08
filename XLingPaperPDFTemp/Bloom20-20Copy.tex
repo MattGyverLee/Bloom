@@ -1,0 +1,1846 @@
+\documentclass[10pt]{book}
+\setlength{\paperheight}{210mm}
+\setlength{\paperwidth}{148mm}
+\setlength{\topmargin}{0pt}
+\setlength{\voffset}{-43.817244089999996pt}
+\setlength{\evensidemargin}{-43.817244089999996pt}
+\setlength{\oddsidemargin}{-29.590866135pt}
+\setlength{\textwidth}{349.96889769300003pt}
+\setlength{\textheight}{483.69685047000013pt}
+\setlength{\headheight}{12.5pt}
+\setlength{\headsep}{16.45275591pt}
+\setlength{\footskip}{10mm}
+\DeclareTextSymbol{\textsquarebracketleft}{EU1}{91}
+\DeclareTextSymbol{\textsquarebracketright}{EU1}{93}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{xltxtra}
+\usepackage{setspace}
+\usepackage[normalem]{ulem}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{calc}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, citecolor=black, filecolor=black, linkcolor=black, urlcolor=blue, bookmarksopen=true, pdfauthor={Jenni Beadle \& Justin Mb., Matthew Lee}, pdfcreator={XLingPaper version 2.31.0 (www.xlingpaper.org)}, pdftitle={Bloom: Manuel de cours (Français)}, pdfkeywords={Bloom, SIL International, United Bible Societies, Bible Translation}}
+\fancypagestyle{frontmattertitle}
+{\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+}\fancypagestyle{frontmatterfirstpage}
+{\fancyhf{}
+\fancyfoot[C]{{\XLingPaperTimesZNewZRomanFontFamily{\fontsize{9}{10.799999999999999}\selectfont \textit{\small\textit{\thepage}}}}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+}\fancypagestyle{frontmatter}
+{\fancyhf{}
+\fancyhead[LE]{{\XLingPaperTimesZNewZRomanFontFamily{\fontsize{9}{10.799999999999999}\selectfont \textit{\small\textit{\thepage}}}}}
+\fancyhead[RE]{{\XLingPaperTimesZNewZRomanFontFamily{\fontsize{9}{10.799999999999999}\selectfont \textit{\small\textit{\rightmark}}}}}
+\fancyhead[LO]{{\XLingPaperTimesZNewZRomanFontFamily{\fontsize{9}{10.799999999999999}\selectfont \textit{\small\textit{\leftmark}}}}}
+\fancyhead[RO]{{\XLingPaperTimesZNewZRomanFontFamily{\fontsize{9}{10.799999999999999}\selectfont \textit{\small\textit{\thepage}}}}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+}\fancypagestyle{bodyfirstpage}
+{\fancyhf{}
+\fancyfoot[C]{{\XLingPaperTimesZNewZRomanFontFamily{\fontsize{9}{10.799999999999999}\selectfont \textit{\small\textit{\thepage}}}}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+}\fancypagestyle{body}
+{\fancyhf{}
+\fancyhead[LE]{{\XLingPaperTimesZNewZRomanFontFamily{\fontsize{9}{10.799999999999999}\selectfont \textit{\small\textit{\thepage}}}}}
+\fancyhead[RE]{{\XLingPaperTimesZNewZRomanFontFamily{\fontsize{9}{10.799999999999999}\selectfont \textit{\small\textit{\rightmark}}}}}
+\fancyhead[LO]{{\XLingPaperTimesZNewZRomanFontFamily{\fontsize{9}{10.799999999999999}\selectfont \textit{\small\textit{\leftmark}}}}}
+\fancyhead[RO]{{\XLingPaperTimesZNewZRomanFontFamily{\fontsize{9}{10.799999999999999}\selectfont \textit{\small\textit{\thepage}}}}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+}\setmainfont{Times New Roman}
+\font\MainFont="Times New Roman" at 10pt
+\newfontfamily{\XLingPaperCharisZSILZSmallZCapsFontFamily}{Charis SIL Small Caps}
+\newfontfamily{\XLingPaperCourierZNewFontFamily}{Courier New}
+\newfontfamily{\XLingPaperTimesZNewZRomanFontFamily}{Times New Roman}
+\definecolor{FTColorA}{HTML}{FFE6FF}
+\setlength{\parindent}{1em}
+\catcode`^^^^200b=\active
+\def^^^^200b{\hskip0pt}
+\let\origdoublepage\cleardoublepage
+\newcommand{\clearemptydoublepage}{\clearpage{\pagestyle{empty}\origdoublepage}}\renewenvironment{quotation}{\list{}{\leftmargin=10mm\rightmargin=10mm}\item[]{}}{\endlist}
+\clubpenalty=10000
+\widowpenalty=10000
+\begin{document}
+\baselineskip=\glueexpr\baselineskip + 0pt plus 2pt minus 1pt\relax
+\renewcommand{\footnotesize}{\fontsize{8}{9.6}\selectfont }
+\newlength{\leveloneindent}
+\newlength{\levelonewidth}
+\newlength{\leveltwoindent}
+\newlength{\leveltwowidth}
+\newlength{\levelthreeindent}
+\newlength{\levelthreewidth}
+\newlength{\levelfourindent}
+\newlength{\levelfourwidth}
+\newlength{\levelfiveindent}
+\newlength{\levelfivewidth}
+\newlength{\levelsixindent}
+\newlength{\levelsixwidth}
+\newdimen\XLingPapertempdim
+                \newdimen\XLingPapertempdimletter
+                \newcommand{\XLingPapertableofcontents}{\immediate\openout8 = \jobname.toc\relax
+\immediate\write8{<toc>}}
+\newcommand{\XLingPaperaddtocontents}[1]{\write8{<tocline ref="#1" page="\thepage"/>}}
+\newcommand{\XLingPaperendtableofcontents}{\immediate\write8{</toc>}\closeout8\relax
+}
+\newcommand{\XLingPaperdotfill}{\leaders\hbox{$\mathsurround 0pt\mkern 4.5 mu\hbox{.}\mkern 4.5 mu$}\hfill}
+\newcommand{\XLingPaperdottedtocline}[4]{
+\newdimen\XLingPapertempdim
+\vskip0pt plus .2pt{
+\leftskip#1\relax% left glue for indent
+\rightskip\XLingPapertocrmarg% right glue for for right margin
+\parfillskip-\rightskip% so can go into margin if need be???
+\parindent#1\relax
+\interlinepenalty10000
+\leavevmode
+\XLingPapertempdim#2\relax% numwidth
+\advance\leftskip\XLingPapertempdim\null\nobreak\hskip-\leftskip{#3}\nobreak
+\XLingPaperdotfill\nobreak
+\hbox to\XLingPaperpnumwidth{\hfil\normalfont\normalcolor#4}
+\par}}
+\newlength{\XLingPaperpnumwidth}
+\newlength{\XLingPapertocrmarg}
+\setlength{\XLingPaperpnumwidth}{2.05em}\setlength{\XLingPapertocrmarg}{\XLingPaperpnumwidth+1em}
+\newlength{\XLingPaperinterlinearsourcewidth}
+\newlength{\XLingPaperinterlinearsourcegapwidth}
+\settowidth{\XLingPaperinterlinearsourcegapwidth}{  }
+\newsavebox{\XLingPapertempbox}
+\newlength{\XLingPapertemplen}
+\newlength{\XLingPaperavailabletablewidth}
+\newlength{\XLingPapertableminwidth}
+\newlength{\XLingPapertablemaxwidth}
+\newlength{\XLingPapertablewidthminustableminwidth}
+\newlength{\XLingPapertablemaxwidthminusminwidth}
+\newlength{\XLingPapertablewidthratio}
+\newlength{\XLingPapermincola}\newlength{\XLingPapermaxcola}\newlength{\XLingPapercolawidth}
+\newlength{\XLingPapermincolb}\newlength{\XLingPapermaxcolb}\newlength{\XLingPapercolbwidth}
+\newlength{\XLingPapermincolc}\newlength{\XLingPapermaxcolc}\newlength{\XLingPapercolcwidth}
+\newlength{\XLingPapermincold}\newlength{\XLingPapermaxcold}\newlength{\XLingPapercoldwidth}
+\newlength{\XLingPapermincole}\newlength{\XLingPapermaxcole}\newlength{\XLingPapercolewidth}
+\newlength{\XLingPapermincolf}\newlength{\XLingPapermaxcolf}\newlength{\XLingPapercolfwidth}
+\newlength{\XLingPapermincolg}\newlength{\XLingPapermaxcolg}\newlength{\XLingPapercolgwidth}
+\newlength{\XLingPapermincolh}\newlength{\XLingPapermaxcolh}\newlength{\XLingPapercolhwidth}
+\newlength{\XLingPapermincoli}\newlength{\XLingPapermaxcoli}\newlength{\XLingPapercoliwidth}
+\newlength{\XLingPapermincolj}\newlength{\XLingPapermaxcolj}\newlength{\XLingPapercoljwidth}
+\newlength{\XLingPapermincolk}\newlength{\XLingPapermaxcolk}\newlength{\XLingPapercolkwidth}
+\newlength{\XLingPapermincoll}\newlength{\XLingPapermaxcoll}\newlength{\XLingPapercollwidth}
+\newlength{\XLingPapermincolm}\newlength{\XLingPapermaxcolm}\newlength{\XLingPapercolmwidth}
+\newlength{\XLingPapermincoln}\newlength{\XLingPapermaxcoln}\newlength{\XLingPapercolnwidth}
+\newlength{\XLingPapermincolo}\newlength{\XLingPapermaxcolo}\newlength{\XLingPapercolowidth}
+\newlength{\XLingPapermincolp}\newlength{\XLingPapermaxcolp}\newlength{\XLingPapercolpwidth}
+\newlength{\XLingPapermincolq}\newlength{\XLingPapermaxcolq}\newlength{\XLingPapercolqwidth}
+\newlength{\XLingPapermincolr}\newlength{\XLingPapermaxcolr}\newlength{\XLingPapercolrwidth}
+\newlength{\XLingPapermincols}\newlength{\XLingPapermaxcols}\newlength{\XLingPapercolswidth}
+\newlength{\XLingPapermincolt}\newlength{\XLingPapermaxcolt}\newlength{\XLingPapercoltwidth}
+\newlength{\XLingPapermincolu}\newlength{\XLingPapermaxcolu}\newlength{\XLingPapercoluwidth}
+\newlength{\XLingPapermincolv}\newlength{\XLingPapermaxcolv}\newlength{\XLingPapercolvwidth}
+\newlength{\XLingPapermincolw}\newlength{\XLingPapermaxcolw}\newlength{\XLingPapercolwwidth}
+\newlength{\XLingPapermincolx}\newlength{\XLingPapermaxcolx}\newlength{\XLingPapercolxwidth}
+\newlength{\XLingPapermincoly}\newlength{\XLingPapermaxcoly}\newlength{\XLingPapercolywidth}
+\newlength{\XLingPapermincolz}\newlength{\XLingPapermaxcolz}\newlength{\XLingPapercolzwidth}
+\newcommand{\XLingPaperlongestcell}[2]{
+\ifdim#1>#2
+#2=#1
+\fi
+}
+\newcommand{\XLingPaperminmaxcellincolumn}[5]{
+\savebox{\XLingPapertempbox}{#3}
+\settowidth{\XLingPapertemplen}{\usebox{\XLingPapertempbox}}
+\addtolength{\XLingPapertemplen}{#5}
+\XLingPaperlongestcell{\XLingPapertemplen}{#4}
+\setlength{\XLingPapertemplen}{\widthof{#1}}
+\addtolength{\XLingPapertemplen}{#5}
+\ifdim\XLingPapertemplen>#4
+\XLingPapertemplen=#4
+\fi
+\XLingPaperlongestcell{\XLingPapertemplen}{#2}}
+\newcommand{\XLingPapersetcolumnwidth}[4]{
+\ifdim\XLingPapertableminwidth>\XLingPaperavailabletablewidth
+#1=#2
+\else
+\ifdim\XLingPapertableminwidth=\XLingPaperavailabletablewidth
+#1=#2
+\else
+\ifdim\XLingPapertablemaxwidth<\XLingPaperavailabletablewidth
+#1=#3
+\else
+\setlength{\XLingPapertemplen}{#3-#2}
+\divide\XLingPapertemplen by 100
+\multiply\XLingPapertemplen by \XLingPapertablewidthratio
+#1=#2
+\addtolength{#1}{\XLingPapertemplen}
+\addtolength{#1}{#4}
+\fi
+\fi
+\fi
+}
+\newcommand{\XLingPapercalculatetablewidthratio}{
+\setlength{\XLingPapertablewidthminustableminwidth}{\XLingPaperavailabletablewidth-\XLingPapertableminwidth}
+\setlength{\XLingPapertablemaxwidthminusminwidth}{\XLingPapertablemaxwidth-\XLingPapertableminwidth}
+\ifdim\XLingPapertablemaxwidthminusminwidth=0sp
+\XLingPapertablemaxwidthminusminwidth=10000sp
+\fi
+\setlength{\XLingPapertablewidthratio}{\XLingPapertablewidthminustableminwidth}
+\divide\XLingPapertablemaxwidthminusminwidth by 100
+\divide\XLingPapertablewidthratio by \XLingPapertablemaxwidthminusminwidth}
+\newlength{\XLingPaperlistinexampleindent}
+\newlength{\XLingPaperisocodewidth}\setlength{\XLingPaperlistinexampleindent}{.125in+ 2.75em}
+\newlength{\XLingPaperlistitemindent}
+\newlength{\XLingPaperbulletlistitemwidth}\settowidth{\XLingPaperbulletlistitemwidth}{•\ }\newlength{\XLingPapersingledigitlistitemwidth}
+\settowidth{\XLingPapersingledigitlistitemwidth}{8.\ }\newlength{\XLingPaperdoubledigitlistitemwidth}
+\settowidth{\XLingPaperdoubledigitlistitemwidth}{88.\ }\newlength{\XLingPapertripledigitlistitemwidth}
+\settowidth{\XLingPapertripledigitlistitemwidth}{888.\ }\newlength{\XLingPapersingleletterlistitemwidth}
+\settowidth{\XLingPapersingleletterlistitemwidth}{m.\ }\newlength{\XLingPaperdoubleletterlistitemwidth}
+\settowidth{\XLingPaperdoubleletterlistitemwidth}{mm.\ }\newlength{\XLingPapertripleletterlistitemwidth}
+\settowidth{\XLingPapertripleletterlistitemwidth}{mmm.\ }\newlength{\XLingPaperromanviilistitemwidth}
+\settowidth{\XLingPaperromanviilistitemwidth}{vii.\ }\newlength{\XLingPaperromanviiilistitemwidth}
+\settowidth{\XLingPaperromanviiilistitemwidth}{viii.\ }\newlength{\XLingPaperromanxviiilistitemwidth}
+\settowidth{\XLingPaperromanxviiilistitemwidth}{xviii.\ }\newlength{\XLingPaperspacewidth}
+\settowidth{\XLingPaperspacewidth}{\ }
+\newcommand{\XLingPaperneedspace}[1]{\penalty-100\begingroup
+\newdimen{\XLingPaperspaceneeded}
+\newdimen{\XLingPaperspaceavailable}
+\setlength{\XLingPaperspaceneeded}{#1}%
+\XLingPaperspaceavailable\pagegoal \advance\XLingPaperspaceavailable-\pagetotal
+\ifdim \XLingPaperspaceneeded>\XLingPaperspaceavailable
+\ifdim \XLingPaperspaceavailable>0pt
+\vfil
+\fi
+\break
+\fi\endgroup}
+\newcommand{\XLingPaperlistitem}[4]{
+\newdimen\XLingPapertempdim
+\vskip0pt plus .2pt{
+\leftskip#1\relax% left glue for indent
+\parindent#1\relax
+\interlinepenalty10000
+\leavevmode
+\XLingPapertempdim#2\relax% label width
+\advance\leftskip\XLingPapertempdim\null\nobreak\hskip-\leftskip\hbox to\XLingPapertempdim{\hfil\normalfont\normalcolor#3\ }{#4}\nobreak
+\par}}
+\newcommand{\XLingPaperexample}[5]{
+\newdimen\XLingPapertempdim
+\vskip0pt plus .2pt{
+\leftskip#1\relax% left glue for indent
+\hspace*{#1}\relax
+\rightskip#2\relax% right glue for indent
+\interlinepenalty10000
+\leavevmode
+\XLingPapertempdim#3\relax% example number width
+\advance\leftskip\XLingPapertempdim\null\nobreak\hskip-\leftskip\hbox to\XLingPapertempdim{\normalfont\normalcolor#4\hfil}{#5}\nobreak
+\par}}
+\newcommand{\XLingPaperexampleintable}[5]{
+\newdimen\XLingPapertempdim
+\leftskip#1\relax% left glue for indent
+\hspace*{#1}\relax
+\rightskip#2\relax% right glue for indent
+\interlinepenalty10000
+\leavevmode
+\XLingPapertempdim#3\relax% example number width
+\hbox to\XLingPapertempdim{\normalfont\normalcolor#4\hfil}{
+\begin{tabular}
+[t]{@{}l@{}}#5\end{tabular}
+}\nobreak
+}
+\newcommand{\XLingPaperfree}[2]{\vskip0pt plus .2pt{
+\leftskip#1\relax% left glue for indent
+\parindent#1\relax
+\interlinepenalty10000
+\leavevmode{#2}\nobreak
+\par}}
+\newcommand{\XLingPaperlistinterlinear}[5]{\vskip0pt plus .2pt{\hspace*{#1}\hspace*{#2}
+\XLingPapertempdimletter#3\relax% letter width
+\advance\leftskip\XLingPapertempdimletter\null\nobreak\hskip-\leftskip\hspace*{-.3em}\hbox to\XLingPapertempdimletter{\normalfont\normalcolor#4\ \hfil}{#5}\nobreak
+\par}}
+\newcommand{\XLingPaperlistinterlinearintable}[5]{
+\XLingPapertempdimletter#3\relax% letter width
+\hspace*{-.3em}\hbox to\XLingPapertempdimletter{\normalfont\normalcolor#4\ \hfil}{
+\begin{tabular}
+[t]{@{}l@{}}#5\end{tabular}
+}\nobreak
+}
+
+\newlength{\XLingPaperexamplefreeindent}\setlength{\XLingPaperexamplefreeindent}{-.3 em}\newskip\XLingPaperinterwordskip
+\XLingPaperinterwordskip=6.66666pt plus 3.33333pt minus 2.22222pt
+\def\XLingPaperintspace{\hskip\XLingPaperinterwordskip}
+\def\XLingPaperraggedright{\rightskip=0pt plus1fil\pretolerance=10000}\raggedbottom
+\pagestyle{fancy}
+\begin{MainFont}
+\XLingPapertableofcontents\pagenumbering{roman}
+\pagestyle{frontmattertitle}\pagestyle{frontmattertitle}{\clearpage
+\vspace*{1cm}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+Bloom\protect\\}}}\par{}
+{\vspace{.25in}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{14}{16.8}\selectfont \textbf{{\centering
+Manuel de cours (Français)\protect\\}}}\par{}
+{\clearpage
+\vspace*{1cm}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+Bloom\protect\\}}}\par{}
+{\vspace{.25in}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{14}{16.8}\selectfont \textbf{{\centering
+Manuel de cours (Français)\protect\\}}}\par{}
+{\XLingPaperneedspace{3\baselineskip}\noindent
+\textit{{\centering
+Jenni Beadle \& Justin Mb.\protect\\}}}\par{}
+{\XLingPaperneedspace{3\baselineskip}\noindent
+\textit{{\centering
+Matthew Lee\protect\\}}}\par{}
+\clearpage
+\pagestyle{frontmatter}\thispagestyle{frontmatterfirstpage}\thispagestyle{frontmatterfirstpage}{\vspace{12.2pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[1]{Table de matières}{rXLingPapContents}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{rXLingPapContents}{}}Table de matières\protect\\}}\markboth{Table de matières}{Table de matières}
+\XLingPaperaddtocontents{rXLingPapContents}}\penalty10000\par{}
+\vspace{10.8pt}\vspace{0pt}\hyperlink{sIntCourseIntro}{\centering{Part I Introduction du Cours\\}}\hyperlink{sGoal}{\XLingPaperdottedtocline{0pt}{0pt}{1  {\textbf{Introduction}}}{3}
+}\settowidth{\leveltwoindent}{{1 }\ }\settowidth{\leveltwowidth}{{1.1 }\thinspace\thinspace}\hyperlink{sIn}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{1.1 } But}{3}
+}\settowidth{\leveltwoindent}{{1 }\ }\settowidth{\leveltwowidth}{{1.2 }\thinspace\thinspace}\hyperlink{scourseObjectives}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{1.2 } Objectifs}{3}
+}\vspace{0pt}\hyperlink{Modules}{\centering{Part II Modules\\}}\hyperlink{c}{\XLingPaperdottedtocline{0pt}{0pt}{2  {\textbf{Introduction}}}{4}
+}\hyperlink{sBT1}{\XLingPaperdottedtocline{0pt}{0pt}{3  {\textbf{Créer un livre simple}}}{6}
+}\settowidth{\leveltwoindent}{{3 }\ }\settowidth{\leveltwowidth}{{3.1 }\thinspace\thinspace}\hyperlink{s4}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{3.1 } Démarrer Bloom}{6}
+}\settowidth{\leveltwoindent}{{3 }\ }\settowidth{\leveltwowidth}{{3.2 }\thinspace\thinspace}\hyperlink{chCollection}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{3.2 } \textsquarebracketleft{}1\textsquarebracketright{} Choisir la collection}{7}
+}\settowidth{\leveltwoindent}{{3 }\ }\settowidth{\leveltwowidth}{{3.3 }\thinspace\thinspace}\hyperlink{cr-basic-book}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{3.3 } Créer un livre basé sur Livre simple}{7}
+}\settowidth{\leveltwoindent}{{3 }\ }\settowidth{\leveltwowidth}{{3.4 }\thinspace\thinspace}\hyperlink{sEditBook}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{3.4 } \textsquarebracketleft{}2\textsquarebracketright{} Éditer le livre}{8}
+}\settowidth{\leveltwoindent}{{3 }\ {3.4 }\ }\settowidth{\leveltwowidth}{{3.4.1 }\thinspace\thinspace}\hyperlink{sEditCover}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{3.4.1 } Éditer le livre — couverture}{8}
+}\settowidth{\leveltwoindent}{{3 }\ {3.4 }\ }\settowidth{\leveltwowidth}{{3.4.2 }\thinspace\thinspace}\hyperlink{sCopy}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{3.4.2 } Éditer le livre — ajouter une page}{9}
+}\settowidth{\leveltwoindent}{{3 }\ {3.4 }\ }\settowidth{\leveltwowidth}{{3.4.3 }\thinspace\thinspace}\hyperlink{sAddPicture}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{3.4.3 } Éditer le livre — ajouter une image}{10}
+}\settowidth{\leveltwoindent}{{3 }\ {3.4 }\ }\settowidth{\leveltwowidth}{{3.4.4 }\thinspace\thinspace}\hyperlink{sAddText}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{3.4.4 } Éditer le livre — ajouter le texte}{11}
+}\settowidth{\leveltwoindent}{{3 }\ {3.4 }\ }\settowidth{\leveltwowidth}{{3.4.5 }\thinspace\thinspace}\hyperlink{sDoitsAuteur}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{3.4.5 } Éditer le livre — page de droits d'auteur}{11}
+}\settowidth{\leveltwoindent}{{3 }\ }\settowidth{\leveltwowidth}{{3.5 }\thinspace\thinspace}\hyperlink{Publish}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{3.5 } \textsquarebracketleft{}3\textsquarebracketright{} Publier un livre}{12}
+}\settowidth{\leveltwoindent}{{3 }\ {3.5 }\ }\settowidth{\leveltwowidth}{{3.5.1 }\thinspace\thinspace}\hyperlink{sPublish}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{3.5.1 } Publish le livre — PDF}{12}
+}\settowidth{\leveltwoindent}{{3 }\ {3.5 }\ }\settowidth{\leveltwowidth}{{3.5.2 }\thinspace\thinspace}\hyperlink{sPubCC}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{3.5.2 } Publier le livre — Vérifier et faire les corrections}{13}
+}\settowidth{\leveltwoindent}{{3 }\ {3.5 }\ }\settowidth{\leveltwowidth}{{3.5.3 }\thinspace\thinspace}\hyperlink{sPubPA}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{3.5.3 } Publier le livre — Publier encore}{13}
+}\settowidth{\leveltwoindent}{{3 }\ {3.5 }\ }\settowidth{\leveltwowidth}{{3.5.4 }\thinspace\thinspace}\hyperlink{sPubSsPDF}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{3.5.4 } Publier le livre — Enregistre le PDF}{14}
+}\settowidth{\leveltwoindent}{{3 }\ {3.5 }\ }\settowidth{\leveltwowidth}{{3.5.5 }\thinspace\thinspace}\hyperlink{sPubPr}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{3.5.5 } Publier le livre — Imprimer le PDF}{14}
+}\hyperlink{sMoreInfo}{\XLingPaperdottedtocline{0pt}{0pt}{4  {\textbf{Pour savoir en plus}}}{16}
+}\settowidth{\leveltwoindent}{{4 }\ }\settowidth{\leveltwowidth}{{4.1 }\thinspace\thinspace}\hyperlink{sCollection}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{4.1 } La collection}{16}
+}\settowidth{\leveltwoindent}{{4 }\ {4.1 }\ }\settowidth{\leveltwowidth}{{4.1.1 }\thinspace\thinspace}\hyperlink{sCreateColl}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{4.1.1 } Pour créer une collection}{16}
+}\settowidth{\leveltwoindent}{{4 }\ {4.1 }\ }\settowidth{\leveltwowidth}{{4.1.2 }\thinspace\thinspace}\hyperlink{sChOtherCol}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{4.1.2 } Choisir une autre collection}{17}
+}\settowidth{\leveltwoindent}{{4 }\ }\settowidth{\leveltwowidth}{{4.2 }\thinspace\thinspace}\hyperlink{sPage}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{4.2 } La page}{17}
+}\settowidth{\leveltwoindent}{{4 }\ {4.2 }\ }\settowidth{\leveltwowidth}{{4.2.1 }\thinspace\thinspace}\hyperlink{sReorg}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{4.2.1 } Réorganiser les pages du livre}{17}
+}\settowidth{\leveltwoindent}{{4 }\ {4.2 }\ }\settowidth{\leveltwowidth}{{4.2.2 }\thinspace\thinspace}\hyperlink{sDel}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{4.2.2 } Supprimer une page d’un livre}{18}
+}\settowidth{\leveltwoindent}{{4 }\ }\settowidth{\leveltwowidth}{{4.3 }\thinspace\thinspace}\hyperlink{sText}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{4.3 } Texte}{18}
+}\settowidth{\leveltwoindent}{{4 }\ {4.3 }\ }\settowidth{\leveltwowidth}{{4.3.1 }\thinspace\thinspace}\hyperlink{sFormatText}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{4.3.1 } Éditer le livre — formater le texte}{18}
+}\settowidth{\leveltwoindent}{{4 }\ }\settowidth{\leveltwowidth}{{4.4 }\thinspace\thinspace}\hyperlink{sImages}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{4.4 } Images}{19}
+}\settowidth{\leveltwoindent}{{4 }\ {4.4 }\ }\settowidth{\leveltwowidth}{{4.4.1 }\thinspace\thinspace}\hyperlink{sxxx}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{4.4.1 } Ajouter (changer) une image}{19}
+}\settowidth{\leveltwoindent}{{4 }\ {4.4 }\ }\settowidth{\leveltwowidth}{{4.4.2 }\thinspace\thinspace}\hyperlink{sPastePicture}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{4.4.2 } Coller une image}{19}
+}\settowidth{\leveltwoindent}{{4 }\ {4.4 }\ }\settowidth{\leveltwowidth}{{4.4.3 }\thinspace\thinspace}\hyperlink{sAddCopyright}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{4.4.3 } Ajouter des informations de licence pour toutes les images}{19}
+}\hyperlink{sCopy3}{\XLingPaperdottedtocline{0pt}{0pt}{5  {\textbf{Livres canevas}}}{21}
+}\settowidth{\leveltwoindent}{{5 }\ }\settowidth{\leveltwowidth}{{5.1 }\thinspace\thinspace}\hyperlink{s51}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{5.1 } Créer une collection}{21}
+}\settowidth{\leveltwoindent}{{5 }\ }\settowidth{\leveltwowidth}{{5.2 }\thinspace\thinspace}\hyperlink{sCC}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{5.2 } Créer un livre canevas}{21}
+}\settowidth{\leveltwoindent}{{5 }\ }\settowidth{\leveltwowidth}{{5.3 }\thinspace\thinspace}\hyperlink{sComplLiv}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{5.3 } Compléter le livre comme désiré}{22}
+}\settowidth{\leveltwoindent}{{5 }\ }\settowidth{\leveltwowidth}{{5.4 }\thinspace\thinspace}\hyperlink{sCBP}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{5.4 } Pack Bloom}{22}
+}\settowidth{\leveltwoindent}{{5 }\ {5.4 }\ }\settowidth{\leveltwowidth}{{5.4.1 }\thinspace\thinspace}\hyperlink{sCrBP}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{5.4.1 } Créer un pack Bloom}{22}
+}\settowidth{\leveltwoindent}{{5 }\ {5.4 }\ }\settowidth{\leveltwowidth}{{5.4.2 }\thinspace\thinspace}\hyperlink{sIBP}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{5.4.2 } Installer un pack Bloom}{22}
+}\settowidth{\leveltwoindent}{{5 }\ {5.4 }\ }\settowidth{\leveltwowidth}{{5.4.3 }\thinspace\thinspace}\hyperlink{sUBP}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{5.4.3 } Utilisez les livres canevas d’un Bloom Pack}{23}
+}\hyperlink{sCustPg}{\XLingPaperdottedtocline{0pt}{0pt}{6  {\textbf{Page personnalisée}}}{24}
+}\settowidth{\leveltwoindent}{{6 }\ }\settowidth{\leveltwowidth}{{6.1 }\thinspace\thinspace}\hyperlink{sCB}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{6.1 } Commencer Bloom}{24}
+}\settowidth{\leveltwoindent}{{6 }\ }\settowidth{\leveltwowidth}{{6.2 }\thinspace\thinspace}\hyperlink{sChCOl}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{6.2 } Choisir une collection}{24}
+}\settowidth{\leveltwoindent}{{6 }\ }\settowidth{\leveltwowidth}{{6.3 }\thinspace\thinspace}\hyperlink{sCreateB}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{6.3 } Créer un livre}{24}
+}\settowidth{\leveltwoindent}{{6 }\ }\settowidth{\leveltwowidth}{{6.4 }\thinspace\thinspace}\hyperlink{sCustPFields}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{6.4 } Personnaliser une page – modifier la taille des champs}{24}
+}\settowidth{\leveltwoindent}{{6 }\ }\settowidth{\leveltwowidth}{{6.5 }\thinspace\thinspace}\hyperlink{sCP-add}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{6.5 } Personnaliser une page – ajouter des champs}{25}
+}\settowidth{\leveltwoindent}{{6 }\ }\settowidth{\leveltwowidth}{{6.6 }\thinspace\thinspace}\hyperlink{sCrPgCust}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{6.6 } Créer une page Personnalisée}{25}
+}\settowidth{\leveltwoindent}{{6 }\ }\settowidth{\leveltwowidth}{{6.7 }\thinspace\thinspace}\hyperlink{sDefPage}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{6.7 } Définir la page}{25}
+}\hyperlink{sLevelBooks}{\XLingPaperdottedtocline{0pt}{0pt}{7  {\textbf{Livres par niveau (gradués)}}}{26}
+}\settowidth{\leveltwoindent}{{7 }\ }\settowidth{\leveltwowidth}{{7.1 }\thinspace\thinspace}\hyperlink{sChCol}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{7.1 } Choisissez une collection}{26}
+}\settowidth{\leveltwoindent}{{7 }\ }\settowidth{\leveltwowidth}{{7.2 }\thinspace\thinspace}\hyperlink{sCrLivre}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{7.2 } Création d’un livre}{26}
+}\settowidth{\leveltwoindent}{{7 }\ }\settowidth{\leveltwowidth}{{7.3 }\thinspace\thinspace}\hyperlink{sConfigLevel}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{7.3 } Configurer les niveaux}{27}
+}\settowidth{\leveltwoindent}{{7 }\ }\settowidth{\leveltwowidth}{{7.4 }\thinspace\thinspace}\hyperlink{sConfigLevel1}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{7.4 } Configurer niveau 1}{27}
+}\settowidth{\leveltwoindent}{{7 }\ }\settowidth{\leveltwowidth}{{7.5 }\thinspace\thinspace}\hyperlink{sConfigOtherLev}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{7.5 } Configurer les autres niveaux}{28}
+}\settowidth{\leveltwoindent}{{7 }\ }\settowidth{\leveltwowidth}{{7.6 }\thinspace\thinspace}\hyperlink{sDelLevel}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{7.6 } Supprimer un niveau}{28}
+}\settowidth{\leveltwoindent}{{7 }\ }\settowidth{\leveltwowidth}{{7.7 }\thinspace\thinspace}\hyperlink{sChOrder}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{7.7 } Modifier l’ordre}{28}
+}\settowidth{\leveltwoindent}{{7 }\ }\settowidth{\leveltwowidth}{{7.8 }\thinspace\thinspace}\hyperlink{sAddLev}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{7.8 } Ajouter un niveau}{28}
+}\settowidth{\leveltwoindent}{{7 }\ }\settowidth{\leveltwowidth}{{7.9 }\thinspace\thinspace}\hyperlink{sAddNotes}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{7.9 } Ajouter des notes à l’auteur}{29}
+}\settowidth{\leveltwoindent}{{7 }\ }\settowidth{\leveltwowidth}{{7.10 }\thinspace\thinspace}\hyperlink{sCreateLevBook}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{7.10 } Créer le livre}{29}
+}\hyperlink{sDecodable}{\XLingPaperdottedtocline{0pt}{0pt}{8  {\textbf{Livre déchiffrable}}}{30}
+}\settowidth{\leveltwoindent}{{8 }\ }\settowidth{\leveltwowidth}{{8.1 }\thinspace\thinspace}\hyperlink{sChCol2}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{8.1 } Choisissez une collection}{30}
+}\settowidth{\leveltwoindent}{{8 }\ }\settowidth{\leveltwowidth}{{8.2 }\thinspace\thinspace}\hyperlink{sCrLivreLD}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{8.2 } Création d’un livre déchiffrable}{30}
+}\settowidth{\leveltwoindent}{{8 }\ }\settowidth{\leveltwowidth}{{8.3 }\thinspace\thinspace}\hyperlink{sConfigSt}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{8.3 } Configurer les étapes}{31}
+}\settowidth{\leveltwoindent}{{8 }\ }\settowidth{\leveltwowidth}{{8.4 }\thinspace\thinspace}\hyperlink{sAddLetters}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{8.4 } Ajouter des graphèmes}{31}
+}\settowidth{\leveltwoindent}{{8 }\ }\settowidth{\leveltwowidth}{{8.5 }\thinspace\thinspace}\hyperlink{sAddWordlist}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{8.5 } Ajouter une liste de mots (des mots suggérés)}{31}
+}\hyperlink{sCrEl}{\XLingPaperdottedtocline{0pt}{0pt}{9  {\textbf{Créer un livre electronique (pour Android)}}}{32}
+}\settowidth{\leveltwoindent}{{9 }\ }\settowidth{\leveltwowidth}{{9.1 }\thinspace\thinspace}\hyperlink{sChCOlEl}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{9.1 } Choisir une collection}{32}
+}\settowidth{\leveltwoindent}{{9 }\ }\settowidth{\leveltwowidth}{{9.2 }\thinspace\thinspace}\hyperlink{sReformat}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{9.2 } Reformater votre livre pour Android}{33}
+}\settowidth{\leveltwoindent}{{9 }\ {9.2 }\ }\settowidth{\leveltwowidth}{{9.2.1 }\thinspace\thinspace}\hyperlink{sRePgeS}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{9.2.1 } Changer la taille de la page}{33}
+}\settowidth{\leveltwoindent}{{9 }\ {9.2 }\ }\settowidth{\leveltwowidth}{{9.2.2 }\thinspace\thinspace}\hyperlink{sRPage}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{9.2.2 } Vérifier chaque page}{34}
+}\settowidth{\leveltwoindent}{{9 }\ }\settowidth{\leveltwowidth}{{9.3 }\thinspace\thinspace}\hyperlink{sdraftBT}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{9.3 } Publier votre livre à Android}{34}
+}\settowidth{\leveltwoindent}{{9 }\ {9.3 }\ }\settowidth{\leveltwowidth}{{9.3.1 }\thinspace\thinspace}\hyperlink{sConAnd}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{9.3.1 } Connectez votre appareil Android}{34}
+}\settowidth{\leveltwoindent}{{9 }\ {9.3 }\ }\settowidth{\leveltwowidth}{{9.3.2 }\thinspace\thinspace}\hyperlink{sAndSettings}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{9.3.2 } Publier}{34}
+}\settowidth{\leveltwoindent}{{9 }\ {9.3 }\ }\settowidth{\leveltwowidth}{{9.3.3 }\thinspace\thinspace}\hyperlink{sBlRead}{\XLingPaperdottedtocline{\leveltwoindent}{\leveltwowidth}{{9.3.3 } Bloom Reader}{36}
+}\hyperlink{sChadSpecChar}{\XLingPaperdottedtocline{0pt}{0pt}{A  Les caractères de Tchad Unicode}{37}
+}\pagenumbering{arabic}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+\thispagestyle{empty}\raisebox{\baselineskip}[0pt]{\pdfbookmark[1]{Part I Introduction du Cours}{sIntCourseIntro}}\XLingPaperaddtocontents{sIntCourseIntro}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sIntCourseIntro}{}}Part I\protect\\}}}\par{}
+\vspace{10.8pt}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+Introduction du Cours\protect\\}}}\par{}
+\vspace{21.6pt}\clearpage
+\thispagestyle{bodyfirstpage}\markboth{}{{\textbf{Introduction}}}
+\XLingPaperaddtocontents{sGoal}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sGoal}{}}\raisebox{\baselineskip}[0pt]{\pdfbookmark[1]{1 Introduction}{sGoal}}1\protect\\}}}\par{}
+\vspace{10.8pt}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+{\textbf{Introduction}}\protect\\}}}\par{}
+\vspace{21.6pt}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{1.1 } But}{sIn}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sIn}{}}{1.1 }But}}\markboth{But}{{\textbf{Introduction}}}\XLingPaperaddtocontents{sIn}}\par{}
+\penalty10000\vspace{10pt}\penalty10000\indent Les participants préparont des divers livres A6 et A5. ...\par{}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{1.2 } Objectifs}{scourseObjectives}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{scourseObjectives}{}}{1.2 }Objectifs}}\markboth{Objectifs}{{\textbf{Introduction}}}\XLingPaperaddtocontents{scourseObjectives}}\par{}
+\penalty10000\vspace{10pt}\penalty10000\indent À la fin de ce cours, le participant sera capable de :\par{}{\parskip .5pt plus 1pt minus 1pt
+
+\vspace{\baselineskip}
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Créer un livre simple dans collection déjà créé}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Produire un Gros Livre basé sur une version A6 du livre.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Definer settings for language}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Create decodable books}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Create books at various levels}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Create electronic books}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+\thispagestyle{empty}\raisebox{\baselineskip}[0pt]{\pdfbookmark[1]{Part II Modules}{Modules}}\XLingPaperaddtocontents{Modules}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{Modules}{}}Part II\protect\\}}}\par{}
+\vspace{10.8pt}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+Modules\protect\\}}}\par{}
+\vspace{21.6pt}\clearpage
+\thispagestyle{bodyfirstpage}\markboth{}{{\textbf{Introduction}}}
+\XLingPaperaddtocontents{c}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+\raisebox{\baselineskip}[0pt]{\protect\hypertarget{c}{}}\raisebox{\baselineskip}[0pt]{\pdfbookmark[1]{2 Introduction}{c}}2\protect\\}}}\par{}
+\vspace{10.8pt}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+{\textbf{Introduction}}\protect\\}}}\par{}
+\vspace{21.6pt}\indent Bloom est un logiciel qui a été créé pour faciliter l’élaboration de livres. Il est conçu pour les débutants en informatique. Il exige moins de formation par rapport à d’autres logiciels, et il offre des étapes à guider l’utilisateur. Nous savons qu’il faut avoir beaucoup de livres pour rendre la lecture utile et intéressante, et pour donner aux lecteurs assez de pratique. Bloom peut aider l’utilisateur à construire une grande collection de livres dans la langue nationale. Plus tard, d’autres personnes peuvent utiliser Bloom pour traduire ces livres dans d’autres langues.\par{}\indent Dans Bloom, une collection est un groupe de livres, de livres de canevas ou de modèles. Il existe deux types de collections.\par{}{\parskip .5pt plus 1pt minus 1pt
+
+\vspace{\baselineskip}
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Une collection vernaculaire est une collection qui est créée dans une langue nationale particulière.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Une collection source est une collection qui utilise une langue officielle ou régionale. Les livres et les livres de canevas qui se trouvent dans une collection sont destinés à être traduits vers les collections vernaculaires. C’est-à-dire, ils sont l’une des sources de livres.}}
+\vspace{\baselineskip}
+}\indent Dans Bloom, le terme « livre » veut dire des livres comme normalement compris et aussi d’autres publications telles qu’un calendrier mural. Dans cette séance, nous nous concentrerons sur la création d’un livre régulier.\par{}\indent Vous pouvez utiliser Bloom pour créer une variété de livres imprimés ou de livres électroniques. Les livres imprimés peuvent être des livres simples, des gros livres, des livres déchiffrables ou des livres par niveau. Les livres électroniques peuvent être simples ou avec audio.\par{}\indent Quel que soit le type de livre que vous créez, il y a trois étapes de base.\par{}{\parskip .5pt plus 1pt minus 1pt
+                    
+\vspace{\baselineskip}
+
+{\setlength{\XLingPapertempdim}{\XLingPapersingledigitlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPapersingledigitlistitemwidth}{1.}{\vspace*{0pt}{\XeTeXpicfile "../imgfr/Coll.png" scaled 750} {\textbf{Collection}} : Choisissez la bonne collection, qui a soit le livre existant soit le modèle pour le nouveau livre.}}
+{\setlength{\XLingPapertempdim}{\XLingPapersingledigitlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPapersingledigitlistitemwidth}{2.}{\vspace*{0pt}{\XeTeXpicfile "../imgfr/Edit.png" scaled 750} {\textbf{ Éditer}} : Ensuite, vous éditez le livre, en ajoutant des pages, des images et du texte.}}
+{\setlength{\XLingPapertempdim}{\XLingPapersingledigitlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPapersingledigitlistitemwidth}{3.}{\vspace*{0pt}{\XeTeXpicfile "../imgfr/Publ.png" scaled 750} {\textbf{Publier}} : Enfin, vous publiez votre livre.}}
+\vspace{\baselineskip}
+}\clearpage
+\thispagestyle{bodyfirstpage}\markboth{}{{\textbf{Créer un livre simple}}}
+\XLingPaperaddtocontents{sBT1}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sBT1}{}}\raisebox{\baselineskip}[0pt]{\pdfbookmark[1]{3 Créer un livre simple}{sBT1}}3\protect\\}}}\par{}
+\vspace{10.8pt}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+{\textbf{Créer un livre simple}}\protect\\}}}\par{}
+\vspace{21.6pt}\noindent {\textit{\textbf{Introduction}}}\par{}\indent Ce module explique comment créer un livre simple dans une collection qui a déjà été créée.\par{}\noindent {\textit{\textbf{Où en sommes-nous ?}}}\par{}\indent Avant de pouvoir créer un livre dans Bloom, le programme doit être installé sur votre ordinateur et une collection doit être créée. Sinon, voir annexe X pour comment faire.Si cela n'a pas été fait, consultez l'annexe X pour obtenir des instructions sur l'installation de Bloom et la création de collections.\par{}\noindent {\textit{\textbf{Pourquoi est-il important ?}}}\par{}\indent Les livres en Bloom sont stockés dans une collection. Une collection peut également contenir des modèles à utiliser lors de la création d'un nouveau livre. Tous les livres sont créés, édités et publiés de la même manière. Le livre simple est le type de livre le plus simple, c'est donc la meilleure façon de commencer à apprendre Bloom.\par{}\noindent {\textit{\textbf{Que ferez-vous ?}}}\par{}{\parskip .5pt plus 1pt minus 1pt
+
+\vspace{\baselineskip}
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Vous démarrez Bloom et utilisez une collection vernaculaire.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Vous allez ensuite créer et éditer un livre à partir du modèle Livre simple.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Une fois l’édition terminée, vous publierez le livre en format PDF.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{3.1 } Démarrer Bloom}{s4}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{s4}{}}{3.1 }Démarrer Bloom}}\markboth{Démarrer Bloom}{{\textbf{Créer un livre simple}}}\XLingPaperaddtocontents{s4}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+\vspace{\baselineskip}
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Double-cliquez sur l’icône {\textbf{Bloom}} sur le bureau \\OU}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{(Dans le menu Démarrer, choisissez Bloom)\\{\textit{Lorsque Bloom est ouvert pour la première fois, votre Collection sera vide.}}\\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{\vspace*{0pt}{\XeTeXpicfile "../imgfr/image3.png" scaled 750}}}
+\vspace{\baselineskip}
+}
+\begin{mdframed}
+[backgroundcolor=FTColorA,skipabove=3pt,skipbelow=3pt,innermargin=2cm,outermargin=2cm,innertopmargin=.03in,innerbottommargin=.03in,innerleftmargin=.125in,innerrightmargin=.125in,align=left]\indent Dans la fenêtre principale, sous l’icône {\textbf{Collections}}, vous avez le nom de la collection ainsi qu’une liste de tous les livres de cette collection. Vous avez plusieurs modèles prédéfinis dans le volet Sources pour nouveaux livres.\par{}\end{mdframed}
+{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{3.2 } \textsquarebracketleft{}1\textsquarebracketright{} Choisir la collection}{chCollection}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{chCollection}{}}{3.2 }\textsquarebracketleft{}1\textsquarebracketright{} Choisir la collection}}\markboth{\textsquarebracketleft{}1\textsquarebracketright{} Choisir la collection}{{\textbf{Créer un livre simple}}}\XLingPaperaddtocontents{chCollection}}\par{}
+\penalty10000\vspace{10pt}\penalty10000\indent \vspace*{0pt}{\XeTeXpicfile "../imgfr/Coll.png" scaled 750} La première étape est de s'assurer que vous avez la bonne collection ouverte. La plupart de votre travail sera fait dans la collection pour votre langue. Si nécessaire, vous pouvez la modifier maintenant. Voir xxx pour savoir comment faire.\par{}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{3.3 } Créer un livre basé sur Livre simple}{cr-basic-book}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{cr-basic-book}{}}{3.3 }Créer un livre basé sur Livre simple}}\markboth{Créer un livre basé sur Livre simple}{{\textbf{Créer un livre simple}}}\XLingPaperaddtocontents{cr-basic-book}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Dans le volet {\textbf{Sources pour nouveaux livres}}, cliquez sur {\textbf{Livre simple}} \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/LivreSimple.png" scaled 750} \\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur le bouton {\textbf{Créer un livre depuis cette source}}.\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image5.png" scaled 750} \\{\textit{Bloom ajoute un nouveau livre de ce modèle à la collection de livres et l’ouvre dans l’onglet « Éditer ». Il y a quatre pages déjà créées.}}\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image6.png" scaled 750} \\}}
+\vspace{\baselineskip}
+}
+\begin{mdframed}
+[backgroundcolor=FTColorA,skipabove=3pt,skipbelow=3pt,innermargin=2cm,outermargin=2cm,innertopmargin=.03in,innerbottommargin=.03in,innerleftmargin=.125in,innerrightmargin=.125in,align=left]\indent Elle s’ouvre sur la page {\textbf{Couverture}}. Notez que le livre apparaît dans l’onglet {\textbf{Éditer}}. Le volet gauche est appelé Pages. Il montre les pages qui sont dans votre livre. La page en surbrillance dans le volet {\textbf{Pages}} s’affiche au centre.\par{}\end{mdframed}
+{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{3.4 } \textsquarebracketleft{}2\textsquarebracketright{} Éditer le livre}{sEditBook}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sEditBook}{}}{3.4 }\textsquarebracketleft{}2\textsquarebracketright{} Éditer le livre}}\markboth{\textsquarebracketleft{}2\textsquarebracketright{} Éditer le livre}{{\textbf{Créer un livre simple}}}\XLingPaperaddtocontents{sEditBook}}\par{}
+\penalty10000\vspace{10pt}\penalty10000\indent \vspace*{0pt}{\XeTeXpicfile "../imgfr/Edit.png" scaled 750}\par{}\indent Maintenant que le livre a été créé, vous pouvez l'éditer.\par{}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{3.4.1 } Éditer le livre — couverture}{sEditCover}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sEditCover}{}}{3.4.1 }Éditer le livre — couverture}}\markboth{Éditer le livre — couverture}{{\textbf{Créer un livre simple}}}\XLingPaperaddtocontents{sEditCover}}\par{}
+\penalty10000\vspace{10pt}\penalty10000\indent Éditez la couverture de la manière suivante :\par{}{\parskip .5pt plus 1pt minus 1pt
+
+\vspace{\baselineskip}
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Assurez que la page de couverture est affichée.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Si necessaire, cliquez sur la page à gauche. br}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{{\textit{La zone de texte supérieure doit contenir le titre du livre.}}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Tapez le titre en langue.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur l’icône {\textbf{Changer d’image}} dans le cadre de l’image \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image7.png" scaled 750}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{Galeries d'images. }}\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image10.png" scaled 750} \\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Pour rechercher une image, tapez un mot et appuyez {\textbf{Enter}} \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/ImagesFound.png" scaled 750} \\{\textit{Les images trouvé sont affichés}}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Sélectionnez une image.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{OK}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Modifier la page de titre comme désiré.}}
+\vspace{\baselineskip}
+}
+\begin{mdframed}
+[backgroundcolor=FTColorA,skipabove=3pt,skipbelow=3pt,innermargin=2cm,outermargin=2cm,innertopmargin=.03in,innerbottommargin=.03in,innerleftmargin=.125in,innerrightmargin=.125in,align=left]\indent Pour plus de détails, voir page xx.\par{}\end{mdframed}
+{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{3.4.2 } Éditer le livre — ajouter une page}{sCopy}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCopy}{}}{3.4.2 }Éditer le livre — ajouter une page}}\markboth{Éditer le livre — ajouter une page}{{\textbf{Créer un livre simple}}}\XLingPaperaddtocontents{sCopy}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur l’icône de la page précédente. (C.à.d. où vous voulez placer la nouvelle page.)}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur «{\textbf{ + Ajouter une page}} » \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image8.png" scaled 750} \\{\textit{La boîte de dialogue {\textbf{Ajouter une page}} s’affiche et affiche les modèles que vous pouvez utiliser pour ajouter d’autres pages à votre livre.}} \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image9.png" scaled 750}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Sélectionnez {\textbf{Texte de base \& Illustration}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{Ajouter cette page}}.\\{\textit{ La nouvelle page s’affiche}}.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{3.4.3 } Éditer le livre — ajouter une image}{sAddPicture}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sAddPicture}{}}{3.4.3 }Éditer le livre — ajouter une image}}\markboth{Éditer le livre — ajouter une image}{{\textbf{Créer un livre simple}}}\XLingPaperaddtocontents{sAddPicture}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur l’icône {\textbf{Changer d'image}} dans le cadre de l’image \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image7.png" scaled 750}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{Galeries d'images. }}\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image10.png" scaled 750} \\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Pour rechercher une image, tapez un mot (p.e. maison) et appuyez {\textbf{Enter}} \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/ImagesFound.png" scaled 750} \\{\textit{Les resultats sont affichés}} \\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur une image}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{OK}}.}}
+\vspace{\baselineskip}
+}
+\begin{mdframed}
+[backgroundcolor=FTColorA,skipabove=3pt,skipbelow=3pt,innermargin=2cm,outermargin=2cm,innertopmargin=.03in,innerbottommargin=.03in,innerleftmargin=.125in,innerrightmargin=.125in,align=left]\indent Pour plus de détails, voir page xx.\par{}\end{mdframed}
+{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{3.4.4 } Éditer le livre — ajouter le texte}{sAddText}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sAddText}{}}{3.4.4 }Éditer le livre — ajouter le texte}}\markboth{Éditer le livre — ajouter le texte}{{\textbf{Créer un livre simple}}}\XLingPaperaddtocontents{sAddText}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur le zone de texte.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Saisissez le texte.}}
+\vspace{\baselineskip}
+}
+\begin{mdframed}
+[backgroundcolor=FTColorA,skipabove=3pt,skipbelow=3pt,innermargin=2cm,outermargin=2cm,innertopmargin=.03in,innerbottommargin=.03in,innerleftmargin=.125in,innerrightmargin=.125in,align=left]\indent Pour plus de détails, voir page xx.\par{}\end{mdframed}
+{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{3.4.5 } Éditer le livre — page de droits d'auteur}{sDoitsAuteur}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sDoitsAuteur}{}}{3.4.5 }Éditer le livre — page de droits d'auteur}}\markboth{Éditer le livre — page de droits d'auteur}{{\textbf{Créer un livre simple}}}\XLingPaperaddtocontents{sDoitsAuteur}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur la page de crédits (à gauche).\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image11.png" scaled 750} \\ {\textit{La page de crédits s'affiche.}}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur le lien bleu \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image12.png" scaled 750} \\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Tapez les informations sur les droits d'auteur. \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image13.png" scaled 750} \\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{OK}}.}}
+\vspace{\baselineskip}
+}
+\begin{mdframed}
+[backgroundcolor=FTColorA,skipabove=3pt,skipbelow=3pt,innermargin=2cm,outermargin=2cm,innertopmargin=.03in,innerbottommargin=.03in,innerleftmargin=.125in,innerrightmargin=.125in,align=left]\indent Pour plus de détails, voir page xx.\par{}\end{mdframed}
+{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{3.5 } \textsquarebracketleft{}3\textsquarebracketright{} Publier un livre}{Publish}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{Publish}{}}{3.5 }\textsquarebracketleft{}3\textsquarebracketright{} Publier un livre}}\markboth{\textsquarebracketleft{}3\textsquarebracketright{} Publier un livre}{{\textbf{Créer un livre simple}}}\XLingPaperaddtocontents{Publish}}\par{}
+\penalty10000\vspace{10pt}\penalty10000\indent \vspace*{0pt}{\XeTeXpicfile "../imgfr/Publ.png" scaled 750}  \\Maintenant, nous sommes prêts à publier ce livre en créant un fichier PDF qui peut être pris à une imprimante pour l’impression.\par{}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{3.5.1 } Publish le livre — PDF}{sPublish}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sPublish}{}}{3.5.1 }Publish le livre — PDF}}\markboth{Publish le livre — PDF}{{\textbf{Créer un livre simple}}}\XLingPaperaddtocontents{sPublish}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur le bouton {\textbf{Publier}} dans barre en haut à gauche \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image15.png" scaled 750}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur le mot {\textbf{Options}} pour vérifiez la taille du papier}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{{\textit{Si la taille du papier est différente que la taille du livre, choisissez la taille du papier}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Choisissez l’une des six options (à gauche) \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image14.png" scaled 750} \\{\textit{Le livre s'affiche au centre}}.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{3.5.2 } Publier le livre — Vérifier et faire les corrections}{sPubCC}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sPubCC}{}}{3.5.2 }Publier le livre — Vérifier et faire les corrections}}\markboth{Publier le livre — Vérifier et faire les corrections}{{\textbf{Créer un livre simple}}}\XLingPaperaddtocontents{sPubCC}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Vérifiez le livre.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Si vous trouve des erreurs, cliquez sur l'onglet {\textbf{Éditer}} et faites les corrections.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{3.5.3 } Publier le livre — Publier encore}{sPubPA}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sPubPA}{}}{3.5.3 }Publier le livre — Publier encore}}\markboth{Publier le livre — Publier encore}{{\textbf{Créer un livre simple}}}\XLingPaperaddtocontents{sPubPA}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur l’onglet {\textbf{Publier}}.\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image15.png" scaled 750}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Choisissez encore l'option désiré.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Vérifiez le livre encore.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Quand le livre est correct,}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Enregistrer le PDF (voir dessus).}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{3.5.4 } Publier le livre — Enregistre le PDF}{sPubSsPDF}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sPubSsPDF}{}}{3.5.4 }Publier le livre — Enregistre le PDF}}\markboth{Publier le livre — Enregistre le PDF}{{\textbf{Créer un livre simple}}}\XLingPaperaddtocontents{sPubSsPDF}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur Enregistrer le PDF sur la barre d'outils \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image16.png" scaled 750} .}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Confirmez le nom de fichier et le dossier.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{Enregistrer}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Si nécessaire, recommencez pour une autre option. (p.ex. la couverture ou l'intérieur)}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Accédez au dossier où vous avez enregistré le fichier PDF.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{3.5.5 } Publier le livre — Imprimer le PDF}{sPubPr}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sPubPr}{}}{3.5.5 }Publier le livre — Imprimer le PDF}}\markboth{Publier le livre — Imprimer le PDF}{{\textbf{Créer un livre simple}}}\XLingPaperaddtocontents{sPubPr}}\par{}
+\penalty10000\vspace{10pt}\penalty10000
+\begin{mdframed}
+[backgroundcolor=FTColorA,skipabove=3pt,skipbelow=3pt,innermargin=2cm,outermargin=2cm,innertopmargin=.03in,innerbottommargin=.03in,innerleftmargin=.125in,innerrightmargin=.125in,align=left]\indent Si vous avez une imprimante connectée, vous pouvez imprimer le livre directement sur votre imprimante\par{}\end{mdframed}
+{\parskip .5pt plus 1pt minus 1pt
+
+\vspace{\baselineskip}
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Si nécessaire, cliquez sur l’onglet {\textbf{Publier}}.\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image15.png" scaled 750}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Choisissez l’une des six options (à gauche).}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{\raisebox{\baselineskip}[0pt]{\protect\hypertarget{tResult}{}}Cliquez sur Imprimer.\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image18.png" scaled 750} \\{\textit{Un message s’affiche}}\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image19.png" scaled 750}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{OK}} pour fermer le message. \\{\textit{Suivant les instructions. C.-à-d. imprimer taille (pas livret) en paysage sur papier A4.}}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Si nécessaire, répétez pour l'option suivante.}}
+\vspace{\baselineskip}
+}\clearpage
+\thispagestyle{bodyfirstpage}\markboth{}{{\textbf{Pour savoir en plus}}}
+\XLingPaperaddtocontents{sMoreInfo}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sMoreInfo}{}}\raisebox{\baselineskip}[0pt]{\pdfbookmark[1]{4 Pour savoir en plus}{sMoreInfo}}4\protect\\}}}\par{}
+\vspace{10.8pt}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+{\textbf{Pour savoir en plus}}\protect\\}}}\par{}
+\vspace{21.6pt}\noindent Ce chapitre contient plus d'informations sur la création de collections et l'édition de pages.\par{}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{4.1 } La collection}{sCollection}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCollection}{}}{4.1 }La collection}}\markboth{La collection}{{\textbf{Pour savoir en plus}}}\XLingPaperaddtocontents{sCollection}}\par{}
+\penalty10000\vspace{10pt}\penalty10000\indent Pour la plupart de votre travail, vous utiliseriez la collection pour votre langue. Mais il y a des moments où vous voudrez soit passer à une autre collection, soit en créer une nouvelle.\par{}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{4.1.1 } Pour créer une collection}{sCreateColl}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCreateColl}{}}{4.1.1 }Pour créer une collection}}\markboth{Pour créer une collection}{{\textbf{Pour savoir en plus}}}\XLingPaperaddtocontents{sCreateColl}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{1. Cliquez sur le bouton {\textbf{Autre collection.}} \vspace*{0pt}{\XeTeXpicfile "../imgfr/image20.png" scaled 750}  \\{\textit{La boîte de dialogue Ouvrir / créer des collections s’ouvre }}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{2. Cliquez sur {\textbf{Créer une nouvelle collection}} \\.\vspace*{0pt}{\XeTeXpicfile "../imgfr/image21.png" scaled 750} \\ {\textit{La boîte de dialogue Créer une nouvelle collection Bloom) s’affiche.}}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{3. Cliquez sur {\textbf{Collection en langue vernaculaire/régionale}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{4. Cliquez sur {\textbf{Suivant}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{5. Sélectionnez la langue principale de cette collection. (p.ex. français) puis cliquez sur {\textbf{Suivant}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{6. Entrez le pays (Tchad), puis cliquez sur {\textbf{Suivant}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{7. Choisissez la police (Andika Compact) et cliquez sur {\textbf{Suivant}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{8. Saisissez le nom du projet et cliquez sur {\textbf{Suivant}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{9. Cliquez sur {\textbf{Terminer}}. \\{\textit{La fenêtre principale s’affiche.}}}}
+\vspace{\baselineskip}
+}
+\begin{mdframed}
+[backgroundcolor=FTColorA,skipabove=3pt,skipbelow=3pt,innermargin=2cm,outermargin=2cm,innertopmargin=.03in,innerbottommargin=.03in,innerleftmargin=.125in,innerrightmargin=.125in,align=left]\indent En haut de la fenêtre, le nom de votre nouvelle collection et le numéro de version de Bloom s’affichent. Maintenant, vous êtes prêt à ajouter un livre à votre collection.\par{}\end{mdframed}
+{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{4.1.2 } Choisir une autre collection}{sChOtherCol}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sChOtherCol}{}}{4.1.2 }Choisir une autre collection}}\markboth{Choisir une autre collection}{{\textbf{Pour savoir en plus}}}\XLingPaperaddtocontents{sChOtherCol}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Depuis la fenêtre principale:}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{Autre collection}}.\\{\textit{La boîte de dialogue Ouvrir/Créer une collection s’affiche.}} \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image22.png" scaled 750}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{1. Si votre collection se trouve dans la liste, cliquez sur le nom de la collection. \textsquarebracketleft{}1\textsquarebracketright{}\\{\textit{ La fenêtre principale réapparaît}}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{2. Si votre collection n’est pas dans la liste,}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur « Rechercher une autre collection sur cet ordinateur » \textsquarebracketleft{}2\textsquarebracketright{} \\{\textit{Une liste des dossiers s’affiche }}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Double-cliquez sur le dossier avec le nom du projet}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Double-cliquez sur le fichier avec le nom du projet.bloomCollection \\{\textit{La fenêtre principale réapparaît}}.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{4.2 } La page}{sPage}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sPage}{}}{4.2 }La page}}\markboth{La page}{{\textbf{Pour savoir en plus}}}\XLingPaperaddtocontents{sPage}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{4.2.1 } Réorganiser les pages du livre}{sReorg}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sReorg}{}}{4.2.1 }Réorganiser les pages du livre}}\markboth{Réorganiser les pages du livre}{{\textbf{Pour savoir en plus}}}\XLingPaperaddtocontents{sReorg}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Faites glisser et déposez les icônes dans le volet « {\textbf{Pages}}».\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image23.png" scaled 750}}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{4.2.2 } Supprimer une page d’un livre}{sDel}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sDel}{}}{4.2.2 }Supprimer une page d’un livre}}\markboth{Supprimer une page d’un livre}{{\textbf{Pour savoir en plus}}}\XLingPaperaddtocontents{sDel}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Faites un clic droit sur la page du volet « {\textbf{Pages}} ».}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Choisissez Retirer la page. OU}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur l’icône \vspace*{0pt}{\XeTeXpicfile "../imgfr/image24.png" scaled 750} en bas des pages. \\{\textit{La page est supprimée}}. \\}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{4.3 } Texte}{sText}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sText}{}}{4.3 }Texte}}\markboth{Texte}{{\textbf{Pour savoir en plus}}}\XLingPaperaddtocontents{sText}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{4.3.1 } Éditer le livre — formater le texte}{sFormatText}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sFormatText}{}}{4.3.1 }Éditer le livre — formater le texte}}\markboth{Éditer le livre — formater le texte}{{\textbf{Pour savoir en plus}}}\XLingPaperaddtocontents{sFormatText}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Formatez le texte en cliquant sur l’icône de commande grise \vspace*{0pt}{\XeTeXpicfile "../imgfr/image25.png" scaled 750}  \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image26.png" scaled 750} \\{\textit{La boîte de dialogue {\textbf{Formater}} s'affiche.}}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Choisissez le {\textbf{style}} de la boîte de texte \textsquarebracketleft{}1\textsquarebracketright{}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur l’onglet {\textbf{Caractères}} \textsquarebracketleft{}2\textsquarebracketright{} \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image27.png" scaled 750} \\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Choisissez la mise en forme du style (p.ex. taille de police 18) \textsquarebracketleft{}3\textsquarebracketright{}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur l’onglet {\textbf{Paragraphe}} \textsquarebracketleft{}4\textsquarebracketright{}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Choisissez tout autre formatage désiré.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur n’importe quelle autre partie de la page pour fermer la boîte. {\textit{La boîte est fermée}}. xx\\}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{4.4 } Images}{sImages}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sImages}{}}{4.4 }Images}}\markboth{Images}{{\textbf{Pour savoir en plus}}}\XLingPaperaddtocontents{sImages}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{4.4.1 } Ajouter (changer) une image}{sxxx}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sxxx}{}}{4.4.1 }Ajouter (changer) une image}}\markboth{Ajouter (changer) une image}{{\textbf{Pour savoir en plus}}}\XLingPaperaddtocontents{sxxx}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{• Cliquez sur l’icône {\textbf{Changer d’image}}».\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image7.png" scaled 750} \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image10.png" scaled 750} \\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{Galeries d’images}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Pour rechercher une image, tapez un mot et appuyez {\textbf{Enter}}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Sélectionnez une image.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{OK}}.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{4.4.2 } Coller une image}{sPastePicture}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sPastePicture}{}}{4.4.2 }Coller une image}}\markboth{Coller une image}{{\textbf{Pour savoir en plus}}}\XLingPaperaddtocontents{sPastePicture}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Copiez une image dans un autre logiciel que Bloom et retournez à Bloom.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur l’icône {\textbf{Coller l’image }}dans le cadre de l’image.\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image28.png" scaled 750} \\ {\textit{L'image est affichée}}. .}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{4.4.3 } Ajouter des informations de licence pour toutes les images}{sAddCopyright}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sAddCopyright}{}}{4.4.3 }Ajouter des informations de licence pour toutes les images}}\markboth{Ajouter des informations de licence pour toutes les images}{{\textbf{Pour savoir en plus}}}\XLingPaperaddtocontents{sAddCopyright}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Affichez une page avec l’image.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{• Cliquez sur le point d’interrogation de l’une des images \\ \vspace*{0pt}{\XeTeXpicfile "../imgfr/image29.jpeg" scaled 750}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Remplir les informations de licence pour l’image.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{OK.}} \\{\textit{Bloom peut vous demande si vous voulez copier ces données sur toutes les autres images du livre}}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{• Cliquez sur  {\textbf{Oui}} (Yes) .}}
+\vspace{\baselineskip}
+}\clearpage
+\thispagestyle{bodyfirstpage}\markboth{}{{\textbf{Livres canevas}}}
+\XLingPaperaddtocontents{sCopy3}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCopy3}{}}\raisebox{\baselineskip}[0pt]{\pdfbookmark[1]{5 Livres canevas}{sCopy3}}5\protect\\}}}\par{}
+\vspace{10.8pt}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+{\textbf{Livres canevas}}\protect\\}}}\par{}
+\vspace{21.6pt}\noindent {\textit{\textbf{Introduction}}}\par{}\indent Dans cette module, nous allons apprendre comment créer un livre canevas que les autres peuvent utiliser pour créer des livres.\par{}\noindent {\textit{\textbf{Où en sommes-nous ?}}}\par{}\indent Vous avez déjà fait des livres dans une collection vernaculaire. Maintenant, nous allons apprendre à faire des livres qui peuvent être partagés avec d’autres langues.\par{}\noindent {\textit{\textbf{Pourquoi est-ce important ?}}}\par{}\indent Dans Bloom, il existe deux types de collections. Une collection vernaculaire contient des livres pour une langue spécifique. Une collection source contient des livres qui peuvent être partagés et traduits dans d’autres langues.\par{}\indent Quand vous voulez créer un livre que d’autres peuvent traduire dans leur propre langue, il faut les créer dans une collection source afin qu’ils puissent être partagés.\par{}\noindent {\textit{\textbf{Que ferez-vous ?}}}\par{}{\parskip .5pt plus 1pt minus 1pt
+
+\vspace{\baselineskip}
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Nous allons d’abord créer une nouvelle collection source puis créer un livre canevas.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Ensuite, nous ferons un Bloompack pour cette collection qui peut être envoyée à d’autres pour créer des livres dans leur langue.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{5.1 } Créer une collection}{s51}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{s51}{}}{5.1 }Créer une collection}}\markboth{Créer une collection}{{\textbf{Livres canevas}}}\XLingPaperaddtocontents{s51}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{1. Lancez Bloom}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{2. Cliquez sur le bouton \vspace*{0pt}{\XeTeXpicfile "../imgfr/image20.png" scaled 750}{\textbf{ Autre collection. }}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{3. Cliquez sur {\textbf{Créer une nouvelle collection}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{4. Cliquez sur {\textbf{Collection source}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{5. Cliquez sur {\textbf{Suivant}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{6. Saisissez le nom du projet (p.ex. Mes livres canevas) et cliquez sur {\textbf{Suivant}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{7. Cliquez sur {\textbf{Terminer}}.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{5.2 } Créer un livre canevas}{sCC}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCC}{}}{5.2 }Créer un livre canevas}}\markboth{Créer un livre canevas}{{\textbf{Livres canevas}}}\XLingPaperaddtocontents{sCC}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{Livre simple}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{Créer un livre depuis cette source}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{Paramètres}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur l’onglet {\textbf{Création de livre}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Réglez le pack de mise en page autour de la couverture à {\textbf{Paper saver}} (économiser de papier).}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{5.3 } Compléter le livre comme désiré}{sComplLiv}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sComplLiv}{}}{5.3 }Compléter le livre comme désiré}}\markboth{Compléter le livre comme désiré}{{\textbf{Livres canevas}}}\XLingPaperaddtocontents{sComplLiv}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Remplissez }{\setlength{\XLingPaperlistitemindent}{\XLingPaperbulletlistitemwidth + \parindent{}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\XLingPaperlistitemindent}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\XLingPaperlistitemindent}{\XLingPaperbulletlistitemwidth}{•}{la couverture}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\XLingPaperlistitemindent}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\XLingPaperlistitemindent}{\XLingPaperbulletlistitemwidth}{•}{la page de titre}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\XLingPaperlistitemindent}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\XLingPaperlistitemindent}{\XLingPaperbulletlistitemwidth}{•}{Ajouter les pages}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\XLingPaperlistitemindent}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\XLingPaperlistitemindent}{\XLingPaperbulletlistitemwidth}{•}{Ajouter le texte}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\XLingPaperlistitemindent}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\XLingPaperlistitemindent}{\XLingPaperbulletlistitemwidth}{•}{Changer les images}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\XLingPaperlistitemindent}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\XLingPaperlistitemindent}{\XLingPaperbulletlistitemwidth}{•}{Remplissez la page de crédits.}}}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{5.4 } Pack Bloom}{sCBP}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCBP}{}}{5.4 }Pack Bloom}}\markboth{Pack Bloom}{{\textbf{Livres canevas}}}\XLingPaperaddtocontents{sCBP}}\par{}
+\penalty10000\vspace{10pt}\penalty10000\indent Vous utilisez les packs Bloom pour partager des livres des collections sources avec d'autres utilisateurs. Avant de pouvoir utiliser un livre dans un Bloom Pack, vous devez l'installer.\par{}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{5.4.1 } Créer un pack Bloom}{sCrBP}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCrBP}{}}{5.4.1 }Créer un pack Bloom}}\markboth{Créer un pack Bloom}{{\textbf{Livres canevas}}}\XLingPaperaddtocontents{sCrBP}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur l’onglet {\textbf{Collections}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Dans la barre d’outils, cliquez sur {\textbf{Créer un pack Bloom}}. \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image30.png" scaled 750}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Tapez un nom pour le fichier pack Bloom et cliquez sur {\textbf{Enregistrer}}. \\{\textit{Le pack Bloom est créé et prêt à être distribué}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Fermez Bloom}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{5.4.2 } Installer un pack Bloom}{sIBP}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sIBP}{}}{5.4.2 }Installer un pack Bloom}}\markboth{Installer un pack Bloom}{{\textbf{Livres canevas}}}\XLingPaperaddtocontents{sIBP}}\par{}
+\penalty10000\vspace{10pt}\penalty10000
+\begin{mdframed}
+[backgroundcolor=FTColorA,skipabove=3pt,skipbelow=3pt,innermargin=2cm,outermargin=2cm,innertopmargin=.03in,innerbottommargin=.03in,innerleftmargin=.125in,innerrightmargin=.125in,align=left]\indent Avant de pouvoir utiliser un pack Bloom, vous devez l'installer.\par{}\end{mdframed}
+{\parskip .5pt plus 1pt minus 1pt
+
+\vspace{\baselineskip}
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Ouvrez une fenêtre {\textbf{Explorer de fichiers}} dans le dossier.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Double-cliquez sur le fichier du pack Bloom. \\{\textit{Bloom ajoutera la collection et affichera un message quand il aura terminé. }}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{OK}} pour fermer le message. \\{\textit{Bloom va redémarrer.}}}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{5.4.3 } Utilisez les livres canevas d’un Bloom Pack}{sUBP}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sUBP}{}}{5.4.3 }Utilisez les livres canevas d’un Bloom Pack}}\markboth{Utilisez les livres canevas d’un Bloom Pack}{{\textbf{Livres canevas}}}\XLingPaperaddtocontents{sUBP}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Dans le volet {\textbf{Source pour des nouveaux livres}}, sélectionnez le livre désiré.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Sélectionnez {\textbf{Créer un livre depuis cette source}}.\\{\textit{ Le livre est créé et chaque zone de texte montre le texte à traduire dans une bulle jaune.}}\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image31cr.png" scaled 750} \\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur le zone de texte}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Traduisez le texte affiché dans le ballon dans votre langue.}}
+\vspace{\baselineskip}
+}\clearpage
+\thispagestyle{bodyfirstpage}\markboth{}{{\textbf{Page personnalisée}}}
+\XLingPaperaddtocontents{sCustPg}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCustPg}{}}\raisebox{\baselineskip}[0pt]{\pdfbookmark[1]{6 Page personnalisée}{sCustPg}}6\protect\\}}}\par{}
+\vspace{10.8pt}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+{\textbf{Page personnalisée}}\protect\\}}}\par{}
+\vspace{21.6pt}\noindent {\textit{\textbf{Introduction}}}\par{}\indent Ce module explique comment.créer une page personnalisée dans un livre.\par{}\indent Regardez le vidéo {\textbf{Bloom\_custompage-SD.mp4}}.\par{}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{6.1 } Commencer Bloom}{sCB}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCB}{}}{6.1 }Commencer Bloom}}\markboth{Commencer Bloom}{{\textbf{Page personnalisée}}}\XLingPaperaddtocontents{sCB}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{{\textit{La fenêtre principale apparaît.}}}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{6.2 } Choisir une collection}{sChCOl}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sChCOl}{}}{6.2 }Choisir une collection}}\markboth{Choisir une collection}{{\textbf{Page personnalisée}}}\XLingPaperaddtocontents{sChCOl}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Vérifiez que la bonne collection est ouverte.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Sinon, cliquez sur {\textbf{Autres collections}}.\\{\textit{ La boîte de dialogue {\textbf{Ouvrir / Créer une collection}} s’affiche.}}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Sélectionnez la collection désirée. \\{\textit{La fenêtre principale réapparaît}}.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{6.3 } Créer un livre}{sCreateB}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCreateB}{}}{6.3 }Créer un livre}}\markboth{Créer un livre}{{\textbf{Page personnalisée}}}\XLingPaperaddtocontents{sCreateB}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Dans le volet {\textbf{Sources pour nouveaux livres}}, cliquez sur {\textbf{Livre simple}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{Créer un livre depuis cette source}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Dans la page {\textbf{Couverture extérieur}}, saisissez un titre.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{6.4 } Personnaliser une page – modifier la taille des champs}{sCustPFields}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCustPFields}{}}{6.4 }Personnaliser une page – modifier la taille des champs}}\markboth{Personnaliser une page – modifier la taille des champs}{{\textbf{Page personnalisée}}}\XLingPaperaddtocontents{sCustPFields}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Vous pouvez modifier la taille des champs de texte et des images {\textbf{en faisant glisser la ligne de séparation}} entre eux.\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image34.png" scaled 750} \\}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{6.5 } Personnaliser une page – ajouter des champs}{sCP-add}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCP-add}{}}{6.5 }Personnaliser une page – ajouter des champs}}\markboth{Personnaliser une page – ajouter des champs}{{\textbf{Page personnalisée}}}\XLingPaperaddtocontents{sCP-add}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Faite un clic droit sur le bouton {\textbf{Modifier la mise en page}}. \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image35.png" scaled 750} \\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Utilisez les symboles {\textbf{+}} pour ajouter de nouveaux champs.\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image36.png" scaled 750} \\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Indiquer à Bloom si vous désirez avoir une image ou un texte dans ce champ.\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image37.png" scaled 750} \\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez à gauche sur le bouton Modifier la mise en page.\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image38.png" scaled 750} \\}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{6.6 } Créer une page Personnalisée}{sCrPgCust}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCrPgCust}{}}{6.6 }Créer une page Personnalisée}}\markboth{Créer une page Personnalisée}{{\textbf{Page personnalisée}}}\XLingPaperaddtocontents{sCrPgCust}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Pour créer une page personnalisée, cliquez sur {\textbf{Ajouter une page}},}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Sélectionnez {\textbf{Personnalisation}},}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Puis cliquez sur {\textbf{Ajouter cette page}}. \\{\textit{Une page personnalisée s’affiche et est prête à être modifiée}}.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{6.7 } Définir la page}{sDefPage}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sDefPage}{}}{6.7 }Définir la page}}\markboth{Définir la page}{{\textbf{Page personnalisée}}}\XLingPaperaddtocontents{sDefPage}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Utilisez les symboles {\textbf{+}} pour ajouter de nouveaux champs.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{X}} pour supprimer de champs.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Indiquez à Bloom si vous désirez avoir une image ou un texte dans ce champ.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez à gauche sur le bouton {\textbf{Modifier la mise en page}} pour la fixer}}
+\vspace{\baselineskip}
+}\clearpage
+\thispagestyle{bodyfirstpage}\markboth{}{{\textbf{Livres par niveau (gradués)}}}
+\XLingPaperaddtocontents{sLevelBooks}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sLevelBooks}{}}\raisebox{\baselineskip}[0pt]{\pdfbookmark[1]{7 Livres par niveau (gradués)}{sLevelBooks}}7\protect\\}}}\par{}
+\vspace{10.8pt}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+{\textbf{Livres par niveau (gradués)}}\protect\\}}}\par{}
+\vspace{21.6pt}\noindent {\textit{\textbf{Introduction}}}\par{}\indent Ce module explique comment créer les livres par niveau de difficulté dans Bloom.\par{}\noindent {\textit{\textbf{Pourquoi est-ce important ?}}}\par{}\indent Dans la prochaine session, nous allons créer des livres déchiffrables pour faciliter la lecture des débutants pendant qu’ils apprennent encore les lettres. Avec les livres par niveau, il n’y a aucune restriction sur les lettres utilisées, mais c’est la difficulté des livres qui est contrôlée. Le niveau de difficulté est défini par le nombre de pages, la longueur des phrases et le nombre de mots par phrase ou par page.\par{}\noindent {\textit{\textbf{Que ferez-vous ?}}}\par{}{\parskip .5pt plus 1pt minus 1pt
+
+\vspace{\baselineskip}
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Créer un livre simple ou un livre par niveau.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Configurer les niveaux.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Créer des livres aux niveaux divers.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{7.1 } Choisissez une collection}{sChCol}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sChCol}{}}{7.1 }Choisissez une collection}}\markboth{Choisissez une collection}{{\textbf{Livres par niveau (gradués)}}}\XLingPaperaddtocontents{sChCol}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Si nécessaire, cliquez sur {\textbf{Autres collections}}. \\{\textit{La boîte de dialogue {\textbf{Ouvrir / Créer une collection}} s’affiche}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Sélectionnez la collection désirée. \\{\textit{La fenêtre principale réapparaît.}}}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{7.2 } Création d’un livre}{sCrLivre}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCrLivre}{}}{7.2 }Création d’un livre}}\markboth{Création d’un livre}{{\textbf{Livres par niveau (gradués)}}}\XLingPaperaddtocontents{sCrLivre}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Dans le volet {\textbf{Sources pour des nouveaux livres}}, sélectionnez le modèle de {\textbf{Livre par niveau}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{Créer un livre depuis cette source}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Si nécessaire, cliquez l’icône de menu (à droite) \\{\textit{Le volet « Outil de livre par niveau » s’affiche.}}}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{7.3 } Configurer les niveaux}{sConfigLevel}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sConfigLevel}{}}{7.3 }Configurer les niveaux}}\markboth{Configurer les niveaux}{{\textbf{Livres par niveau (gradués)}}}\XLingPaperaddtocontents{sConfigLevel}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Dans le volet {\textbf{Outil de livre gradué}}, cliquez sur le lien {\textbf{Configurer les niveaux}}. \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image39cr.png" scaled 750} \\ \\{\textit{La boîte de dialogue Configurer l’outil de livre par niveau s’affiche. }}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Sur le côté gauche, un tableau récapitulatif de niveau est donné. Sur le côté droit, nous pouvons voir les règles pour un niveau donné. \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image40.png" scaled 750} \\}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{7.4 } Configurer niveau 1}{sConfigLevel1}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sConfigLevel1}{}}{7.4 }Configurer niveau 1}}\markboth{Configurer niveau 1}{{\textbf{Livres par niveau (gradués)}}}\XLingPaperaddtocontents{sConfigLevel1}}\par{}
+\penalty10000\vspace{10pt}\penalty10000
+\begin{mdframed}
+[backgroundcolor=FTColorA,skipabove=3pt,skipbelow=3pt,innermargin=2cm,outermargin=2cm,innertopmargin=.03in,innerbottommargin=.03in,innerleftmargin=.125in,innerrightmargin=.125in,align=left]\indent Maintenant nous voulons définir chaque niveau selon nos règles. Notez qu’il y a six niveaux définis préalablement. Nous voulons les modifier et ajouter des niveaux supplémentaires si nécessaire.\par{}\end{mdframed}
+{\parskip .5pt plus 1pt minus 1pt
+
+\vspace{\baselineskip}
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{1. Cliquez sur {\textbf{Niveau 1}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{2. Définissez les mots{\textbf{ maximums dans chaque phrase }}(par exemple, 3).}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{3. Définissez le mot {\textbf{maximum dans chaque page}} (par exemple, 3).}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{4. Définissez le nombre {\textbf{maximum de mots par livre}} (par exemple, 20).}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{5. Si vous le souhaitez, nous pourrions définir le {\textbf{maximum de mots uniques par livre }}(par exemple, 10).}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{7.5 } Configurer les autres niveaux}{sConfigOtherLev}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sConfigOtherLev}{}}{7.5 }Configurer les autres niveaux}}\markboth{Configurer les autres niveaux}{{\textbf{Livres par niveau (gradués)}}}\XLingPaperaddtocontents{sConfigOtherLev}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Configurez les autres niveaux comme désiré.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Voilà quelques suggestions dans le tableau :}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Définez la limite de mots par phrase. \textsquarebracketleft{}A\textsquarebracketright{}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Définez la limite de mot par page. \textsquarebracketleft{}B\textsquarebracketright{}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Définez Nombre maximal de mots par livre. \textsquarebracketleft{}C\textsquarebracketright{}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Si désiré, on peut définer la limite de mots uniques par livre. \textsquarebracketleft{}D\textsquarebracketright{}}}
+\vspace{\baselineskip}
+}\hspace*{10mm}{
+\XLingPaperminmaxcellincolumn{Niveau}{\XLingPapermincola}{\textbf{Niveau}}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{\textsquarebracketleft{}A\textsquarebracketright{}}{\XLingPapermincolb}{\textbf{\textsquarebracketleft{}A\textsquarebracketright{}}}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{\textsquarebracketleft{}B\textsquarebracketright{}}{\XLingPapermincolc}{\textbf{\textsquarebracketleft{}B\textsquarebracketright{}}}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{\textsquarebracketleft{}C\textsquarebracketright{}}{\XLingPapermincold}{\textbf{\textsquarebracketleft{}C\textsquarebracketright{}}}{\XLingPapermaxcold}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{\textsquarebracketleft{}D\textsquarebracketright{}}{\XLingPapermincole}{\textbf{\textsquarebracketleft{}D\textsquarebracketright{}}}{\XLingPapermaxcole}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{2}{\XLingPapermincola}{\textbf{2}}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{5}{\XLingPapermincolb}{\textbf{5}}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{5}{\XLingPapermincolc}{\textbf{5}}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{48}{\XLingPapermincold}{\textbf{48}}{\XLingPapermaxcold}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{16}{\XLingPapermincole}{\textbf{16}}{\XLingPapermaxcole}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{3}{\XLingPapermincola}{3}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{7}{\XLingPapermincolb}{7}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{10}{\XLingPapermincolc}{10}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{72}{\XLingPapermincold}{72}{\XLingPapermaxcold}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{24}{\XLingPapermincole}{24}{\XLingPapermaxcole}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{4}{\XLingPapermincola}{4}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{8}{\XLingPapermincolb}{8}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{18}{\XLingPapermincolc}{18}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{206}{\XLingPapermincold}{206}{\XLingPapermaxcold}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{40}{\XLingPapermincole}{40}{\XLingPapermaxcole}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{5}{\XLingPapermincola}{5}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{12}{\XLingPapermincolb}{12}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{25}{\XLingPapermincolc}{25}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{500}{\XLingPapermincold}{500}{\XLingPapermaxcold}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{72}{\XLingPapermincole}{72}{\XLingPapermaxcole}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{6}{\XLingPapermincola}{6}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{20}{\XLingPapermincolb}{20}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{50}{\XLingPapermincolc}{50}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{1000}{\XLingPapermincold}{1000}{\XLingPapermaxcold}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincole}{}{\XLingPapermaxcole}{+0\tabcolsep}
+\setlength{\XLingPaperavailabletablewidth}{349.96889769300003pt}
+\setlength{\XLingPapertableminwidth}{\XLingPapermincola+\XLingPapermincolb+\XLingPapermincolc+\XLingPapermincold+\XLingPapermincole}
+\setlength{\XLingPapertablemaxwidth}{\XLingPapermaxcola+\XLingPapermaxcolb+\XLingPapermaxcolc+\XLingPapermaxcold+\XLingPapermaxcole}
+\XLingPapercalculatetablewidthratio{}
+\XLingPapersetcolumnwidth{\XLingPapercolawidth}{\XLingPapermincola}{\XLingPapermaxcola}{-0\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercolbwidth}{\XLingPapermincolb}{\XLingPapermaxcolb}{-2\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercolcwidth}{\XLingPapermincolc}{\XLingPapermaxcolc}{-2\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercoldwidth}{\XLingPapermincold}{\XLingPapermaxcold}{-2\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercolewidth}{\XLingPapermincole}{\XLingPapermaxcole}{-2\tabcolsep}\vspace*{-\baselineskip}
+\begin{longtable}
+[l]{@{}p{\XLingPapercolawidth}p{\XLingPapercolbwidth}p{\XLingPapercolcwidth}p{\XLingPapercoldwidth}p{\XLingPapercolewidth}@{}}\toprule\multicolumn{1}{@{}p{\XLingPapercolawidth}}{\textbf{Niveau}}&\multicolumn{1}{p{\XLingPapercolbwidth}}{\textbf{\textsquarebracketleft{}A\textsquarebracketright{}}}&\multicolumn{1}{p{\XLingPapercolcwidth}}{\textbf{\textsquarebracketleft{}B\textsquarebracketright{}}}&\multicolumn{1}{p{\XLingPapercoldwidth}}{\textbf{\textsquarebracketleft{}C\textsquarebracketright{}}}&\multicolumn{1}{p{\XLingPapercolewidth}@{}}{\textbf{\textsquarebracketleft{}D\textsquarebracketright{}}}\\\multicolumn{1}{@{}p{\XLingPapercolawidth}}{\textbf{2}}&\multicolumn{1}{p{\XLingPapercolbwidth}}{\textbf{5}}&\multicolumn{1}{p{\XLingPapercolcwidth}}{\textbf{5}}&\multicolumn{1}{p{\XLingPapercoldwidth}}{\textbf{48}}&\multicolumn{1}{p{\XLingPapercolewidth}@{}}{\textbf{16}}\\\midrule\endhead \multicolumn{1}{@{}p{\XLingPapercolawidth}}{3}&\multicolumn{1}{p{\XLingPapercolbwidth}}{7}&\multicolumn{1}{p{\XLingPapercolcwidth}}{10}&\multicolumn{1}{p{\XLingPapercoldwidth}}{72}&\multicolumn{1}{p{\XLingPapercolewidth}@{}}{24}\\%
+\multicolumn{1}{@{}p{\XLingPapercolawidth}}{4}&\multicolumn{1}{p{\XLingPapercolbwidth}}{8}&\multicolumn{1}{p{\XLingPapercolcwidth}}{18}&\multicolumn{1}{p{\XLingPapercoldwidth}}{206}&\multicolumn{1}{p{\XLingPapercolewidth}@{}}{40}\\%
+\multicolumn{1}{@{}p{\XLingPapercolawidth}}{5}&\multicolumn{1}{p{\XLingPapercolbwidth}}{12}&\multicolumn{1}{p{\XLingPapercolcwidth}}{25}&\multicolumn{1}{p{\XLingPapercoldwidth}}{500}&\multicolumn{1}{p{\XLingPapercolewidth}@{}}{72}\\%
+\multicolumn{1}{@{}p{\XLingPapercolawidth}}{6}&\multicolumn{1}{p{\XLingPapercolbwidth}}{20}&\multicolumn{1}{p{\XLingPapercolcwidth}}{50}&\multicolumn{1}{p{\XLingPapercoldwidth}}{1000}&\multicolumn{1}{p{\XLingPapercolewidth}@{}}{}\\\bottomrule%
+\end{longtable}
+}
+{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{7.6 } Supprimer un niveau}{sDelLevel}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sDelLevel}{}}{7.6 }Supprimer un niveau}}\markboth{Supprimer un niveau}{{\textbf{Livres par niveau (gradués)}}}\XLingPaperaddtocontents{sDelLevel}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{1. Cliquez sur le niveau}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{2. Cliquez sur le lien {\textbf{Retirer le niveau}}. \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/RetNiv.png" scaled 750} \\}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{7.7 } Modifier l’ordre}{sChOrder}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sChOrder}{}}{7.7 }Modifier l’ordre}}\markboth{Modifier l’ordre}{{\textbf{Livres par niveau (gradués)}}}\XLingPaperaddtocontents{sChOrder}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Faites glisser les lignes pour changer l'ordre.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{7.8 } Ajouter un niveau}{sAddLev}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sAddLev}{}}{7.8 }Ajouter un niveau}}\markboth{Ajouter un niveau}{{\textbf{Livres par niveau (gradués)}}}\XLingPaperaddtocontents{sAddLev}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur le lien {\textbf{Ajouter un niveau}}.\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/AdjNiveau.png" scaled 750} \\}}
+\vspace{\baselineskip}
+}
+\begin{mdframed}
+[backgroundcolor=FTColorA,skipabove=3pt,skipbelow=3pt,innermargin=2cm,outermargin=2cm,innertopmargin=.03in,innerbottommargin=.03in,innerleftmargin=.125in,innerrightmargin=.125in,align=left]\indent Si on ne veut pas qu’une règle s’applique à un niveau donné, décocher la case appropriée.\par{}\indent \vspace*{0pt}{\XeTeXpicfile "../imgfr/AdjNiveauCaseCr.png" scaled 750}\par{}\end{mdframed}
+{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{7.9 } Ajouter des notes à l’auteur}{sAddNotes}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sAddNotes}{}}{7.9 }Ajouter des notes à l’auteur}}\markboth{Ajouter des notes à l’auteur}{{\textbf{Livres par niveau (gradués)}}}\XLingPaperaddtocontents{sAddNotes}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Nous pouvons mettre des notes à l’auteur dans la zone de texte {\textbf{Ce qu’il faut se rappeler pour ce niveau}}.}}
+\vspace{\baselineskip}
+}
+\begin{mdframed}
+[backgroundcolor=FTColorA,skipabove=3pt,skipbelow=3pt,innermargin=2cm,outermargin=2cm,innertopmargin=.03in,innerbottommargin=.03in,innerleftmargin=.125in,innerrightmargin=.125in,align=left]\indent xxx\par{}\end{mdframed}
+{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{7.10 } Créer le livre}{sCreateLevBook}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCreateLevBook}{}}{7.10 }Créer le livre}}\markboth{Créer le livre}{{\textbf{Livres par niveau (gradués)}}}\XLingPaperaddtocontents{sCreateLevBook}}\par{}
+\penalty10000\vspace{10pt}\penalty10000
+\begin{mdframed}
+[backgroundcolor=FTColorA,skipabove=3pt,skipbelow=3pt,innermargin=2cm,outermargin=2cm,innertopmargin=.03in,innerbottommargin=.03in,innerleftmargin=.125in,innerrightmargin=.125in,align=left]\indent Après avoir défini tous les niveaux, nous sommes prêts à créer notre livre gradué.\par{}\end{mdframed}
+{\parskip .5pt plus 1pt minus 1pt
+
+\vspace{\baselineskip}
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Si nécessaire, cliquez sur {\textbf{OK}} (pour fermer la boîte de dialogue).}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Assurez-vous que le niveau est correct (cliquez sur la flèche si nécessaire) \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image41.png" scaled 750} \\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Remplissez les détails des pages avant (page de titre, etc.) et ajoutez des pages au besoin.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Tapez (ou copiez) du texte.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Si votre texte est plus complexe que permis pour le niveau, le texte ou la page changera de couleur.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Modifiez la police si nécessaire (voir page x)}}
+\vspace{\baselineskip}
+}\hspace*{10mm}{
+\XLingPaperminmaxcellincolumn{Étape}{\XLingPapermincola}{\textbf{Étape}}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{Lettres}{\XLingPapermincolb}{\textbf{Lettres}}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{Mots}{\XLingPapermincolc}{\textbf{Mots à vue}}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{1}{\XLingPapermincola}{1}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolb}{}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolc}{}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{2}{\XLingPapermincola}{2}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolb}{}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolc}{}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{3}{\XLingPapermincola}{3}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolb}{}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolc}{}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{4}{\XLingPapermincola}{4}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolb}{}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolc}{}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{5}{\XLingPapermincola}{5}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolb}{}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolc}{}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{6}{\XLingPapermincola}{6}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolb}{}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolc}{}{\XLingPapermaxcolc}{+0\tabcolsep}
+\setlength{\XLingPaperavailabletablewidth}{349.96889769300003pt}
+\setlength{\XLingPapertableminwidth}{\XLingPapermincola+\XLingPapermincolb+\XLingPapermincolc}
+\setlength{\XLingPapertablemaxwidth}{\XLingPapermaxcola+\XLingPapermaxcolb+\XLingPapermaxcolc}
+\XLingPapercalculatetablewidthratio{}
+\XLingPapersetcolumnwidth{\XLingPapercolawidth}{\XLingPapermincola}{\XLingPapermaxcola}{-0\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercolbwidth}{\XLingPapermincolb}{\XLingPapermaxcolb}{-2\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercolcwidth}{\XLingPapermincolc}{\XLingPapermaxcolc}{-2\tabcolsep}\vspace*{-\baselineskip}
+\begin{longtable}
+[l]{@{}p{\XLingPapercolawidth}p{\XLingPapercolbwidth}p{\XLingPapercolcwidth}@{}}\toprule\multicolumn{1}{@{}p{\XLingPapercolawidth}}{\textbf{Étape}}&\multicolumn{1}{p{\XLingPapercolbwidth}}{\textbf{Lettres}}&\multicolumn{1}{p{\XLingPapercolcwidth}@{}}{\textbf{Mots à vue}}\\%
+\midrule\endhead \multicolumn{1}{@{}p{\XLingPapercolawidth}}{1}&\multicolumn{1}{p{\XLingPapercolbwidth}}{}&\multicolumn{1}{p{\XLingPapercolcwidth}@{}}{}\\%
+\multicolumn{1}{@{}p{\XLingPapercolawidth}}{2}&\multicolumn{1}{p{\XLingPapercolbwidth}}{}&\multicolumn{1}{p{\XLingPapercolcwidth}@{}}{}\\%
+\multicolumn{1}{@{}p{\XLingPapercolawidth}}{3}&\multicolumn{1}{p{\XLingPapercolbwidth}}{}&\multicolumn{1}{p{\XLingPapercolcwidth}@{}}{}\\%
+\multicolumn{1}{@{}p{\XLingPapercolawidth}}{4}&\multicolumn{1}{p{\XLingPapercolbwidth}}{}&\multicolumn{1}{p{\XLingPapercolcwidth}@{}}{}\\%
+\multicolumn{1}{@{}p{\XLingPapercolawidth}}{5}&\multicolumn{1}{p{\XLingPapercolbwidth}}{}&\multicolumn{1}{p{\XLingPapercolcwidth}@{}}{}\\%
+\multicolumn{1}{@{}p{\XLingPapercolawidth}}{6}&\multicolumn{1}{p{\XLingPapercolbwidth}}{}&\multicolumn{1}{p{\XLingPapercolcwidth}@{}}{}\\\bottomrule%
+\end{longtable}
+}
+\clearpage
+\thispagestyle{bodyfirstpage}\markboth{}{{\textbf{Livre déchiffrable}}}
+\XLingPaperaddtocontents{sDecodable}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sDecodable}{}}\raisebox{\baselineskip}[0pt]{\pdfbookmark[1]{8 Livre déchiffrable}{sDecodable}}8\protect\\}}}\par{}
+\vspace{10.8pt}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+{\textbf{Livre déchiffrable}}\protect\\}}}\par{}
+\vspace{21.6pt}\noindent {\textit{\textbf{Introduction}}}\par{}\indent Ce module nous allons apprendre comment créer un livre déchiffrable dans Bloom (c.-à-d. un livre qui ne contient que les lettres (ou mots à vue) apprises).\par{}\noindent {\textit{\textbf{Pourquoi est-ce important ?}}}\par{}\indent Quand les gens commencent à apprendre à lire, ils ont besoin de beaucoup de pratique avec des documents de lecture qui ne contient que les lettres (ou mots à vue) qu’ils ont apprises jusqu’à présent. Sans un programme comme Bloom, il est très pénible de s’assurer que votre livre est limité aux lettres connues ou mots à vue. Le livre Déchiffrable de Bloom nous permet d’introduire des lettres et des mots à vue à différentes étapes. Lorsque vous faites des livres déchiffrables, Bloom vous avertira chaque fois que vous utilisez un mot avec des lettres qui n’ont pas encore été apprises (ou qui n’est pas un mot à vue).\par{}\noindent {\textit{\textbf{Que ferez-vous ?}}}\par{}{\parskip .5pt plus 1pt minus 1pt
+
+\vspace{\baselineskip}
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Créez un livre basé sur le modèle de livre déchiffrable.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Régler les étapes en ajoutant les graphèmes, la liste de mots et la définition des lettres et des mots à vue pour chacune des étapes.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Créer un livre déchiffrable de niveau 1.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{8.1 } Choisissez une collection}{sChCol2}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sChCol2}{}}{8.1 }Choisissez une collection}}\markboth{Choisissez une collection}{{\textbf{Livre déchiffrable}}}\XLingPaperaddtocontents{sChCol2}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Si nécessaire, démarrez Bloom}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Vérifiez que la bonne collection est overte.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Si nécessaire, cliquez sur {\textbf{Autres collections}}. \\{\textit{La boîte de dialogue {\textbf{Ouvrir / Créer une collection}} s’affiche}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Sélectionnez la collection désirée. \\{\textit{La fenêtre principale réapparaît.}}}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{8.2 } Création d’un livre déchiffrable}{sCrLivreLD}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCrLivreLD}{}}{8.2 }Création d’un livre déchiffrable}}\markboth{Création d’un livre déchiffrable}{{\textbf{Livre déchiffrable}}}\XLingPaperaddtocontents{sCrLivreLD}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Dans le volet {\textbf{Sources pour des nouveaux livres}}, sélectionnez le modèle de {\textbf{Livre déchiffrable}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur {\textbf{Créer un livre depuis cette source}}.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{8.3 } Configurer les étapes}{sConfigSt}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sConfigSt}{}}{8.3 }Configurer les étapes}}\markboth{Configurer les étapes}{{\textbf{Livre déchiffrable}}}\XLingPaperaddtocontents{sConfigSt}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Si nécessaire, cliquez sur \vspace*{0pt}{\XeTeXpicfile "../imgfr/image42.png" scaled 750} (à droite) pour voir le volet d'outils.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Dans le volet {\textbf{Outil du livre déchiffrable}}, cliquez sur {\textbf{Configurer les étapes}}.\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image43.jpeg" scaled 750} \\ \\{\textit{La boîte de dialogue s’affiche}}. Voir dessous.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{8.4 } Ajouter des graphèmes}{sAddLetters}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sAddLetters}{}}{8.4 }Ajouter des graphèmes}}\markboth{Ajouter des graphèmes}{{\textbf{Livre déchiffrable}}}\XLingPaperaddtocontents{sAddLetters}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur l’onglet {\textbf{Lettres}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{• Saisissez ou collez les lettres souhaitées dans la zone de texte {\textbf{Lettres et ensembles de lettres}}. \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/image44.png" scaled 750} \\}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{8.5 } Ajouter une liste de mots (des mots suggérés)}{sAddWordlist}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sAddWordlist}{}}{8.5 }Ajouter une liste de mots (des mots suggérés)}}\markboth{Ajouter une liste de mots (des mots suggérés)}{{\textbf{Livre déchiffrable}}}\XLingPaperaddtocontents{sAddWordlist}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur l’onglet {\textbf{Exemples de mots}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Tapez ou collez les mots suggérés dans la zone de texte {\textbf{1) Tapez les mots ici}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquez sur le lien {\uline{Dossier de textes types}}. \\{\textit{Une fenêtre Explorer s’ouvre dans le dossier que Bloom utilise pour obtenir des mots suggérés.}}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Collez votre fichier texte dans ce dossier.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Fermez la fenêtre Explorer. \\{\textit{Le nom complet du chemin du fichier est affiché dans la zone de texte {\textbf{2) Placez les fichiers texte}}.}}}}
+\vspace{\baselineskip}
+}\clearpage
+\thispagestyle{bodyfirstpage}\markboth{}{{\textbf{Créer un livre electronique (pour Android)}}}
+\XLingPaperaddtocontents{sCrEl}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sCrEl}{}}\raisebox{\baselineskip}[0pt]{\pdfbookmark[1]{9 Créer un livre electronique (pour Android)}{sCrEl}}9\protect\\}}}\par{}
+\vspace{10.8pt}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+{\textbf{Créer un livre electronique (pour Android)}}\protect\\}}}\par{}
+\vspace{21.6pt}\noindent {\textit{\textbf{Introduction}}}\par{}\indent Bloom peut également créer des livres électroniques qui peuvent être lus sur un Smartphone Android en utilisant l'App Bloom Reader. Ce module explique comment formater votre livre pour un Android et aussi comment transférer le livre sur le téléphone.\par{}\noindent {\textit{\textbf{Où en sommes-nous ?}}}\par{}\indent Avant de pouvoir copier votre livre sur votre appareil Android, vous devez télécharger et installer Bloom Reader sur votre téléphone.\par{}\noindent {\textit{\textbf{Pourquoi est-ce important ?}}}\par{}\indent Les livres électroniques sont moins chers à produire, cependant, vous devez avoir une application qui peut les lire. Bloom Reader a été écrit spécialement pour lire les livres Bloom sur un Smartphone Android. Comme la taille de l'écran est très différente de la taille du papier, vous devez d'abord le formater avant de pouvoir l'envoyer à votre téléphone.\par{}\noindent {\textit{\textbf{Que ferez-vous ?}}}\par{}{\parskip .5pt plus 1pt minus 1pt
+
+\vspace{\baselineskip}
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{D'abord vous devez télécharger et installer Bloom Reader à partir de la boutique Google Playstore.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Vous ouvrez ensuite votre livre et le reformatez pour qu'il s'adapte à un écran Android}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Puis, vous publiez le livre sur votre appareil Android.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{9.1 } Choisir une collection}{sChCOlEl}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sChCOlEl}{}}{9.1 }Choisir une collection}}\markboth{Choisir une collection}{{\textbf{Créer un livre electronique (pour Android)}}}\XLingPaperaddtocontents{sChCOlEl}}\par{}
+\penalty10000\vspace{10pt}\penalty10000\indent \vspace*{0pt}{\XeTeXpicfile "../imgfr/Coll.png" scaled 750}\par{}{\parskip .5pt plus 1pt minus 1pt
+
+\vspace{\baselineskip}
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Lancez Bloom (et Bloom Reader sur votre téléphone)}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Vérifiez que la bonne collection est ouverte.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Sinon, cliquez sur {\textbf{Autres collections}}.\\{\textit{ La boîte de dialogue {\textbf{Ouvrir / Créer une collection}} s’affiche.}}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Sélectionnez la collection désirée. \\{\textit{La fenêtre principale réapparaît}}.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Sélectionnez le livre désirée. \\{\textit{La fenêtre principale réapparaît}}.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{9.2 } Reformater votre livre pour Android}{sReformat}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sReformat}{}}{9.2 }Reformater votre livre pour Android}}\markboth{Reformater votre livre pour Android}{{\textbf{Créer un livre electronique (pour Android)}}}\XLingPaperaddtocontents{sReformat}}\par{}
+\penalty10000\vspace{10pt}\penalty10000\indent \vspace*{0pt}{\XeTeXpicfile "../imgfr/edit.png" scaled 750}\par{}\indent Vous devez changer la taille de la page et vérifier chaque page pour vous assurer qu'elle s'affiche correctement à l'écran.\par{}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{9.2.1 } Changer la taille de la page}{sRePgeS}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sRePgeS}{}}{9.2.1 }Changer la taille de la page}}\markboth{Changer la taille de la page}{{\textbf{Créer un livre electronique (pour Android)}}}\XLingPaperaddtocontents{sRePgeS}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Dans la barre d'outils, cliquez sur {\textbf{la taille de la page actuelle}} (par exemple, A5Portrait)}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Choisissez {\textbf{Appareil16x0Portrait}}\\\vspace*{0pt}{\XeTeXpicfile "../imgfr/PageAndroid.png" scaled 750}  \\{\textit{ La taille de la page change et Bloom tente de réorganiser la page}}.\\}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{9.2.2 } Vérifier chaque page}{sRPage}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sRPage}{}}{9.2.2 }Vérifier chaque page}}\markboth{Vérifier chaque page}{{\textbf{Créer un livre electronique (pour Android)}}}\XLingPaperaddtocontents{sRPage}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Vérifiez chaque page pour vous assurer qu'elle s'affiche correctement à l'écran. Si ce n'est pas le cas, apportez les modifications nécessaires aux pages problématiques.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{12}{14.399999999999999}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[2]{{9.3 } Publier votre livre à Android}{sdraftBT}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sdraftBT}{}}{9.3 }Publier votre livre à Android}}\markboth{Publier votre livre à Android}{{\textbf{Créer un livre electronique (pour Android)}}}\XLingPaperaddtocontents{sdraftBT}}\par{}
+\penalty10000\vspace{10pt}\penalty10000\indent Pour publier votre livre sur votre Android, vous devez connecter votre appareil, faire quelques réglages et ensuite envoyer le livre. Voir ci-dessous pour les instructions sur la façon de procéder.\par{}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{9.3.1 } Connectez votre appareil Android}{sConAnd}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sConAnd}{}}{9.3.1 }Connectez votre appareil Android}}\markboth{Connectez votre appareil Android}{{\textbf{Créer un livre electronique (pour Android)}}}\XLingPaperaddtocontents{sConAnd}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Connectez votre appareil Android à votre PC via le câble ou le Wi-Fi.}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Vérifiez que le lecteur Bloom est en marche sur votre appareil Android.}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{9.3.2 } Publier}{sAndSettings}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sAndSettings}{}}{9.3.2 }Publier}}\markboth{Publier}{{\textbf{Créer un livre electronique (pour Android)}}}\XLingPaperaddtocontents{sAndSettings}}\par{}
+\penalty10000\vspace{10pt}\penalty10000{\parskip .5pt plus 1pt minus 1pt
+
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Cliquer sur l'icône {\textbf{Publier}}}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Choisissez Android \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/PubAnd.png" scaled 750} \\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Si vous le souhaitez, sélectionnez la couleur dans {\textbf{Settings}} (Couleur des vignettes) \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/ChCol.png" scaled 750} \\}}
+{\setlength{\XLingPapertempdim}{\XLingPaperbulletlistitemwidth+\parindent{}}\leftskip\XLingPapertempdim\relax
+\interlinepenalty10000
+\XLingPaperlistitem{\parindent{}}{\XLingPaperbulletlistitemwidth}{•}{Sélectionnez votre choix parmi les choix de méthodes \\\vspace*{0pt}{\XeTeXpicfile "../imgfr/ConAnd.png" scaled 750} \\}}
+\vspace{\baselineskip}
+}{\XLingPaperneedspace{3\baselineskip}
+\vspace{10pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{10}{12}\selectfont \textbf{{\noindent
+\raisebox{\baselineskip}[0pt]{\pdfbookmark[3]{{9.3.3 } Bloom Reader}{sBlRead}}\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sBlRead}{}}{9.3.3 }Bloom Reader}}\markboth{Bloom Reader}{{\textbf{Créer un livre electronique (pour Android)}}}\XLingPaperaddtocontents{sBlRead}}\par{}
+\penalty10000\vspace{10pt}\penalty10000\indent Une fois l'envoi terminé. Sur votre Androïde, jouez le livre envoyé. Parfois, tout le texte ne sera pas affiché sur l'Android. Vous pouvez avoir besoin de faire quelques ajustements dans le livre Bloom pour que tout le texte s'adapte, puis le publier à nouveau.\par{}\pagestyle{body}\clearpage
+\thispagestyle{bodyfirstpage}\markboth{}{Paratext\_8\_3-6\_Tchad}
+\XLingPaperaddtocontents{sChadSpecChar}{\vspace*{12pt}\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+\raisebox{\baselineskip}[0pt]{\protect\hypertarget{sChadSpecChar}{}}\raisebox{\baselineskip}[0pt]{\pdfbookmark[1]{A  Les caractères de Tchad Unicode}{sChadSpecChar}}A\protect\\}}}\par{}
+\vspace{10.8pt}{\XLingPaperneedspace{3\baselineskip}\noindent
+\fontsize{18}{21.599999999999998}\selectfont \textbf{{\centering
+Les caractères de Tchad Unicode\protect\\}}}\par{}
+\vspace{21.6pt}\indent Certains des caractères utilisés dans les langues tchadiennes ne se trouvent pas sur le clavier. Pour les taper, vous devez appuyer sur plus qu’une touche.\par{}\indent Les tableaux ci-dessous montrent tous les caractères du Tchad. Les séquences de touches sont indiquées pour chaque caractère.\par{}\vspace{10pt plus 2pt minus 1pt}\XLingPaperneedspace{3\baselineskip}\protect\hypertarget{ntLetSpec}{}\XLingPaperaddtocontents{ntLetSpec}\hspace*{10mm}{\vspace*{-\baselineskip}
+\begin{longtable}
+[l]{@{}llll@{}}\toprule\multicolumn{2}{@{}l}{\textbf{Les caractères du Tchad}}&\multicolumn{2}{l@{}}{\textbf{Les tons}}\\\multicolumn{2}{@{}l}{\textbf{Tapez ... pour avoir}}&\multicolumn{2}{l@{}}{\textbf{Tapez ... pour avoir}}\\\midrule\endhead \multicolumn{1}{@{}l}{;’ ’}&\multicolumn{1}{l}{;n ŋ}&\multicolumn{1}{l}{\textsquarebracketright{}}&\multicolumn{1}{l@{}}{à ton bas}\\%
+\multicolumn{1}{@{}l}{;b ɓ}&\multicolumn{1}{l}{;o ɔ}&\multicolumn{1}{l}{\textsquarebracketleft{}}&\multicolumn{1}{l@{}}{á ton haut}\\%
+\multicolumn{1}{@{}l}{;c ç}&\multicolumn{1}{l}{;p œ}&\multicolumn{1}{l}{=}&\multicolumn{1}{l@{}}{ā ton moyen}\\%
+\multicolumn{1}{@{}l}{;d ɗ}&\multicolumn{1}{l}{;y ƴ}&\multicolumn{1}{l}{\^{}}&\multicolumn{1}{l@{}}{â ton descendant}\\%
+\multicolumn{1}{@{}l}{;e ɛ}&\multicolumn{1}{l}{}&\multicolumn{1}{l}{\textbar{}}&\multicolumn{1}{l@{}}{ǎ ton montant}\\%
+\multicolumn{1}{@{}l}{;f ə}&\multicolumn{1}{l}{}&\multicolumn{1}{l}{\#}&\multicolumn{1}{l@{}}{ä umlaut}\\%
+\multicolumn{1}{@{}l}{;h ɦ}&\multicolumn{1}{l}{}&\multicolumn{1}{l}{\textasciitilde{}}&\multicolumn{1}{l@{}}{ã tilde}\\%
+\multicolumn{1}{@{}l}{;k ɨ}&\multicolumn{1}{l}{}&\multicolumn{1}{l}{\_}&\multicolumn{1}{l@{}}{a̰ sous-tilda}\\%
+\multicolumn{1}{@{}l}{;m ɲ}&\multicolumn{1}{l}{}&\multicolumn{1}{l}{`}&\multicolumn{1}{l@{}}{a̧ cédille}\\\bottomrule%
+\end{longtable}
+}
+\vspace*{-.65\baselineskip}\vspace{0pt}{\protect\raggedright{Table }{A.1}{  \\}}\vspace{.3em}\vspace{10pt plus 2pt minus 1pt}\indent Taper les autres caractères spéciaux de la façon suivante :\par{}\vspace{10pt plus 2pt minus 1pt}\XLingPaperneedspace{3\baselineskip}\protect\hypertarget{ntCarSpec}{}\XLingPaperaddtocontents{ntCarSpec}\hspace*{10mm}{
+\XLingPaperminmaxcellincolumn{Tapez}{\XLingPapermincola}{\textbf{Tapez}}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{avoir}{\XLingPapermincolb}{\textbf{\vbox{\hbox{\strut{}pour }\hbox{\strut{}avoir}}}}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolc}{\textbf{}}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{Tapez}{\XLingPapermincold}{\textbf{Tapez}}{\XLingPapermaxcold}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{avoir}{\XLingPapermincole}{\textbf{\vbox{\hbox{\strut{}Pour }\hbox{\strut{}avoir}}}}{\XLingPapermaxcole}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolf}{\textbf{}}{\XLingPapermaxcolf}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{Tapez}{\XLingPapermincolg}{\textbf{Tapez}}{\XLingPapermaxcolg}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{avoir}{\XLingPapermincolh}{\textbf{\vbox{\hbox{\strut{}Pour }\hbox{\strut{}avoir}}}}{\XLingPapermaxcolh}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincoli}{\textbf{}}{\XLingPapermaxcoli}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{Tapez}{\XLingPapermincolj}{\textbf{Tapez}}{\XLingPapermaxcolj}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{avoir}{\XLingPapermincolk}{\textbf{\vbox{\hbox{\strut{}Pour }\hbox{\strut{}avoir}}}}{\XLingPapermaxcolk}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;\textsquarebracketright{}}{\XLingPapermincola}{;\textsquarebracketright{}}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{\textsquarebracketright{}}{\XLingPapermincolb}{\textsquarebracketright{}}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolc}{}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;\#}{\XLingPapermincold}{;\#}{\XLingPapermaxcold}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{\#}{\XLingPapermincole}{\#}{\XLingPapermaxcole}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolf}{}{\XLingPapermaxcolf}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;;}{\XLingPapermincolg}{;;}{\XLingPapermaxcolg}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;}{\XLingPapermincolh}{;}{\XLingPapermaxcolh}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincoli}{}{\XLingPapermaxcoli}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;\textless{}}{\XLingPapermincolj}{;\textless{} ou \textless{}\textless{}}{\XLingPapermaxcolj}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{«}{\XLingPapermincolk}{«}{\XLingPapermaxcolk}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;\textsquarebracketleft{}}{\XLingPapermincola}{;\textsquarebracketleft{}}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{\textsquarebracketleft{}}{\XLingPapermincolb}{\textsquarebracketleft{}}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolc}{}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;\textasciitilde{}}{\XLingPapermincold}{;\textasciitilde{}}{\XLingPapermaxcold}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{\textasciitilde{}}{\XLingPapermincole}{\textasciitilde{}}{\XLingPapermaxcole}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolf}{}{\XLingPapermaxcolf}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;\{}{\XLingPapermincolg}{;\{}{\XLingPapermaxcolg}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{“}{\XLingPapermincolh}{“}{\XLingPapermaxcolh}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincoli}{}{\XLingPapermaxcoli}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;\textgreater{}}{\XLingPapermincolj}{;\textgreater{} ou \textgreater{}\textgreater{}}{\XLingPapermaxcolj}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{»}{\XLingPapermincolk}{»}{\XLingPapermaxcolk}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;=}{\XLingPapermincola}{;=}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{=}{\XLingPapermincolb}{=}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolc}{}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;\_}{\XLingPapermincold}{;\_}{\XLingPapermaxcold}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{\_}{\XLingPapermincole}{\_}{\XLingPapermaxcole}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolf}{}{\XLingPapermaxcolf}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;\}}{\XLingPapermincolg}{;\}}{\XLingPapermaxcolg}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{”}{\XLingPapermincolh}{”}{\XLingPapermaxcolh}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincoli}{}{\XLingPapermaxcoli}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;,}{\XLingPapermincolj}{;,}{\XLingPapermaxcolj}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{‹}{\XLingPapermincolk}{‹}{\XLingPapermaxcolk}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;\^{}}{\XLingPapermincola}{;\^{}}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{\^{}}{\XLingPapermincolb}{\^{}}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolc}{}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;`}{\XLingPapermincold}{;`}{\XLingPapermaxcold}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{`}{\XLingPapermincole}{`}{\XLingPapermaxcole}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolf}{}{\XLingPapermaxcolf}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;(}{\XLingPapermincolg}{;(}{\XLingPapermaxcolg}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{’}{\XLingPapermincolh}{’}{\XLingPapermaxcolh}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincoli}{}{\XLingPapermaxcoli}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;.}{\XLingPapermincolj}{;.}{\XLingPapermaxcolj}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{›}{\XLingPapermincolk}{›}{\XLingPapermaxcolk}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;\textbar{}}{\XLingPapermincola}{;\textbar{}}{\XLingPapermaxcola}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{\textbar{}}{\XLingPapermincolb}{\textbar{}}{\XLingPapermaxcolb}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolc}{}{\XLingPapermaxcolc}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincold}{}{\XLingPapermaxcold}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincole}{}{\XLingPapermaxcole}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolf}{}{\XLingPapermaxcolf}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{;)}{\XLingPapermincolg}{;)}{\XLingPapermaxcolg}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{’}{\XLingPapermincolh}{’}{\XLingPapermaxcolh}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincoli}{}{\XLingPapermaxcoli}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolj}{}{\XLingPapermaxcolj}{+0\tabcolsep}
+\XLingPaperminmaxcellincolumn{}{\XLingPapermincolk}{}{\XLingPapermaxcolk}{+0\tabcolsep}
+\setlength{\XLingPaperavailabletablewidth}{349.96889769300003pt}
+\setlength{\XLingPapertableminwidth}{\XLingPapermincola+\XLingPapermincolb+\XLingPapermincolc+\XLingPapermincold+\XLingPapermincole+\XLingPapermincolf+\XLingPapermincolg+\XLingPapermincolh+\XLingPapermincoli+\XLingPapermincolj+\XLingPapermincolk}
+\setlength{\XLingPapertablemaxwidth}{\XLingPapermaxcola+\XLingPapermaxcolb+\XLingPapermaxcolc+\XLingPapermaxcold+\XLingPapermaxcole+\XLingPapermaxcolf+\XLingPapermaxcolg+\XLingPapermaxcolh+\XLingPapermaxcoli+\XLingPapermaxcolj+\XLingPapermaxcolk}
+\XLingPapercalculatetablewidthratio{}
+\XLingPapersetcolumnwidth{\XLingPapercolawidth}{\XLingPapermincola}{\XLingPapermaxcola}{-0\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercolbwidth}{\XLingPapermincolb}{\XLingPapermaxcolb}{-2\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercolcwidth}{\XLingPapermincolc}{\XLingPapermaxcolc}{-2\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercoldwidth}{\XLingPapermincold}{\XLingPapermaxcold}{-2\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercolewidth}{\XLingPapermincole}{\XLingPapermaxcole}{-2\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercolfwidth}{\XLingPapermincolf}{\XLingPapermaxcolf}{-2\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercolgwidth}{\XLingPapermincolg}{\XLingPapermaxcolg}{-2\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercolhwidth}{\XLingPapermincolh}{\XLingPapermaxcolh}{-2\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercoliwidth}{\XLingPapermincoli}{\XLingPapermaxcoli}{-2\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercoljwidth}{\XLingPapermincolj}{\XLingPapermaxcolj}{-2\tabcolsep}
+\XLingPapersetcolumnwidth{\XLingPapercolkwidth}{\XLingPapermincolk}{\XLingPapermaxcolk}{-2\tabcolsep}\vspace*{-\baselineskip}
+\begin{longtable}
+[l]{@{}p{\XLingPapercolawidth}p{\XLingPapercolbwidth}p{\XLingPapercolcwidth}p{\XLingPapercoldwidth}p{\XLingPapercolewidth}p{\XLingPapercolfwidth}p{\XLingPapercolgwidth}p{\XLingPapercolhwidth}p{\XLingPapercoliwidth}p{\XLingPapercoljwidth}p{\XLingPapercolkwidth}@{}}\toprule\multicolumn{1}{@{}p{\XLingPapercolawidth}}{\textbf{Tapez}}&\multicolumn{1}{p{\XLingPapercolbwidth}}{\textbf{\vbox{\hbox{\strut{}pour }\hbox{\strut{}avoir}}}}&\multicolumn{1}{p{\XLingPapercolcwidth}}{\textbf{}}&\multicolumn{1}{p{\XLingPapercoldwidth}}{\textbf{Tapez}}&\multicolumn{1}{p{\XLingPapercolewidth}}{\textbf{\vbox{\hbox{\strut{}Pour }\hbox{\strut{}avoir}}}}&\multicolumn{1}{p{\XLingPapercolfwidth}}{\textbf{}}&\multicolumn{1}{p{\XLingPapercolgwidth}}{\textbf{Tapez}}&\multicolumn{1}{p{\XLingPapercolhwidth}}{\textbf{\vbox{\hbox{\strut{}Pour }\hbox{\strut{}avoir}}}}&\multicolumn{1}{p{\XLingPapercoliwidth}}{\textbf{}}&\multicolumn{1}{p{\XLingPapercoljwidth}}{\textbf{Tapez}}&\multicolumn{1}{p{\XLingPapercolkwidth}@{}}{\textbf{\vbox{\hbox{\strut{}Pour }\hbox{\strut{}avoir}}}}\\%
+\midrule\endhead \multicolumn{1}{@{}p{\XLingPapercolawidth}}{;\textsquarebracketright{}}&\multicolumn{1}{p{\XLingPapercolbwidth}}{\textsquarebracketright{}}&\multicolumn{1}{p{\XLingPapercolcwidth}}{}&\multicolumn{1}{p{\XLingPapercoldwidth}}{;\#}&\multicolumn{1}{p{\XLingPapercolewidth}}{\#}&\multicolumn{1}{p{\XLingPapercolfwidth}}{}&\multicolumn{1}{p{\XLingPapercolgwidth}}{;;}&\multicolumn{1}{p{\XLingPapercolhwidth}}{;}&\multicolumn{1}{p{\XLingPapercoliwidth}}{}&\multicolumn{1}{p{\XLingPapercoljwidth}}{;\textless{} ou \textless{}\textless{}}&\multicolumn{1}{p{\XLingPapercolkwidth}@{}}{«}\\%
+\multicolumn{1}{@{}p{\XLingPapercolawidth}}{;\textsquarebracketleft{}}&\multicolumn{1}{p{\XLingPapercolbwidth}}{\textsquarebracketleft{}}&\multicolumn{1}{p{\XLingPapercolcwidth}}{}&\multicolumn{1}{p{\XLingPapercoldwidth}}{;\textasciitilde{}}&\multicolumn{1}{p{\XLingPapercolewidth}}{\textasciitilde{}}&\multicolumn{1}{p{\XLingPapercolfwidth}}{}&\multicolumn{1}{p{\XLingPapercolgwidth}}{;\{}&\multicolumn{1}{p{\XLingPapercolhwidth}}{“}&\multicolumn{1}{p{\XLingPapercoliwidth}}{}&\multicolumn{1}{p{\XLingPapercoljwidth}}{;\textgreater{} ou \textgreater{}\textgreater{}}&\multicolumn{1}{p{\XLingPapercolkwidth}@{}}{»}\\%
+\multicolumn{1}{@{}p{\XLingPapercolawidth}}{;=}&\multicolumn{1}{p{\XLingPapercolbwidth}}{=}&\multicolumn{1}{p{\XLingPapercolcwidth}}{}&\multicolumn{1}{p{\XLingPapercoldwidth}}{;\_}&\multicolumn{1}{p{\XLingPapercolewidth}}{\_}&\multicolumn{1}{p{\XLingPapercolfwidth}}{}&\multicolumn{1}{p{\XLingPapercolgwidth}}{;\}}&\multicolumn{1}{p{\XLingPapercolhwidth}}{”}&\multicolumn{1}{p{\XLingPapercoliwidth}}{}&\multicolumn{1}{p{\XLingPapercoljwidth}}{;,}&\multicolumn{1}{p{\XLingPapercolkwidth}@{}}{‹}\\%
+\multicolumn{1}{@{}p{\XLingPapercolawidth}}{;\^{}}&\multicolumn{1}{p{\XLingPapercolbwidth}}{\^{}}&\multicolumn{1}{p{\XLingPapercolcwidth}}{}&\multicolumn{1}{p{\XLingPapercoldwidth}}{;`}&\multicolumn{1}{p{\XLingPapercolewidth}}{`}&\multicolumn{1}{p{\XLingPapercolfwidth}}{}&\multicolumn{1}{p{\XLingPapercolgwidth}}{;(}&\multicolumn{1}{p{\XLingPapercolhwidth}}{’}&\multicolumn{1}{p{\XLingPapercoliwidth}}{}&\multicolumn{1}{p{\XLingPapercoljwidth}}{;.}&\multicolumn{1}{p{\XLingPapercolkwidth}@{}}{›}\\%
+\multicolumn{1}{@{}p{\XLingPapercolawidth}}{;\textbar{}}&\multicolumn{1}{p{\XLingPapercolbwidth}}{\textbar{}}&\multicolumn{1}{p{\XLingPapercolcwidth}}{}&\multicolumn{1}{p{\XLingPapercoldwidth}}{}&\multicolumn{1}{p{\XLingPapercolewidth}}{}&\multicolumn{1}{p{\XLingPapercolfwidth}}{}&\multicolumn{1}{p{\XLingPapercolgwidth}}{;)}&\multicolumn{1}{p{\XLingPapercolhwidth}}{’}&\multicolumn{1}{p{\XLingPapercoliwidth}}{}&\multicolumn{1}{p{\XLingPapercoljwidth}}{}&\multicolumn{1}{p{\XLingPapercolkwidth}@{}}{}\\\bottomrule%
+\end{longtable}
+}
+\vspace*{-.65\baselineskip}\vspace{0pt}{\protect\raggedright{Table }{A.2}{  \\}}\vspace{.3em}\vspace{10pt plus 2pt minus 1pt}\clearpage\XLingPaperendtableofcontents
+\pagebreak\end{MainFont}
+\end{document}
